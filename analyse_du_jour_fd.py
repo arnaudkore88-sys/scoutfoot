@@ -36,10 +36,27 @@ def nom(equipe):
 
 def matchs_du_jour(jour, codes):
     fin = (date.fromisoformat(jour) + timedelta(days=1)).isoformat()
-    data = fd_api.appel("/matches", {"dateFrom": jour, "dateTo": fin,
-                                     "competitions": ",".join(str(IDS[c]) for c in codes)}, ttl=1800)
+    try:   # requête groupée (un seul appel)
+        liste = fd_api.appel("/matches", {"dateFrom": jour, "dateTo": fin,
+                                          "competitions": ",".join(str(IDS[c]) for c in codes)},
+                             ttl=1800).get("matches", [])
+    except fd_api.ErreurFD as e:
+        print(f"  requête groupée impossible ({e}) : essai compétition par compétition")
+        liste, erreurs = [], []
+        for c in codes:
+            try:
+                d = fd_api.appel(f"/competitions/{c}/matches", {"dateFrom": jour, "dateTo": fin}, ttl=1800)
+            except fd_api.ErreurFD as e2:
+                erreurs.append(f"{c}: {e2}")
+                print(f"  {c} ignorée ({e2})")
+                continue
+            for m in d.get("matches", []):
+                m.setdefault("competition", d.get("competition") or {"name": c, "code": c})
+                liste.append(m)
+        if not liste and erreurs:
+            raise fd_api.ErreurFD("; ".join(erreurs))
     out = []
-    for m in data.get("matches", []):
+    for m in liste:
         if not m["utcDate"].startswith(jour) or m["status"] not in ("TIMED", "SCHEDULED"):
             continue
         out.append({"id": m["id"], "heure": m["utcDate"], "ligue": m["competition"]["name"],
