@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScoutFoot</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#7b2ff7">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<style>
+:root{--bg:#f4efff;--ink:#1a0f3d;--mute:#6a5f8f;--card:#fff;--line:#ddd2fb;--v:#7b2ff7;--rose:#ff2e7e;--gold:#ffb400;--nav:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#140b33;--ink:#f3eeff;--mute:#b3a6e0;--card:#221651;--line:#3a2a80;--v:#a970ff;--rose:#ff5c9a;--gold:#ffc933;--nav:#1b1042}}
+:root[data-theme="dark"]{--bg:#140b33;--ink:#f3eeff;--mute:#b3a6e0;--card:#221651;--line:#3a2a80;--v:#a970ff;--rose:#ff5c9a;--gold:#ffc933;--nav:#1b1042}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:16px 14px 96px}
+h1{font-size:26px;font-weight:800;margin:0;color:var(--v);letter-spacing:-.02em}h2{font-size:18px;margin:18px 0 8px}p{margin:0 0 10px}
+.mute{color:var(--mute);font-size:14px}.hidden{display:none!important}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none;padding:0}
+button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.btn{border-radius:10px;padding:12px 16px;font-weight:600;width:100%}
+.main{background:linear-gradient(90deg,#7b2ff7,#ff2e7e);color:#fff;box-shadow:0 6px 18px rgba(123,47,247,.35)}
+.ghost{color:var(--mute);text-decoration:underline}
+.lg{display:block;filter:drop-shadow(0 1px 3px rgba(0,0,0,.35))}.brand{display:flex;align-items:center;gap:8px}
+.gate{text-align:center;padding-top:10vh}.age{font-size:64px;font-weight:800;color:var(--rose);line-height:1}
+.days{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:12px 0;background:var(--card)}
+.days button{padding:8px 0;text-align:center;font-size:13px;color:var(--mute)}.days b{display:block;font-size:20px;color:var(--ink)}
+.days button[aria-pressed="true"]{background:linear-gradient(180deg,#7b2ff7,#ff2e7e);color:#fff}.days button[aria-pressed="true"] b{color:#fff}
+.banner{background:var(--gold);color:#1a0f3d;border-radius:10px;padding:8px 12px;font-size:14px;font-weight:600;margin:0 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.card.combo{border-top:4px solid var(--gold)}
+.hd{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--mute)}
+.star{font-size:24px;line-height:1;color:var(--gold);padding:4px 6px}
+.line{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left}
+.tm{display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:17px;min-width:0}
+.tr{display:flex;align-items:center;gap:8px;min-width:0}.tr>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bd{position:relative;flex:none;width:28px;height:28px;border-radius:50%;color:#fff;font-size:10px;font-weight:800;display:inline-grid;place-items:center;overflow:hidden}
+.bd img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
+.p3{display:flex;gap:10px;font-size:14px;color:var(--mute);text-align:center}.p3 span{min-width:38px}.p3 i{display:block;font-style:normal;font-size:11px}
+.p3 .hi{color:var(--v);font-weight:800}
+.best{margin-top:8px;font-size:14px;color:var(--mute)}.best b{color:var(--v)}
+.opt{margin-top:10px}.row{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-weight:600}
+.pc{font-weight:800;font-size:18px;color:var(--v)}.cote{font-size:13px;color:var(--mute);font-weight:400}
+.top{background:var(--gold);color:#1a0f3d;border-radius:6px;padding:2px 8px;font-size:12px;font-weight:800;margin-left:6px}
+.bar{height:8px;background:var(--line);border-radius:8px;overflow:hidden;margin-top:4px}.bar i{display:block;height:100%;background:linear-gradient(90deg,#7b2ff7,#ff2e7e)}
+.det{border-top:1px solid var(--line);margin-top:10px;padding-top:2px}
+ul{margin:10px 0 0;padding-left:18px}li{margin-bottom:4px}
+.load{display:block;text-align:center;color:var(--mute);text-decoration:underline;cursor:pointer;padding:12px 0;font-size:14px}
+.legal{border-top:1px solid var(--line);margin-top:10px;padding-top:12px;font-size:13px;color:var(--mute)}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom,0px)}
+nav button{flex:1;padding:12px 4px;font-size:13px;color:var(--mute);font-weight:600}nav b{display:block;font-size:20px}
+nav button[aria-current="page"]{color:var(--v)}
+</style></head><body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7b2ff7"/><stop offset="1" stop-color="#ff2e7e"/></linearGradient></defs><symbol id="logo" viewBox="0 0 100 100"><g stroke="#fff" stroke-linecap="round" fill="none"><circle cx="42" cy="42" r="30" stroke-width="16"/><line x1="64" y1="64" x2="87" y2="87" stroke-width="22"/></g>
+<circle cx="42" cy="42" r="30" fill="#fff" stroke="url(#g)" stroke-width="8"/>
+<line x1="64" y1="64" x2="86" y2="86" stroke="url(#g)" stroke-width="12" stroke-linecap="round"/>
+<polygon points="42,29 54.4,38 49.6,52.5 34.4,52.5 29.6,38" fill="url(#g)"/>
+<g stroke="url(#g)" stroke-width="3" stroke-linecap="round"><line x1="42" y1="29" x2="42" y2="19"/><line x1="54.4" y1="38" x2="63" y2="33"/><line x1="49.6" y1="52.5" x2="55" y2="60"/><line x1="34.4" y1="52.5" x2="29" y2="60"/><line x1="29.6" y1="38" x2="21" y2="33"/></g></symbol></svg><main>
+<section id="gate" class="gate">
+ <svg class="lg" style="margin:0 auto 6px" width="96" height="96" viewBox="0 0 100 100" role="img" aria-label="Logo ScoutFoot"><use href="#logo"/></svg>
+ <p style="font-weight:800;font-size:24px;margin:0 0 12px;color:var(--v)">ScoutFoot</p>
+ <div class="age" aria-hidden="true">18+</div>
+ <h2>Réservé aux adultes</h2>
+ <p class="mute">ScoutFoot présente des analyses de matchs. Vous devez avoir 18 ans ou plus pour continuer.</p>
+ <button class="btn main" id="yes">J'ai 18 ans ou plus</button>
+ <button class="btn ghost" id="no">J'ai moins de 18 ans</button>
+ <p id="deny" class="hidden" style="color:var(--rose);margin-top:12px">Accès refusé : l'application est réservée aux personnes majeures.</p>
+</section>
+<section id="app" class="hidden">
+ <div class="brand"><svg class="lg" width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><h1>ScoutFoot</h1></div>
+ <div class="days" id="days"></div>
+ <div id="demo" class="banner hidden">Données de démonstration (fictives) pour tester l'application.</div>
+ <div id="content"></div>
+ <label class="load">Charger un fichier analyse_du_jour.json<input id="file" type="file" accept=".json,application/json" style="display:none"></label>
+ <p id="msg" class="mute" style="text-align:center"></p>
+ <div class="legal"><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
+</section>
+</main>
+<nav id="nav" class="hidden" aria-label="Navigation">
+ <button data-tab="matchs"><b>⚽</b>Matchs</button>
+ <button data-tab="combines"><b>🎟</b>Combinés</button>
+ <button data-tab="favoris"><b>★</b>Favoris</button>
+</nav>
+<script>
+var DEMO={"matchs":{"PSG - Lens":[{"marche":"PSG ou nul","proba":89.4,"cote_estimee":1.12},{"marche":"Plus de 1,5 buts","proba":74.7,"cote_estimee":1.34},{"marche":"Plus de 7,5 corners","proba":74.2,"cote_estimee":1.35},{"marche":"Moins de 3,5 buts","proba":72.8,"cote_estimee":1.37},{"marche":"Plus de 2,5 cartons jaunes","proba":71.5,"cote_estimee":1.4},{"marche":"1re équipe à marquer : PSG","proba":69.7,"cote_estimee":1.43},{"marche":"But en 1re mi-temps","proba":69.4,"cote_estimee":1.44},{"marche":"Victoire PSG","proba":67.9,"cote_estimee":1.47},{"marche":"PSG ou nul et moins de 3,5 buts","proba":63.9,"cote_estimee":1.56},{"marche":"Match nul","proba":21.5,"cote_estimee":4.66},{"marche":"Victoire Lens","proba":10.6,"cote_estimee":9.4}],"Arsenal - Brighton":[{"marche":"Arsenal ou nul","proba":88.9,"cote_estimee":1.12},{"marche":"Plus de 7,5 corners","proba":79.7,"cote_estimee":1.25},{"marche":"Plus de 2,5 cartons jaunes","proba":74.7,"cote_estimee":1.34},{"marche":"Moins de 3,5 buts","proba":74.3,"cote_estimee":1.35},{"marche":"Plus de 1,5 buts","proba":73.4,"cote_estimee":1.36},{"marche":"Plus de 8,5 corners","proba":68.9,"cote_estimee":1.45},{"marche":"1re équipe à marquer : Arsenal","proba":68.8,"cote_estimee":1.45},{"marche":"But en 1re mi-temps","proba":68.5,"cote_estimee":1.46},{"marche":"Victoire Arsenal","proba":66.6,"cote_estimee":1.5},{"marche":"Match nul","proba":22.2,"cote_estimee":4.5},{"marche":"Victoire Brighton","proba":11.1,"cote_estimee":9.0}],"Inter - Torino":[{"marche":"Inter ou nul","proba":92.3,"cote_estimee":1.08},{"marche":"Moins de 3,5 buts","proba":83.4,"cote_estimee":1.2},{"marche":"Plus de 2,5 cartons jaunes","proba":80.3,"cote_estimee":1.25},{"marche":"Inter ou nul et moins de 3,5 buts","proba":76.2,"cote_estimee":1.31},{"marche":"1re équipe à marquer : Inter","proba":70.9,"cote_estimee":1.41},{"marche":"Victoire Inter","proba":68.9,"cote_estimee":1.45},{"marche":"Plus de 7,5 corners","proba":68.8,"cote_estimee":1.45},{"marche":"Plus de 1,5 buts","proba":63.4,"cote_estimee":1.58},{"marche":"Plus de 3,5 cartons jaunes","proba":62.3,"cote_estimee":1.61},{"marche":"Match nul","proba":23.4,"cote_estimee":4.28},{"marche":"Victoire Torino","proba":7.7,"cote_estimee":12.99}]},"combines":[{"taille":2,"proba":79.5,"cote_estimee":1.26,"selections":["PSG - Lens : PSG ou nul (89.4 %)","Arsenal - Brighton : Arsenal ou nul (88.9 %)"]},{"taille":3,"proba":66.3,"cote_estimee":1.51,"selections":["PSG - Lens : PSG ou nul (89.4 %)","Arsenal - Brighton : Arsenal ou nul (88.9 %)","Inter - Torino : Moins de 3,5 buts (83.4 %)"]}]};
+var mem={};function get(k){try{return localStorage.getItem(k)}catch(e){return mem[k]||null}}function set(k,v){try{localStorage.setItem(k,v)}catch(e){mem[k]=v}}
+var $=function(i){return document.getElementById(i)};
+function p2(n){return(n<10?"0":"")+n}
+function iso(d){return d.getFullYear()+"-"+p2(d.getMonth()+1)+"-"+p2(d.getDate())}
+function fmt(n){return String(n).replace(".",",")}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var JOURS=["dim","lun","mar","mer","jeu","ven","sam"],NOMS={2:"Prudent",3:"Équilibré",4:"Ambitieux",5:"Risqué"};
+var today=new Date();DEMO.date=iso(today);
+(function(){function at(h,m){return new Date(today.getFullYear(),today.getMonth(),today.getDate(),h,m).toISOString()}
+DEMO.infos={"PSG - Lens":{heure:at(18,45),ligue:"Ligue 1"},"Arsenal - Brighton":{heure:at(20,30),ligue:"Premier League"},"Inter - Torino":{heure:at(21,0),ligue:"Serie A"}}})();
+document.addEventListener("error",function(e){if(e.target&&e.target.tagName==="IMG")e.target.remove()},true);
+var S={tab:"matchs",day:iso(today),data:DEMO,demo:true,open:{},fav:[]};
+try{S.fav=JSON.parse(get("fav")||"[]")}catch(e){S.fav=[]}
+
+function liste(d){
+  return Object.keys(d.matchs||{}).map(function(k){
+    var i=k.indexOf(" - "),a=k.slice(0,i),b=k.slice(i+3);
+    var o=d.matchs[k].slice().sort(function(x,y){return y.proba-x.proba});
+    var f=function(n){var m=o.filter(function(x){return x.marche===n})[0];return m?Math.round(m.proba):null};
+    var best=o.filter(function(x){return x.proba<=90})[0]||o[0];
+    return{k:k,a:a,b:b,o:o,p:[f("Victoire "+a),f("Match nul"),f("Victoire "+b)],best:best,info:(d.infos||{})[k]||null};
+  });
+}
+function row(x,top){return`<div class="opt"><div class="row"><span>${esc(x.marche)}${top?'<span class="top">Le + probable</span>':''}</span><span><span class="pc">${Math.round(x.proba)}%</span> <span class="cote">cote ≈ ${fmt(x.cote_estimee)}</span></span></div><div class="bar"><i style="width:${Math.min(100,x.proba)}%"></i></div></div>`}
+function heure(iso){var d=new Date(iso);return isNaN(d)?"":p2(d.getHours())+":"+p2(d.getMinutes())}
+function entete(m){var i=m.info||{},h=i.heure?heure(i.heure):"";return esc([h,i.ligue].filter(Boolean).join(" · ")||"Analyse du jour")}
+function badge(nom,url){var h=0;for(var c=0;c<nom.length;c++)h=(h*31+nom.charCodeAt(c))%360;
+  var ini=nom.split(/[\s.-]+/).filter(Boolean).slice(0,2).map(function(w){return w[0]}).join("").toUpperCase();
+  return`<span class="bd" style="background:hsl(${h},55%,42%)">${esc(ini)}${url?`<img src="${esc(url)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:""}</span>`}
+function carte(m,i){
+  var mx=Math.max.apply(null,m.p.map(function(v){return v==null?-1:v})),fav=S.fav.indexOf(m.k)>=0,ouvert=S.open[m.k];
+  var p3=["1","X","2"].map(function(l,j){var v=m.p[j];return`<span class="${v===mx&&v>=0?'hi':''}"><i>${l}</i>${v==null?'–':v+'%'}</span>`}).join("");
+  var det=ouvert?`<div class="det">${m.o.map(function(x,j){return row(x,j===0)}).join("")}</div>`:"";
+  return`<article class="card"><div class="hd"><span>${entete(m)}</span><button class="star" data-star="${i}" aria-label="${fav?'Retirer des favoris':'Ajouter aux favoris'}">${fav?'★':'☆'}</button></div>
+  <button class="line" data-open="${i}" aria-expanded="${!!ouvert}"><span class="tm"><span class="tr">${badge(m.a,m.info&&m.info.logo_dom)}<span>${esc(m.a)}</span></span><span class="tr">${badge(m.b,m.info&&m.info.logo_ext)}<span>${esc(m.b)}</span></span></span><span class="p3">${p3}</span></button>
+  <div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>${det}</article>`;
+}
+var cur=[];
+function render(){
+  var d=S.data,dataDay=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today);
+  $("days").innerHTML=[-1,0,1,2,3].map(function(n){var x=new Date(today);x.setDate(x.getDate()+n);var v=iso(x);
+    return`<button data-day="${v}" aria-pressed="${v===S.day}">${JOURS[x.getDay()]}<b>${x.getDate()}</b></button>`}).join("");
+  $("demo").classList.toggle("hidden",!S.demo);
+  Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(b){if(b.dataset.tab===S.tab)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  var h="";
+  if(S.day!==dataDay){cur=[];h=`<p class="mute" style="text-align:center;margin-top:30px">Pas d'analyse disponible pour cette date.</p>`}
+  else{
+    cur=liste(d);
+    if(S.tab==="combines"){
+      var cb=d.combines||[];
+      h+=`<h2>Combinés du jour</h2><p class="mute">Une seule sélection par match. Un combiné est perdu dès qu'une sélection échoue.</p>`;
+      if(!cb.length)h+=`<p class="mute">Pas assez de matchs pour proposer un combiné.</p>`;
+      cb.forEach(function(c){h+=`<article class="card combo"><div class="row"><span>Combiné ${c.taille} matchs<span class="top">${NOMS[c.taille]||""}</span></span><span><span class="pc">${Math.round(c.proba)}%</span> <span class="cote">cote ≈ ${fmt(c.cote_estimee)}</span></span></div><div class="bar"><i style="width:${Math.min(100,c.proba)}%"></i></div><ul>${c.selections.map(function(t){return`<li>${esc(t)}</li>`}).join("")}</ul></article>`});
+    }else if(S.tab==="favoris"){
+      var fs=cur.map(function(m,i){return[m,i]}).filter(function(z){return S.fav.indexOf(z[0].k)>=0});
+      h+=`<h2>Mes favoris</h2>`;
+      h+=fs.length?fs.map(function(z){return carte(z[0],z[1])}).join(""):`<p class="mute">Touchez l'étoile d'un match pour le retrouver ici.</p>`;
+    }else{
+      var tops=cur.map(function(m,i){return[m,i]}).sort(function(a,b){return b[0].best.proba-a[0].best.proba}).slice(0,3);
+      h+=`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join("");
+      var rest=cur.map(function(m,i){return[m,i]}).filter(function(z){return tops.every(function(t){return t[1]!==z[1]})}).sort(function(a,b){var x=(a[0].info&&a[0].info.heure)||"",y=(b[0].info&&b[0].info.heure)||"";return x<y?-1:x>y?1:0});
+      if(rest.length)h+=`<h2>Tous les matchs</h2>`+rest.map(function(z){return carte(z[0],z[1])}).join("");
+      if(!cur.length)h+=`<p class="mute">Aucun match analysé pour le moment.</p>`;
+    }
+  }
+  $("content").innerHTML=h;
+}
+document.addEventListener("click",function(e){
+  var t=e.target.closest("[data-star],[data-open],[data-day],[data-tab]");if(!t)return;
+  if(t.dataset.star!==undefined){var k=cur[+t.dataset.star].k,i=S.fav.indexOf(k);if(i>=0)S.fav.splice(i,1);else S.fav.push(k);set("fav",JSON.stringify(S.fav))}
+  else if(t.dataset.open!==undefined){var m=cur[+t.dataset.open].k;S.open[m]=!S.open[m]}
+  else if(t.dataset.day){S.day=t.dataset.day}
+  else if(t.dataset.tab){S.tab=t.dataset.tab;window.scrollTo(0,0)}
+  render();
+});
+function valide(d){if(!d||typeof d.matchs!=="object")throw new Error("format inattendu")}
+function utiliser(d,demo){S.data=d;S.demo=demo;if(/^\d{4}-\d{2}-\d{2}$/.test(d.date||""))S.day=d.date;render()}
+function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){})}
+function entrer(){$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
+$("yes").onclick=function(){set("adulte","1");entrer()};
+$("no").onclick=function(){$("deny").classList.remove("hidden")};
+$("file").onchange=function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();
+  r.onload=function(){try{var d=JSON.parse(r.result);valide(d);utiliser(d,false);$("msg").textContent="Analyse chargée."}catch(x){$("msg").textContent="Fichier non valide : "+x.message}};r.readAsText(f)};
+if(get("adulte"))entrer();
+</script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){})}</script></body></html>
