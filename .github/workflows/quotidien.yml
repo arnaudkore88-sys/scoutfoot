@@ -1,0 +1,73 @@
+name: Analyse quotidienne
+
+on:
+  schedule:
+    - cron: "0 7 * * *"      # tous les jours à 07:00 UTC (= heure de la Côte d'Ivoire)
+  workflow_dispatch:          # permet de lancer à la main depuis l'onglet Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: scoutfoot
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Résultats des matchs terminés
+        continue-on-error: true
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python mise_a_jour_resultats.py
+
+      - name: Analyse du jour
+        env:
+          FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+        run: python analyse_du_jour_fd.py --date "$(date -u +%F)" --ligues PL PD SA BL1 FL1 CL --max 12
+
+      - name: Rapport de fiabilité
+        run: |
+          {
+            echo '### Rapport de fiabilité'
+            echo '```'
+            python mise_a_jour_resultats.py --rapport
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Enregistrer le journal des prédictions
+        run: |
+          git config user.name "scoutfoot-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for f in analyse_du_jour.json predictions.jsonl resultats.jsonl; do
+            [ -f "$f" ] && git add "$f"
+          done
+          git diff --cached --quiet || { git commit -m "Analyse $(date -u +%F)"; git push; }
+
+      - name: Préparer le site
+        run: |
+          mkdir public
+          cp index.html manifest.webmanifest sw.js icon-192.png icon-512.png analyse_du_jour.json public/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
