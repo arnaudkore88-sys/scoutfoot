@@ -24,6 +24,7 @@ button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline
 .gate{text-align:center;padding-top:10vh}.age{font-size:64px;font-weight:800;color:var(--rose);line-height:1}
 .days{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:12px 0;background:var(--card)}
 .days button{padding:8px 0;text-align:center;font-size:13px;color:var(--mute)}.days b{display:block;font-size:20px;color:var(--ink)}
+.days button.has b::after{content:"";display:block;width:5px;height:5px;border-radius:50%;background:var(--gold);margin:2px auto 0}
 .days button[aria-pressed="true"]{background:linear-gradient(180deg,#7b2ff7,#ff2e7e);color:#fff}.days button[aria-pressed="true"] b{color:#fff}
 .banner{background:var(--gold);color:#1a0f3d;border-radius:10px;padding:8px 12px;font-size:14px;font-weight:600;margin:0 0 12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
@@ -119,14 +120,15 @@ function carte(m,i){
   <div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>${det}</article>`;
 }
 var cur=[];
+function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
 function render(){
-  var d=S.data,dataDay=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today);
+  var J=jours(S.data),d=J[S.day];
   $("days").innerHTML=[-1,0,1,2,3].map(function(n){var x=new Date(today);x.setDate(x.getDate()+n);var v=iso(x);
-    return`<button data-day="${v}" aria-pressed="${v===S.day}">${JOURS[x.getDay()]}<b>${x.getDate()}</b></button>`}).join("");
+    return`<button data-day="${v}" class="${J[v]&&Object.keys(J[v].matchs||{}).length?'has':''}" aria-pressed="${v===S.day}">${JOURS[x.getDay()]}<b>${x.getDate()}</b></button>`}).join("");
   $("demo").classList.toggle("hidden",!S.demo);
   Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(b){if(b.dataset.tab===S.tab)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
   var h="";
-  if(S.day!==dataDay){cur=[];h=`<p class="mute" style="text-align:center;margin-top:30px">Pas d'analyse disponible pour cette date.</p>`}
+  if(!d){cur=[];h=`<p class="mute" style="text-align:center;margin-top:30px">Pas d'analyse disponible pour cette date.</p>`}
   else{
     cur=liste(d);
     if(S.tab==="combines"){
@@ -143,7 +145,7 @@ function render(){
       h+=`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join("");
       var rest=cur.map(function(m,i){return[m,i]}).filter(function(z){return tops.every(function(t){return t[1]!==z[1]})}).sort(function(a,b){var x=(a[0].info&&a[0].info.heure)||"",y=(b[0].info&&b[0].info.heure)||"";return x<y?-1:x>y?1:0});
       if(rest.length)h+=`<h2>Tous les matchs</h2>`+rest.map(function(z){return carte(z[0],z[1])}).join("");
-      if(!cur.length)h+=`<p class="mute">Aucun match analysé pour le moment.</p>`;
+      if(!cur.length)h+=`<p class="mute">Aucun match analysé pour ce jour.</p>`;
     }
   }
   $("content").innerHTML=h;
@@ -156,8 +158,8 @@ document.addEventListener("click",function(e){
   else if(t.dataset.tab){S.tab=t.dataset.tab;window.scrollTo(0,0)}
   render();
 });
-function valide(d){if(!d||typeof d.matchs!=="object")throw new Error("format inattendu")}
-function utiliser(d,demo){S.data=d;S.demo=demo;if(/^\d{4}-\d{2}-\d{2}$/.test(d.date||""))S.day=d.date;render()}
+function valide(d){if(!d||(typeof d.matchs!=="object"&&typeof d.jours!=="object"))throw new Error("format inattendu")}
+function utiliser(d,demo){S.data=d;S.demo=demo;var J=jours(d),k=Object.keys(J).sort();S.day=J[iso(today)]?iso(today):(k[0]||iso(today));render()}
 function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){})}
 function entrer(){$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
 $("yes").onclick=function(){set("adulte","1");entrer()};
