@@ -34,8 +34,10 @@ def nom(equipe):
     return equipe.get("shortName") or equipe.get("name") or "?"
 
 
-def matchs_du_jour(jour, codes):
-    fin = (date.fromisoformat(jour) + timedelta(days=1)).isoformat()
+def matchs_du_jour(jour, codes, nb=1):
+    d0 = date.fromisoformat(jour)
+    fin = (d0 + timedelta(days=nb)).isoformat()
+    jours_ok = {(d0 + timedelta(days=i)).isoformat() for i in range(nb)}
     try:   # requête groupée (un seul appel)
         liste = fd_api.appel("/matches", {"dateFrom": jour, "dateTo": fin,
                                           "competitions": ",".join(str(IDS[c]) for c in codes)},
@@ -57,7 +59,7 @@ def matchs_du_jour(jour, codes):
             raise fd_api.ErreurFD("; ".join(erreurs))
     out = []
     for m in liste:
-        if not m["utcDate"].startswith(jour) or m["status"] not in ("TIMED", "SCHEDULED"):
+        if m["utcDate"][:10] not in jours_ok or m["status"] not in ("TIMED", "SCHEDULED"):
             continue
         out.append({"id": m["id"], "heure": m["utcDate"], "ligue": m["competition"]["name"],
                     "code": m["competition"].get("code"),
@@ -92,23 +94,37 @@ def moyennes_competition(code):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", default=date.today().isoformat())
-    ap.add_argument("--ligues", nargs="+", default=["PL", "PD", "SA", "BL1", "FL1"])
-    ap.add_argument("--max", type=int, default=10)
+    ap.add_argument("--jours", type=int, default=7, help="nombre de jours analysés, aujourd'hui inclus (1 à 7)")
+    ap.add_argument("--ligues", nargs="+", default=list(IDS))
+    ap.add_argument("--max", type=int, default=10, help="nombre maximum de matchs analysés par jour")
     a = ap.parse_args()
+    if not 1 <= a.jours <= 7:
+        raise SystemExit("--jours doit être compris entre 1 et 7.")
     inconnus = [c for c in a.ligues if c not in IDS]
     if inconnus:
         raise SystemExit(f"Codes inconnus : {inconnus}. Codes valides : {sorted(IDS)}")
 
     try:
-        matchs = matchs_du_jour(a.date, a.ligues)[: a.max]
+        tous = matchs_du_jour(a.date, a.ligues, a.jours)
     except fd_api.ErreurFD as e:
         raise SystemExit(f"Impossible de récupérer les matchs ({e}). Vérifiez la clé et la connexion.")
-    print(f"{len(matchs)} match(s) trouvé(s) pour le {a.date}")
+    par_jour = {}
+    for m in tous:
+        par_jour.setdefault(m["heure"][:10], []).append(m)
+    matchs = []
+    for j in sorted(par_jour):
+        matchs += par_jour[j][: a.max]
+    print(f"{len(matchs)} match(s) à analyser sur {a.jours} jour(s) à partir du {a.date}")
     points = calibration.charger()
     print("Calibration appliquée." if points else "Pas de calibration.json : probabilités brutes.")
-    moyennes, analyses, infos, journal = {}, {}, {}, []
+
+    d0 = date.fromisoformat(a.date)
+    jours_out = {(d0 + timedelta(days=i)).isoformat(): {"matchs": {}, "infos": {}, "combines": []}
+                 for i in range(a.jours)}
+    moyennes, journal = {}, []
 
     for m in matchs:
+        jour = m["heure"][:10]
         try:
             if m["code"] not in moyennes:
                 moyennes[m["code"]] = moyennes_competition(m["code"])
@@ -120,19 +136,31 @@ def main():
             notes = moteur.forces(hist, moy_d, moy_e)
             lh, la = moteur.buts_attendus(notes, m["dom"], m["ext"], moy_d, moy_e)
             nom_match = f"{m['dom']} - {m['ext']}"
-            analyses[nom_match] = calibration.appliquer(moteur.marches(m["dom"], m["ext"], lh, la), points)
-            infos[nom_match] = {"heure": m["heure"], "ligue": m["ligue"], "dom": m["dom"], "ext": m["ext"],
-                                "logo_dom": m["logo_dom"], "logo_ext": m["logo_ext"]}
-            journal.append({"source": "fd", "fixture_id": m["id"], "date": a.date, "match": nom_match,
+            marches = calibration.appliquer(moteur.marches(m["dom"], m["ext"], lh, la), points)
+            jours_out[jour]["matchs"][nom_match] = marches
+            att_d, def_d = notes[m["dom"]]
+            att_e, def_e = notes[m["ext"]]
+            forme_d, forme_e = moteur.forme_texte(hist[m["dom"]]), moteur.forme_texte(hist[m["ext"]])
+            jours_out[jour]["infos"][nom_match] = {
+                "heure": m["heure"], "ligue": m["ligue"], "dom": m["dom"], "ext": m["ext"],
+                "logo_dom": m["logo_dom"], "logo_ext": m["logo_ext"],
+                "forme_dom": forme_d, "forme_ext": forme_e,
+                "buts_attendus": [round(lh, 2), round(la, 2)],
+                "scores": moteur.scores_probables(lh, la),
+                "explication": moteur.explication(m["dom"], m["ext"], lh, la, att_d, def_d, att_e, def_e, forme_d, forme_e)}
+            journal.append({"source": "fd", "fixture_id": m["id"], "date": jour, "match": nom_match,
                             "dom": m["dom"], "ext": m["ext"], "buts_attendus": [round(lh, 3), round(la, 3)],
-                            "marches": analyses[nom_match]})
-            print(f"  ok : {nom_match} ({lh:.2f} - {la:.2f})")
+                            "marches": marches})
+            print(f"  ok : {jour} {nom_match} ({lh:.2f} - {la:.2f})")
         except fd_api.ErreurFD as e:
             print(f"  erreur sur {m['dom']} - {m['ext']} : {e}")
 
+    for jour, contenu in jours_out.items():
+        contenu["combines"] = moteur.combines(contenu["matchs"])
+    premier = jours_out[a.date]      # les anciennes versions de la page lisent ces trois clés (jour d'aujourd'hui)
     with open("analyse_du_jour.json", "w", encoding="utf-8") as f:
-        json.dump({"date": a.date, "matchs": analyses, "infos": infos, "combines": moteur.combines(analyses)},
-                  f, ensure_ascii=False, indent=2)
+        json.dump({"date": a.date, "jours": jours_out, "matchs": premier["matchs"], "infos": premier["infos"],
+                   "combines": premier["combines"]}, f, ensure_ascii=False, indent=2)
     with open("predictions.jsonl", "a", encoding="utf-8") as f:
         for j in journal:
             f.write(json.dumps(j, ensure_ascii=False) + "\n")
