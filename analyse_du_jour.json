@@ -267,86 +267,86 @@
     },
     "2026-10-07": {
       "matchs": {
-        "Internacional - Corinthians": [
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 84.6,
-            "cote_estimee": 1.18
-          },
-          {
-            "marche": "Internacional ou nul",
-            "proba": 78.1,
-            "cote_estimee": 1.28
-          },
-          {
-            "marche": "Internacional ou nul et moins de 3,5 buts",
-            "proba": 65.7,
-            "cote_estimee": 1.52
-          },
+        "Clube do Remo - Grêmio": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 62.0,
-            "cote_estimee": 1.61
+            "proba": 74.4,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 73.5,
+            "cote_estimee": 1.36
+          },
+          {
+            "marche": "Clube do Remo ou nul",
+            "proba": 70.0,
+            "cote_estimee": 1.43
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 60.4,
-            "cote_estimee": 1.65
+            "proba": 69.0,
+            "cote_estimee": 1.45
           },
           {
-            "marche": "1re équipe à marquer : Internacional",
-            "proba": 54.0,
-            "cote_estimee": 1.85
-          },
-          {
-            "marche": "Corinthians ou nul",
-            "proba": 53.0,
-            "cote_estimee": 1.89
-          },
-          {
-            "marche": "Victoire Internacional",
-            "proba": 47.0,
-            "cote_estimee": 2.13
+            "marche": "Grêmio ou nul",
+            "proba": 58.1,
+            "cote_estimee": 1.72
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 40.2,
-            "cote_estimee": 2.49
+            "proba": 53.6,
+            "cote_estimee": 1.87
+          },
+          {
+            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
+            "proba": 51.4,
+            "cote_estimee": 1.95
+          },
+          {
+            "marche": "1re équipe à marquer : Clube do Remo",
+            "proba": 50.8,
+            "cote_estimee": 1.97
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 34.0,
-            "cote_estimee": 2.95
+            "proba": 48.3,
+            "cote_estimee": 2.07
           },
           {
-            "marche": "1re équipe à marquer : Corinthians",
-            "proba": 33.2,
-            "cote_estimee": 3.01
+            "marche": "Victoire Clube do Remo",
+            "proba": 41.9,
+            "cote_estimee": 2.39
           },
           {
-            "marche": "Internacional gagne et plus de 1,5 but",
-            "proba": 31.8,
-            "cote_estimee": 3.15
+            "marche": "1re équipe à marquer : Grêmio",
+            "proba": 41.8,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "Clube do Remo gagne et plus de 1,5 but",
+            "proba": 32.3,
+            "cote_estimee": 3.09
+          },
+          {
+            "marche": "Victoire Grêmio",
+            "proba": 30.0,
+            "cote_estimee": 3.33
           },
           {
             "marche": "Match nul",
-            "proba": 31.1,
-            "cote_estimee": 3.21
-          },
-          {
-            "marche": "Victoire Corinthians",
-            "proba": 21.9,
-            "cote_estimee": 4.57
+            "proba": 28.1,
+            "cote_estimee": 3.56
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 15.4,
-            "cote_estimee": 6.5
+            "proba": 26.5,
+            "cote_estimee": 3.77
           },
           {
-            "marche": "Score exact : 1-0",
-            "proba": 15.2,
-            "cote_estimee": 6.56
+            "marche": "Score exact : 1-1",
+            "proba": 13.4,
+            "cote_estimee": 7.46
           }
         ],
         "Bragantino - Mirassol": [
@@ -431,86 +431,86 @@
             "cote_estimee": 8.62
           }
         ],
-        "Clube do Remo - Grêmio": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 74.4,
-            "cote_estimee": 1.34
-          },
+        "Internacional - Corinthians": [
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 73.5,
-            "cote_estimee": 1.36
+            "proba": 84.6,
+            "cote_estimee": 1.18
           },
           {
-            "marche": "Clube do Remo ou nul",
-            "proba": 70.0,
-            "cote_estimee": 1.43
+            "marche": "Internacional ou nul",
+            "proba": 78.1,
+            "cote_estimee": 1.28
+          },
+          {
+            "marche": "Internacional ou nul et moins de 3,5 buts",
+            "proba": 65.7,
+            "cote_estimee": 1.52
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 62.0,
+            "cote_estimee": 1.61
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 69.0,
-            "cote_estimee": 1.45
+            "proba": 60.4,
+            "cote_estimee": 1.65
           },
           {
-            "marche": "Grêmio ou nul",
-            "proba": 58.1,
-            "cote_estimee": 1.72
+            "marche": "1re équipe à marquer : Internacional",
+            "proba": 54.0,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Corinthians ou nul",
+            "proba": 53.0,
+            "cote_estimee": 1.89
+          },
+          {
+            "marche": "Victoire Internacional",
+            "proba": 47.0,
+            "cote_estimee": 2.13
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 53.6,
-            "cote_estimee": 1.87
-          },
-          {
-            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
-            "proba": 51.4,
-            "cote_estimee": 1.95
-          },
-          {
-            "marche": "1re équipe à marquer : Clube do Remo",
-            "proba": 50.8,
-            "cote_estimee": 1.97
+            "proba": 40.2,
+            "cote_estimee": 2.49
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 48.3,
-            "cote_estimee": 2.07
+            "proba": 34.0,
+            "cote_estimee": 2.95
           },
           {
-            "marche": "Victoire Clube do Remo",
-            "proba": 41.9,
-            "cote_estimee": 2.39
+            "marche": "1re équipe à marquer : Corinthians",
+            "proba": 33.2,
+            "cote_estimee": 3.01
           },
           {
-            "marche": "1re équipe à marquer : Grêmio",
-            "proba": 41.8,
-            "cote_estimee": 2.39
-          },
-          {
-            "marche": "Clube do Remo gagne et plus de 1,5 but",
-            "proba": 32.3,
-            "cote_estimee": 3.09
-          },
-          {
-            "marche": "Victoire Grêmio",
-            "proba": 30.0,
-            "cote_estimee": 3.33
+            "marche": "Internacional gagne et plus de 1,5 but",
+            "proba": 31.8,
+            "cote_estimee": 3.15
           },
           {
             "marche": "Match nul",
-            "proba": 28.1,
-            "cote_estimee": 3.56
+            "proba": 31.1,
+            "cote_estimee": 3.21
+          },
+          {
+            "marche": "Victoire Corinthians",
+            "proba": 21.9,
+            "cote_estimee": 4.57
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 26.5,
-            "cote_estimee": 3.77
+            "proba": 15.4,
+            "cote_estimee": 6.5
           },
           {
-            "marche": "Score exact : 1-1",
-            "proba": 13.4,
-            "cote_estimee": 7.46
+            "marche": "Score exact : 1-0",
+            "proba": 15.2,
+            "cote_estimee": 6.56
           }
         ],
         "Vitória - Chapecoense": [
@@ -679,37 +679,37 @@
         ]
       },
       "infos": {
-        "Internacional - Corinthians": {
+        "Clube do Remo - Grêmio": {
           "heure": "2026-10-07T22:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Internacional",
-          "ext": "Corinthians",
-          "logo_dom": "https://crests.football-data.org/6684.png",
-          "logo_ext": "https://crests.football-data.org/1779.png",
-          "forme_dom": "NDDVD",
-          "forme_ext": "DNDDD",
+          "dom": "Clube do Remo",
+          "ext": "Grêmio",
+          "logo_dom": "https://crests.football-data.org/4287.png",
+          "logo_ext": "https://crests.football-data.org/1767.png",
+          "forme_dom": "DDDDD",
+          "forme_ext": "VDDDN",
           "buts_attendus": [
-            1.28,
-            0.78
+            1.43,
+            1.17
           ],
           "scores": [
             [
-              "1-0",
-              15.2
-            ],
-            [
               "1-1",
-              13.8
+              13.4
             ],
             [
-              "0-0",
-              13.8
+              "1-0",
+              9.6
+            ],
+            [
+              "2-1",
+              8.9
             ]
           ],
           "explication": [
-            "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
-            "Internacional marque peu; Corinthians marque peu.",
-            "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
+            "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
+            "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
+            "Match équilibré (1,4 - 1,2 buts attendus)."
           ]
         },
         "Bragantino - Mirassol": {
@@ -745,37 +745,37 @@
             "Bragantino est favori (1,8 but attendu contre 1,3), aidé par le terrain."
           ]
         },
-        "Clube do Remo - Grêmio": {
+        "Internacional - Corinthians": {
           "heure": "2026-10-07T22:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Clube do Remo",
-          "ext": "Grêmio",
-          "logo_dom": "https://crests.football-data.org/4287.png",
-          "logo_ext": "https://crests.football-data.org/1767.png",
-          "forme_dom": "DDDDD",
-          "forme_ext": "VDDDN",
+          "dom": "Internacional",
+          "ext": "Corinthians",
+          "logo_dom": "https://crests.football-data.org/6684.png",
+          "logo_ext": "https://crests.football-data.org/1779.png",
+          "forme_dom": "NDDVD",
+          "forme_ext": "DNDDD",
           "buts_attendus": [
-            1.43,
-            1.17
+            1.28,
+            0.78
           ],
           "scores": [
             [
-              "1-1",
-              13.4
-            ],
-            [
               "1-0",
-              9.6
+              15.2
             ],
             [
-              "2-1",
-              8.9
+              "1-1",
+              13.8
+            ],
+            [
+              "0-0",
+              13.8
             ]
           ],
           "explication": [
-            "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
-            "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
-            "Match équilibré (1,4 - 1,2 buts attendus)."
+            "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
+            "Internacional marque peu; Corinthians marque peu.",
+            "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
           ]
         },
         "Vitória - Chapecoense": {
