@@ -1,5 +1,896 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
+  "jours": {
+    "2026-10-01": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
+    },
+    "2026-10-02": {
+      "matchs": {
+        "São Paulo - Santos": [
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 79.7,
+            "cote_estimee": 1.25
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 68.2,
+            "cote_estimee": 1.47
+          },
+          {
+            "marche": "Santos ou nul",
+            "proba": 67.9,
+            "cote_estimee": 1.47
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 64.6,
+            "cote_estimee": 1.55
+          },
+          {
+            "marche": "São Paulo ou nul",
+            "proba": 62.4,
+            "cote_estimee": 1.6
+          },
+          {
+            "marche": "São Paulo ou nul et moins de 3,5 buts",
+            "proba": 50.5,
+            "cote_estimee": 1.98
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 47.9,
+            "cote_estimee": 2.09
+          },
+          {
+            "marche": "1re équipe à marquer : Santos",
+            "proba": 47.2,
+            "cote_estimee": 2.12
+          },
+          {
+            "marche": "1re équipe à marquer : São Paulo",
+            "proba": 42.9,
+            "cote_estimee": 2.33
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 40.7,
+            "cote_estimee": 2.46
+          },
+          {
+            "marche": "Victoire Santos",
+            "proba": 37.6,
+            "cote_estimee": 2.66
+          },
+          {
+            "marche": "Victoire São Paulo",
+            "proba": 32.1,
+            "cote_estimee": 3.12
+          },
+          {
+            "marche": "Match nul",
+            "proba": 30.3,
+            "cote_estimee": 3.3
+          },
+          {
+            "marche": "São Paulo gagne et plus de 1,5 but",
+            "proba": 22.2,
+            "cote_estimee": 4.5
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 20.3,
+            "cote_estimee": 4.93
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 14.3,
+            "cote_estimee": 7.01
+          }
+        ]
+      },
+      "infos": {
+        "São Paulo - Santos": {
+          "heure": "2026-10-02T23:00:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "São Paulo",
+          "ext": "Santos",
+          "logo_dom": "https://crests.football-data.org/1776.png",
+          "logo_ext": "https://crests.football-data.org/6685.png",
+          "forme_dom": "DVVDV",
+          "forme_ext": "NVVVV",
+          "buts_attendus": [
+            1.1,
+            1.21
+          ],
+          "scores": [
+            [
+              "1-1",
+              14.3
+            ],
+            [
+              "0-0",
+              11.0
+            ],
+            [
+              "0-1",
+              11.0
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : São Paulo 3V 0N 2D, Santos 4V 1N 0D.",
+            "São Paulo marque peu; Santos marque plus que la moyenne.",
+            "Match équilibré (1,1 - 1,2 buts attendus)."
+          ]
+        }
+      },
+      "combines": []
+    },
+    "2026-10-03": {
+      "matchs": {
+        "Mineiro - Bragantino": [
+          {
+            "marche": "Mineiro ou nul",
+            "proba": 84.0,
+            "cote_estimee": 1.19
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 76.2,
+            "cote_estimee": 1.31
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 71.8,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 67.3,
+            "cote_estimee": 1.49
+          },
+          {
+            "marche": "Mineiro ou nul et moins de 3,5 buts",
+            "proba": 63.0,
+            "cote_estimee": 1.59
+          },
+          {
+            "marche": "1re équipe à marquer : Mineiro",
+            "proba": 62.9,
+            "cote_estimee": 1.59
+          },
+          {
+            "marche": "Victoire Mineiro",
+            "proba": 58.6,
+            "cote_estimee": 1.71
+          },
+          {
+            "marche": "Mineiro gagne et plus de 1,5 but",
+            "proba": 45.2,
+            "cote_estimee": 2.21
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 45.1,
+            "cote_estimee": 2.22
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 45.1,
+            "cote_estimee": 2.22
+          },
+          {
+            "marche": "Bragantino ou nul",
+            "proba": 41.4,
+            "cote_estimee": 2.41
+          },
+          {
+            "marche": "1re équipe à marquer : Bragantino",
+            "proba": 28.7,
+            "cote_estimee": 3.48
+          },
+          {
+            "marche": "Match nul",
+            "proba": 25.5,
+            "cote_estimee": 3.92
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 23.8,
+            "cote_estimee": 4.19
+          },
+          {
+            "marche": "Victoire Bragantino",
+            "proba": 16.0,
+            "cote_estimee": 6.27
+          },
+          {
+            "marche": "Score exact : 1-0",
+            "proba": 13.4,
+            "cote_estimee": 7.49
+          }
+        ]
+      },
+      "infos": {
+        "Mineiro - Bragantino": {
+          "heure": "2026-10-03T21:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Mineiro",
+          "ext": "Bragantino",
+          "logo_dom": "https://crests.football-data.org/1766.png",
+          "logo_ext": "https://crests.football-data.org/4286.png",
+          "forme_dom": "NVDVN",
+          "forme_ext": "VDDND",
+          "buts_attendus": [
+            1.7,
+            0.78
+          ],
+          "scores": [
+            [
+              "1-0",
+              13.4
+            ],
+            [
+              "2-0",
+              12.1
+            ],
+            [
+              "1-1",
+              12.0
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Mineiro 2V 2N 1D, Bragantino 1V 1N 3D.",
+            "Mineiro encaisse peu; Bragantino marque peu.",
+            "Mineiro est favori (1,7 but attendu contre 0,8), aidé par le terrain."
+          ]
+        }
+      },
+      "combines": []
+    },
+    "2026-10-04": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
+    },
+    "2026-10-05": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
+    },
+    "2026-10-06": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
+    },
+    "2026-10-07": {
+      "matchs": {
+        "Internacional - Corinthians": [
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 84.6,
+            "cote_estimee": 1.18
+          },
+          {
+            "marche": "Internacional ou nul",
+            "proba": 78.1,
+            "cote_estimee": 1.28
+          },
+          {
+            "marche": "Internacional ou nul et moins de 3,5 buts",
+            "proba": 65.7,
+            "cote_estimee": 1.52
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 62.0,
+            "cote_estimee": 1.61
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 60.4,
+            "cote_estimee": 1.65
+          },
+          {
+            "marche": "1re équipe à marquer : Internacional",
+            "proba": 54.0,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Corinthians ou nul",
+            "proba": 53.0,
+            "cote_estimee": 1.89
+          },
+          {
+            "marche": "Victoire Internacional",
+            "proba": 47.0,
+            "cote_estimee": 2.13
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 40.2,
+            "cote_estimee": 2.49
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 34.0,
+            "cote_estimee": 2.95
+          },
+          {
+            "marche": "1re équipe à marquer : Corinthians",
+            "proba": 33.2,
+            "cote_estimee": 3.01
+          },
+          {
+            "marche": "Internacional gagne et plus de 1,5 but",
+            "proba": 31.8,
+            "cote_estimee": 3.15
+          },
+          {
+            "marche": "Match nul",
+            "proba": 31.1,
+            "cote_estimee": 3.21
+          },
+          {
+            "marche": "Victoire Corinthians",
+            "proba": 21.9,
+            "cote_estimee": 4.57
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 15.4,
+            "cote_estimee": 6.5
+          },
+          {
+            "marche": "Score exact : 1-0",
+            "proba": 15.2,
+            "cote_estimee": 6.56
+          }
+        ],
+        "Bragantino - Mirassol": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 81.7,
+            "cote_estimee": 1.22
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 74.7,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Bragantino ou nul",
+            "proba": 72.7,
+            "cote_estimee": 1.37
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 63.5,
+            "cote_estimee": 1.57
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 60.9,
+            "cote_estimee": 1.64
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 58.9,
+            "cote_estimee": 1.7
+          },
+          {
+            "marche": "1re équipe à marquer : Bragantino",
+            "proba": 55.0,
+            "cote_estimee": 1.82
+          },
+          {
+            "marche": "Mirassol ou nul",
+            "proba": 52.3,
+            "cote_estimee": 1.91
+          },
+          {
+            "marche": "Victoire Bragantino",
+            "proba": 47.7,
+            "cote_estimee": 2.1
+          },
+          {
+            "marche": "Bragantino ou nul et moins de 3,5 buts",
+            "proba": 45.7,
+            "cote_estimee": 2.19
+          },
+          {
+            "marche": "1re équipe à marquer : Mirassol",
+            "proba": 40.3,
+            "cote_estimee": 2.48
+          },
+          {
+            "marche": "Bragantino gagne et plus de 1,5 but",
+            "proba": 40.2,
+            "cote_estimee": 2.49
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 36.5,
+            "cote_estimee": 2.74
+          },
+          {
+            "marche": "Victoire Mirassol",
+            "proba": 27.3,
+            "cote_estimee": 3.67
+          },
+          {
+            "marche": "Match nul",
+            "proba": 25.1,
+            "cote_estimee": 3.99
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 11.6,
+            "cote_estimee": 8.62
+          }
+        ],
+        "Clube do Remo - Grêmio": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 74.4,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 73.5,
+            "cote_estimee": 1.36
+          },
+          {
+            "marche": "Clube do Remo ou nul",
+            "proba": 70.0,
+            "cote_estimee": 1.43
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 69.0,
+            "cote_estimee": 1.45
+          },
+          {
+            "marche": "Grêmio ou nul",
+            "proba": 58.1,
+            "cote_estimee": 1.72
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 53.6,
+            "cote_estimee": 1.87
+          },
+          {
+            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
+            "proba": 51.4,
+            "cote_estimee": 1.95
+          },
+          {
+            "marche": "1re équipe à marquer : Clube do Remo",
+            "proba": 50.8,
+            "cote_estimee": 1.97
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 48.3,
+            "cote_estimee": 2.07
+          },
+          {
+            "marche": "Victoire Clube do Remo",
+            "proba": 41.9,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "1re équipe à marquer : Grêmio",
+            "proba": 41.8,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "Clube do Remo gagne et plus de 1,5 but",
+            "proba": 32.3,
+            "cote_estimee": 3.09
+          },
+          {
+            "marche": "Victoire Grêmio",
+            "proba": 30.0,
+            "cote_estimee": 3.33
+          },
+          {
+            "marche": "Match nul",
+            "proba": 28.1,
+            "cote_estimee": 3.56
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 26.5,
+            "cote_estimee": 3.77
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 13.4,
+            "cote_estimee": 7.46
+          }
+        ],
+        "Vitória - Chapecoense": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 74.4,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 73.5,
+            "cote_estimee": 1.36
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 69.1,
+            "cote_estimee": 1.45
+          },
+          {
+            "marche": "Chapecoense ou nul",
+            "proba": 64.3,
+            "cote_estimee": 1.55
+          },
+          {
+            "marche": "Vitória ou nul",
+            "proba": 64.0,
+            "cote_estimee": 1.56
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 54.1,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 48.3,
+            "cote_estimee": 2.07
+          },
+          {
+            "marche": "Vitória ou nul et moins de 3,5 buts",
+            "proba": 47.6,
+            "cote_estimee": 2.1
+          },
+          {
+            "marche": "1re équipe à marquer : Chapecoense",
+            "proba": 46.4,
+            "cote_estimee": 2.15
+          },
+          {
+            "marche": "1re équipe à marquer : Vitória",
+            "proba": 46.2,
+            "cote_estimee": 2.16
+          },
+          {
+            "marche": "Victoire Chapecoense",
+            "proba": 36.0,
+            "cote_estimee": 2.78
+          },
+          {
+            "marche": "Victoire Vitória",
+            "proba": 35.7,
+            "cote_estimee": 2.8
+          },
+          {
+            "marche": "Match nul",
+            "proba": 28.4,
+            "cote_estimee": 3.53
+          },
+          {
+            "marche": "Vitória gagne et plus de 1,5 but",
+            "proba": 27.1,
+            "cote_estimee": 3.69
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 26.5,
+            "cote_estimee": 3.77
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 13.5,
+            "cote_estimee": 7.39
+          }
+        ],
+        "Botafogo - Vasco da Gama": [
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 79.7,
+            "cote_estimee": 1.25
+          },
+          {
+            "marche": "Vasco da Gama ou nul",
+            "proba": 68.7,
+            "cote_estimee": 1.46
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 68.2,
+            "cote_estimee": 1.47
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 64.7,
+            "cote_estimee": 1.55
+          },
+          {
+            "marche": "Botafogo ou nul",
+            "proba": 61.6,
+            "cote_estimee": 1.62
+          },
+          {
+            "marche": "Botafogo ou nul et moins de 3,5 buts",
+            "proba": 50.0,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 47.9,
+            "cote_estimee": 2.09
+          },
+          {
+            "marche": "1re équipe à marquer : Vasco da Gama",
+            "proba": 47.8,
+            "cote_estimee": 2.09
+          },
+          {
+            "marche": "1re équipe à marquer : Botafogo",
+            "proba": 42.3,
+            "cote_estimee": 2.37
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 40.7,
+            "cote_estimee": 2.46
+          },
+          {
+            "marche": "Victoire Vasco da Gama",
+            "proba": 38.4,
+            "cote_estimee": 2.61
+          },
+          {
+            "marche": "Victoire Botafogo",
+            "proba": 31.3,
+            "cote_estimee": 3.19
+          },
+          {
+            "marche": "Match nul",
+            "proba": 30.3,
+            "cote_estimee": 3.3
+          },
+          {
+            "marche": "Botafogo gagne et plus de 1,5 but",
+            "proba": 21.6,
+            "cote_estimee": 4.62
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 20.3,
+            "cote_estimee": 4.92
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 14.2,
+            "cote_estimee": 7.02
+          }
+        ]
+      },
+      "infos": {
+        "Internacional - Corinthians": {
+          "heure": "2026-10-07T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Internacional",
+          "ext": "Corinthians",
+          "logo_dom": "https://crests.football-data.org/6684.png",
+          "logo_ext": "https://crests.football-data.org/1779.png",
+          "forme_dom": "NDDVD",
+          "forme_ext": "DNDDD",
+          "buts_attendus": [
+            1.28,
+            0.78
+          ],
+          "scores": [
+            [
+              "1-0",
+              15.2
+            ],
+            [
+              "1-1",
+              13.8
+            ],
+            [
+              "0-0",
+              13.8
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
+            "Internacional marque peu; Corinthians marque peu.",
+            "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
+          ]
+        },
+        "Bragantino - Mirassol": {
+          "heure": "2026-10-07T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Bragantino",
+          "ext": "Mirassol",
+          "logo_dom": "https://crests.football-data.org/4286.png",
+          "logo_ext": "https://crests.football-data.org/4364.png",
+          "forme_dom": "VDDND",
+          "forme_ext": "NDVNV",
+          "buts_attendus": [
+            1.76,
+            1.29
+          ],
+          "scores": [
+            [
+              "1-1",
+              11.6
+            ],
+            [
+              "2-1",
+              9.5
+            ],
+            [
+              "1-0",
+              7.5
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Bragantino 1V 1N 3D, Mirassol 2V 2N 1D.",
+            "Bragantino marque peu; Mirassol encaisse beaucoup.",
+            "Bragantino est favori (1,8 but attendu contre 1,3), aidé par le terrain."
+          ]
+        },
+        "Clube do Remo - Grêmio": {
+          "heure": "2026-10-07T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Clube do Remo",
+          "ext": "Grêmio",
+          "logo_dom": "https://crests.football-data.org/4287.png",
+          "logo_ext": "https://crests.football-data.org/1767.png",
+          "forme_dom": "DDDDD",
+          "forme_ext": "VDDDN",
+          "buts_attendus": [
+            1.43,
+            1.17
+          ],
+          "scores": [
+            [
+              "1-1",
+              13.4
+            ],
+            [
+              "1-0",
+              9.6
+            ],
+            [
+              "2-1",
+              8.9
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
+            "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
+            "Match équilibré (1,4 - 1,2 buts attendus)."
+          ]
+        },
+        "Vitória - Chapecoense": {
+          "heure": "2026-10-07T23:00:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Vitória",
+          "ext": "Chapecoense",
+          "logo_dom": "https://crests.football-data.org/1782.png",
+          "logo_ext": "https://crests.football-data.org/1772_large.png",
+          "forme_dom": "DDVND",
+          "forme_ext": "VDVDN",
+          "buts_attendus": [
+            1.3,
+            1.31
+          ],
+          "scores": [
+            [
+              "1-1",
+              13.5
+            ],
+            [
+              "0-1",
+              8.6
+            ],
+            [
+              "1-0",
+              8.6
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Vitória 1V 1N 3D, Chapecoense 2V 1N 2D.",
+            "Vitória marque peu; Vitória encaisse beaucoup; Chapecoense encaisse beaucoup.",
+            "Match équilibré (1,3 - 1,3 buts attendus)."
+          ]
+        },
+        "Botafogo - Vasco da Gama": {
+          "heure": "2026-10-07T23:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Botafogo",
+          "ext": "Vasco da Gama",
+          "logo_dom": "https://crests.football-data.org/1770.png",
+          "logo_ext": "https://crests.football-data.org/1780.png",
+          "forme_dom": "DNNVD",
+          "forme_ext": "DVDVV",
+          "buts_attendus": [
+            1.08,
+            1.23
+          ],
+          "scores": [
+            [
+              "1-1",
+              14.2
+            ],
+            [
+              "0-1",
+              11.1
+            ],
+            [
+              "0-0",
+              11.0
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Botafogo 1V 2N 2D, Vasco da Gama 3V 0N 2D.",
+            "Botafogo marque peu.",
+            "Match équilibré (1,1 - 1,2 buts attendus)."
+          ]
+        }
+      },
+      "combines": [
+        {
+          "taille": 2,
+          "proba": 69.1,
+          "cote_estimee": 1.45,
+          "selections": [
+            "Internacional - Corinthians : Moins de 3,5 buts (84.6 %)",
+            "Bragantino - Mirassol : Plus de 1,5 buts (81.7 %)"
+          ]
+        },
+        {
+          "taille": 3,
+          "proba": 55.1,
+          "cote_estimee": 1.82,
+          "selections": [
+            "Internacional - Corinthians : Moins de 3,5 buts (84.6 %)",
+            "Bragantino - Mirassol : Plus de 1,5 buts (81.7 %)",
+            "Botafogo - Vasco da Gama : Moins de 3,5 buts (79.7 %)"
+          ]
+        },
+        {
+          "taille": 4,
+          "proba": 41.0,
+          "cote_estimee": 2.44,
+          "selections": [
+            "Internacional - Corinthians : Moins de 3,5 buts (84.6 %)",
+            "Bragantino - Mirassol : Plus de 1,5 buts (81.7 %)",
+            "Botafogo - Vasco da Gama : Moins de 3,5 buts (79.7 %)",
+            "Clube do Remo - Grêmio : Plus de 1,5 buts (74.4 %)"
+          ]
+        },
+        {
+          "taille": 5,
+          "proba": 30.5,
+          "cote_estimee": 3.28,
+          "selections": [
+            "Internacional - Corinthians : Moins de 3,5 buts (84.6 %)",
+            "Bragantino - Mirassol : Plus de 1,5 buts (81.7 %)",
+            "Botafogo - Vasco da Gama : Moins de 3,5 buts (79.7 %)",
+            "Clube do Remo - Grêmio : Plus de 1,5 buts (74.4 %)",
+            "Vitória - Chapecoense : Plus de 1,5 buts (74.4 %)"
+          ]
+        }
+      ]
+    }
+  },
   "matchs": {},
   "infos": {},
   "combines": []
