@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -33,7 +34,7 @@ jobs:
       - name: Analyse du jour
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
-        run: python analyse_du_jour_fd.py --date "$(date -u +%F)" --ligues PL PD SA BL1 FL1 CL --max 12
+        run: python analyse_du_jour_fd.py --date "$(date -u +%F)"
 
       - name: Rapport de fiabilité
         run: |
