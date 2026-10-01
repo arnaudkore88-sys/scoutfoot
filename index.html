@@ -2,6 +2,9 @@
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ScoutFoot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#7b2ff7">
 <link rel="apple-touch-icon" href="icon-192.png">
@@ -11,7 +14,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#140b33;--ink:#f3eeff;--mute:#b3a6e0;--card:#221651;--line:#3a2a80;--v:#a970ff;--rose:#ff5c9a;--gold:#ffc933;--nav:#1b1042}}
 :root[data-theme="dark"]{--bg:#140b33;--ink:#f3eeff;--mute:#b3a6e0;--card:#221651;--line:#3a2a80;--v:#a970ff;--rose:#ff5c9a;--gold:#ffc933;--nav:#1b1042}
 *{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.45 Poppins,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:520px;margin:0 auto;padding:16px 14px 96px}
 h1{font-size:26px;font-weight:800;margin:0;color:var(--v);letter-spacing:-.02em}h2{font-size:18px;margin:18px 0 8px}p{margin:0 0 10px}
 .mute{color:var(--mute);font-size:14px}.hidden{display:none!important}
@@ -22,8 +25,8 @@ button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline
 .ghost{color:var(--mute);text-decoration:underline}
 .lg{display:block;filter:drop-shadow(0 1px 3px rgba(0,0,0,.35))}.brand{display:flex;align-items:center;gap:8px}
 .gate{text-align:center;padding-top:10vh}.age{font-size:64px;font-weight:800;color:var(--rose);line-height:1}
-.days{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:12px 0;background:var(--card)}
-.days button{padding:8px 0;text-align:center;font-size:13px;color:var(--mute)}.days b{display:block;font-size:20px;color:var(--ink)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:12px 0;background:var(--card)}
+.days button{padding:7px 0;text-align:center;font-size:11px;color:var(--mute);font-weight:600}.days b{display:block;font-size:17px;color:var(--ink);font-weight:800}
 .days button.has b::after{content:"";display:block;width:5px;height:5px;border-radius:50%;background:var(--gold);margin:2px auto 0}
 .days button[aria-pressed="true"]{background:linear-gradient(180deg,#7b2ff7,#ff2e7e);color:#fff}.days button[aria-pressed="true"] b{color:#fff}
 .banner{background:var(--gold);color:#1a0f3d;border-radius:10px;padding:8px 12px;font-size:14px;font-weight:600;margin:0 0 12px}
@@ -33,7 +36,10 @@ button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline
 .star{font-size:24px;line-height:1;color:var(--gold);padding:4px 6px}
 .line{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left}
 .tm{display:flex;flex-direction:column;gap:6px;font-weight:800;font-size:17px;min-width:0}
-.tr{display:flex;align-items:center;gap:8px;min-width:0}.tr>span:last-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tr{display:flex;align-items:center;gap:8px;min-width:0}.nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fm{display:inline-flex;gap:2px;flex:none}.fm i{width:9px;height:9px;border-radius:2px;display:block}.fm .V{background:#19b36b}.fm .N{background:#8d86ab}.fm .D{background:#e5484d}
+.meta{margin-top:6px;font-size:13px;color:var(--mute)}.meta b{color:var(--ink)}
+.why{background:var(--bg);border-radius:10px;padding:8px 12px;margin-top:10px;font-size:14px}.why ul{margin:6px 0 0;padding-left:18px}.why li{margin-bottom:3px}
 .bd{position:relative;flex:none;width:28px;height:28px;border-radius:50%;color:#fff;font-size:10px;font-weight:800;display:inline-grid;place-items:center;overflow:hidden}
 .bd img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;border-radius:50%;padding:2px}
 .p3{display:flex;gap:10px;font-size:14px;color:var(--mute);text-align:center}.p3 span{min-width:38px}.p3 i{display:block;font-style:normal;font-size:11px}
@@ -70,9 +76,9 @@ nav button[aria-current="page"]{color:var(--v)}
  <div class="days" id="days"></div>
  <div id="demo" class="banner hidden">Données de démonstration (fictives) pour tester l'application.</div>
  <div id="content"></div>
- <label class="load">Charger un fichier analyse_du_jour.json<input id="file" type="file" accept=".json,application/json" style="display:none"></label>
+ <label class="load" id="loadbox">Charger un fichier analyse_du_jour.json<input id="file" type="file" accept=".json,application/json" style="display:none"></label>
  <p id="msg" class="mute" style="text-align:center"></p>
- <div class="legal"><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
+ <div class="legal"><p>Forme récente : <b>V</b> victoire, <b>N</b> nul, <b>D</b> défaite sur les 5 derniers matchs, du plus ancien au plus récent.</p><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
 </section>
 </main>
 <nav id="nav" class="hidden" aria-label="Navigation">
@@ -92,6 +98,8 @@ var JOURS=["dim","lun","mar","mer","jeu","ven","sam"],NOMS={2:"Prudent",3:"Équi
 var today=new Date();DEMO.date=iso(today);
 (function(){function at(h,m){return new Date(today.getFullYear(),today.getMonth(),today.getDate(),h,m).toISOString()}
 DEMO.infos={"PSG - Lens":{heure:at(18,45),ligue:"Ligue 1"},"Arsenal - Brighton":{heure:at(20,30),ligue:"Premier League"},"Inter - Torino":{heure:at(21,0),ligue:"Serie A"}}})();
+var DEMO_PLUS={"PSG - Lens":{"forme_dom":"VNVVV","forme_ext":"NNDVD","buts_attendus":[1.98,0.66],"scores":[["2-0",14.0],["1-0",13.4],["1-1",10.1]],"explication":["Forme sur les 5 derniers matchs : PSG 4V 1N 0D, Lens 1V 2N 2D.","PSG marque plus que la moyenne; PSG encaisse peu; Lens encaisse peu.","PSG est favori (2,0 but attendu contre 0,7), aidé par le terrain."]},"Arsenal - Brighton":{"forme_dom":"VVNVV","forme_ext":"VNDVN","buts_attendus":[1.92,0.65],"scores":[["2-0",14.1],["1-0",13.9],["1-1",10.4]],"explication":["Forme sur les 5 derniers matchs : Arsenal 4V 1N 0D, Brighton 2V 2N 1D.","Arsenal marque plus que la moyenne; Arsenal encaisse peu.","Arsenal est favori (1,9 but attendu contre 0,7), aidé par le terrain."]},"Inter - Torino":{"forme_dom":"VVVVV","forme_ext":"VNNDD","buts_attendus":[1.71,0.41],"scores":[["1-0",19.8],["2-0",17.5],["0-0",12.6]],"explication":["Forme sur les 5 derniers matchs : Inter 5V 0N 0D, Torino 1V 2N 2D.","Inter marque plus que la moyenne; Inter encaisse peu; Torino marque peu.","Inter est favori (1,7 but attendu contre 0,4), aidé par le terrain."]}};
+Object.keys(DEMO_PLUS).forEach(function(k){Object.assign(DEMO.infos[k],DEMO_PLUS[k])});
 document.addEventListener("error",function(e){if(e.target&&e.target.tagName==="IMG")e.target.remove()},true);
 var S={tab:"matchs",day:iso(today),data:DEMO,demo:true,open:{},fav:[]};
 try{S.fav=JSON.parse(get("fav")||"[]")}catch(e){S.fav=[]}
@@ -111,19 +119,24 @@ function entete(m){var i=m.info||{},h=i.heure?heure(i.heure):"";return esc([h,i.
 function badge(nom,url){var h=0;for(var c=0;c<nom.length;c++)h=(h*31+nom.charCodeAt(c))%360;
   var ini=nom.split(/[\s.-]+/).filter(Boolean).slice(0,2).map(function(w){return w[0]}).join("").toUpperCase();
   return`<span class="bd" style="background:hsl(${h},55%,42%)">${esc(ini)}${url?`<img src="${esc(url)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:""}</span>`}
+function fm(f){return f?`<span class="fm" title="Forme récente">${f.split("").map(function(c){return`<i class="${c}"></i>`}).join("")}</span>`:""}
+function meta(m){var i=m.info||{};if(!i.buts_attendus)return"";var sc=(i.scores||[])[0];
+  return`<div class="meta">Buts attendus <b>${fmt(i.buts_attendus[0])} – ${fmt(i.buts_attendus[1])}</b>${sc?` · Score probable <b>${esc(sc[0])}</b> (${Math.round(sc[1])} %)`:""}</div>`}
+function why(m){var i=m.info||{};if(!i.explication)return"";var sc=(i.scores||[]).map(function(s){return esc(s[0])+" ("+Math.round(s[1])+" %)"}).join(" · ");
+  return`<div class="why"><b>Pourquoi ce pronostic ?</b><ul>${i.explication.map(function(t){return`<li>${esc(t)}</li>`}).join("")}</ul>${sc?`<div class="meta">Scores les plus probables : ${sc}</div>`:""}</div>`}
 function carte(m,i){
   var mx=Math.max.apply(null,m.p.map(function(v){return v==null?-1:v})),fav=S.fav.indexOf(m.k)>=0,ouvert=S.open[m.k];
   var p3=["1","X","2"].map(function(l,j){var v=m.p[j];return`<span class="${v===mx&&v>=0?'hi':''}"><i>${l}</i>${v==null?'–':v+'%'}</span>`}).join("");
-  var det=ouvert?`<div class="det">${m.o.map(function(x,j){return row(x,j===0)}).join("")}</div>`:"";
+  var det=ouvert?`<div class="det">${why(m)}${m.o.map(function(x,j){return row(x,j===0)}).join("")}</div>`:"";
   return`<article class="card"><div class="hd"><span>${entete(m)}</span><button class="star" data-star="${i}" aria-label="${fav?'Retirer des favoris':'Ajouter aux favoris'}">${fav?'★':'☆'}</button></div>
-  <button class="line" data-open="${i}" aria-expanded="${!!ouvert}"><span class="tm"><span class="tr">${badge(m.a,m.info&&m.info.logo_dom)}<span>${esc(m.a)}</span></span><span class="tr">${badge(m.b,m.info&&m.info.logo_ext)}<span>${esc(m.b)}</span></span></span><span class="p3">${p3}</span></button>
-  <div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>${det}</article>`;
+  <button class="line" data-open="${i}" aria-expanded="${!!ouvert}"><span class="tm"><span class="tr">${badge(m.a,m.info&&m.info.logo_dom)}<span class="nm">${esc(m.a)}</span>${fm(m.info&&m.info.forme_dom)}</span><span class="tr">${badge(m.b,m.info&&m.info.logo_ext)}<span class="nm">${esc(m.b)}</span>${fm(m.info&&m.info.forme_ext)}</span></span><span class="p3">${p3}</span></button>
+  <div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>${meta(m)}${det}</article>`;
 }
 var cur=[];
 function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
 function render(){
   var J=jours(S.data),d=J[S.day];
-  $("days").innerHTML=[-1,0,1,2,3].map(function(n){var x=new Date(today);x.setDate(x.getDate()+n);var v=iso(x);
+  $("days").innerHTML=[0,1,2,3,4,5,6].map(function(n){var x=new Date(today);x.setDate(x.getDate()+n);var v=iso(x);
     return`<button data-day="${v}" class="${J[v]&&Object.keys(J[v].matchs||{}).length?'has':''}" aria-pressed="${v===S.day}">${JOURS[x.getDay()]}<b>${x.getDate()}</b></button>`}).join("");
   $("demo").classList.toggle("hidden",!S.demo);
   Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(b){if(b.dataset.tab===S.tab)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
@@ -166,5 +179,7 @@ $("yes").onclick=function(){set("adulte","1");entrer()};
 $("no").onclick=function(){$("deny").classList.remove("hidden")};
 $("file").onchange=function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();
   r.onload=function(){try{var d=JSON.parse(r.result);valide(d);utiliser(d,false);$("msg").textContent="Analyse chargée."}catch(x){$("msg").textContent="Fichier non valide : "+x.message}};r.readAsText(f)};
+// Le chargement manuel d'un fichier est réservé au propriétaire : il apparaît seulement avec  ?outil=1  à la fin de l'adresse.
+(function(){var q=(window.location&&window.location.search)||"";if(q.indexOf("outil=1")<0){$("loadbox").classList.add("hidden");$("msg").classList.add("hidden")}})();
 if(get("adulte"))entrer();
 </script><script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(function(){})}</script></body></html>
