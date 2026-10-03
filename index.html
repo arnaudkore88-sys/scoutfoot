@@ -67,6 +67,7 @@ ul{margin:10px 0 0;padding-left:18px}li{margin-bottom:4px}
 .ov{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(10,5,30,.82);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
 .ov>div{background:var(--card);border-radius:16px;padding:16px;max-width:380px;width:100%}.ov .sp{margin:16px 0 14px}.ov button:disabled{opacity:.55}
 body.avecstk main{padding-bottom:170px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--mute);margin:8px 0}
 .legal{border-top:1px solid var(--line);margin-top:10px;padding-top:12px;font-size:13px;color:var(--mute)}
 nav{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom,0px)}
 nav button{flex:1;padding:12px 4px;font-size:13px;color:var(--mute);font-weight:600}nav b{display:block;font-size:20px}
@@ -249,6 +250,13 @@ function montrerInter(suite){
   var b=ov.querySelector("#ovgo"),t=setInterval(function(){n--;if(n>0){b.textContent="Continuer ("+n+")"}else{clearInterval(t);b.disabled=false;b.textContent="Continuer"}},1000);
   b.onclick=function(){document.body.removeChild(ov);suite()};
 }
+var MOIS=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+function dateFr(iso){var p=String(iso).split("-");return p.length===3?(Number(p[2])+" "+MOIS[Number(p[1])-1]):iso}
+function limiteSel(){var c=S.data&&S.data.couverture_selections;return c&&c.jusqu_au?c.jusqu_au:null}
+function noteSel(){var l=limiteSel();
+  return(l&&S.day>l)?`<div class="info">Matchs de sélections (qualifications, amicaux, CAN, Mondial…) non affichés pour cette date : visibles jusqu'au ${dateFr(l)} avec l'offre actuelle.</div>`:""}
+function msgVide(){var l=limiteSel(),m=`<p class="mute" style="text-align:center;margin-top:30px">Aucun match de club analysé ce jour-là.</p>`;
+  return m+((l&&S.day>l)?`<div class="info" style="margin-top:14px">Les matchs de sélections (qualifications, amicaux, CAN, Mondial…) ne sont visibles que jusqu'au ${dateFr(l)} avec l'offre actuelle : il peut y en avoir ce jour-là sans qu'ils soient affichés.</div>`:"")}
 var cur=[];
 function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
 function render(){
@@ -258,7 +266,7 @@ function render(){
   $("demo").classList.toggle("hidden",!S.demo);
   Array.prototype.forEach.call(document.querySelectorAll("nav button"),function(b){if(b.dataset.tab===S.tab)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
   var h="";
-  if(!d){cur=[];h=`<p class="mute" style="text-align:center;margin-top:30px">Pas d'analyse disponible pour cette date.</p>`}
+  if(!d){cur=[];h=msgVide()}
   else{
     cur=liste(d);
     if(S.tab==="combines"){
@@ -272,10 +280,10 @@ function render(){
       h+=fs.length?fs.map(function(z){return carte(z[0],z[1])}).join(""):`<p class="mute">Touchez l'étoile d'un match pour le retrouver ici.</p>`;
     }else{
       var tops=cur.map(function(m,i){return[m,i]}).filter(function(z){return z[0].best}).sort(function(a,b){return b[0].best.proba-a[0].best.proba}).slice(0,3);
-      h+=pub("haut")+(tops.length?`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join(""):"");
+      h+=(cur.length?noteSel():"")+pub("haut")+(tops.length?`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join(""):"");
       var rest=cur.map(function(m,i){return[m,i]}).filter(function(z){return tops.every(function(t){return t[1]!==z[1]})}).sort(function(a,b){var x=(a[0].info&&a[0].info.heure)||"",y=(b[0].info&&b[0].info.heure)||"";return x<y?-1:x>y?1:0});
       if(rest.length)h+=pub("milieu")+`<h2>Tous les matchs</h2>`+avecPub(rest.map(function(z){return carte(z[0],z[1])})).join("");
-      if(!cur.length)h+=`<p class="mute">Aucun match analysé pour ce jour.</p>`;
+      if(!cur.length)h+=msgVide();
     }
   }
   $("content").innerHTML=h;

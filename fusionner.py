@@ -55,7 +55,8 @@ def main():
     premier = jours.get(aujourdhui, {"matchs": {}, "infos": {}, "combines": []})
     with open("analyse_du_jour.json", "w", encoding="utf-8") as f:
         json.dump({"date": aujourdhui, "jours": jours, "matchs": premier["matchs"], "infos": premier["infos"],
-                   "combines": premier["combines"]}, f, ensure_ascii=False, indent=2)
+                   "combines": premier["combines"], "couverture_selections": sel.get("couverture")},
+                  f, ensure_ascii=False, indent=2)
     print(f"Fusion terminée : {ajoutes} match(s) de sélections ajouté(s).")
 
 

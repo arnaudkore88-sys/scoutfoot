@@ -89,6 +89,7 @@ def main():
     # 2) matchs
     d0 = date.fromisoformat(a.date)
     par_jour = {}
+    dernier_ok = None            # dernier jour réellement obtenu (limite de l'offre gratuite : aujourd'hui et demain)
     for i in range(nb_jours):
         jour = (d0 + timedelta(days=i)).isoformat()
         try:
@@ -102,6 +103,7 @@ def main():
         except api.ErreurApif as e:
             print(f"  {jour} : erreur ({e}) -> jour ignoré")
             continue
+        dernier_ok = jour
         for m in liste:
             par_jour.setdefault(m["jour"], []).append(m)
     matchs = []
@@ -162,7 +164,8 @@ def main():
         contenu["combines"] = moteur.combines({k: v for k, v in contenu["matchs"].items() if v})
 
     with open("analyse_apif.json", "w", encoding="utf-8") as f:
-        json.dump({"date": a.date, "plan": plan, "jours": jours_out}, f, ensure_ascii=False, indent=2)
+        json.dump({"date": a.date, "plan": plan, "couverture": {"plan": plan, "jusqu_au": dernier_ok}, "jours": jours_out},
+                  f, ensure_ascii=False, indent=2)
     with open("predictions.jsonl", "a", encoding="utf-8") as f:
         for j in journal:
             f.write(json.dumps(j, ensure_ascii=False) + "\n")
