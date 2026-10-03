@@ -1,0 +1,45 @@
+{
+  "note": "TOUT EST ÉTEINT. Passer actif à true seulement après l'avis de l'avocat et la mise à jour des textes légaux. Aperçu avant activation : ajouter ?outil=1 à l'adresse du site.",
+  "actif": false,
+  "frequence_feed": 3,
+  "sticky_actif": true,
+  "interstitiel": { "actif": false, "secondes": 5 },
+  "adsense": {
+    "client": "",
+    "slots": { "haut": "", "milieu": "", "feed": "", "sticky": "" },
+    "layout_key": "",
+    "personnalisees": false
+  },
+  "sponsors": [
+    {
+      "nom": "Boutique Sport (exemple fictif)",
+      "texte": "-10 % sur les maillots sur présentation de l'application",
+      "categorie": "sport",
+      "lien": "https://example.com",
+      "image": "",
+      "bouton": "Voir",
+      "emplacement": "haut",
+      "debut": "2026-10-01",
+      "fin": "2026-12-31"
+    },
+    {
+      "nom": "Mobile Money (exemple fictif)",
+      "texte": "Rechargez facilement votre forfait data",
+      "categorie": "mobile-money",
+      "lien": "https://example.com",
+      "bouton": "Découvrir",
+      "emplacement": "feed",
+      "debut": "2026-10-01",
+      "fin": "2026-12-31"
+    },
+    {
+      "nom": "Restaurant du Stade (exemple fictif)",
+      "texte": "Retransmission des matchs, menu supporters",
+      "categorie": "restauration",
+      "lien": "https://example.com",
+      "emplacement": "inter",
+      "debut": "2026-10-01",
+      "fin": "2026-12-31"
+    }
+  ]
+}

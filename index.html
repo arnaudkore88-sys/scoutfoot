@@ -52,6 +52,21 @@ button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline
 .det{border-top:1px solid var(--line);margin-top:10px;padding-top:2px}
 ul{margin:10px 0 0;padding-left:18px}li{margin-bottom:4px}
 .load{display:block;text-align:center;color:var(--mute);text-decoration:underline;cursor:pointer;padding:12px 0;font-size:14px}
+.sp{display:flex;gap:10px;align-items:center;border:1px dashed var(--line);border-radius:14px;padding:12px;margin:14px 0 10px;background:var(--card);color:inherit;text-decoration:none;position:relative}
+.sp small,.gads small{font-size:11px;font-weight:600;color:var(--mute)}
+.sp small{position:absolute;top:-9px;left:12px;background:var(--bg);padding:0 6px;border-radius:6px}
+.sp img{width:52px;height:52px;border-radius:10px;object-fit:cover;flex:none;background:#fff}
+.sp b{display:block;font-size:14px;color:var(--ink)}.sp .tx{flex:1;font-size:13px;color:var(--mute)}.sp .go{font-size:12px;font-weight:800;color:var(--v);white-space:nowrap}
+.gads{margin:14px 0 10px;text-align:center}.gads small{display:block;margin-bottom:2px}
+.ph{border:1px dashed var(--line);border-radius:12px;padding:14px;text-align:center;font-size:12px;color:var(--mute);margin:10px 0}
+#stickypub{position:fixed;left:0;right:0;z-index:6;display:flex;justify-content:center;pointer-events:none}
+#stickypub .stk{pointer-events:auto;display:flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 6px;width:calc(100% - 24px);max-width:360px;min-height:58px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+#stickypub .sp{flex:1;margin:0;padding:6px 8px}#stickypub .gads{margin:0;flex:1}#stickypub .x{font-size:22px;color:var(--mute);padding:4px 10px}
+#consent{position:fixed;left:12px;right:12px;z-index:7;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;font-size:13px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+#consent p{margin:0 0 10px}.row2{display:flex;gap:8px}.row2 button{flex:1}
+.ov{position:fixed;left:0;right:0;top:0;bottom:0;background:rgba(10,5,30,.82);z-index:50;display:flex;align-items:center;justify-content:center;padding:20px}
+.ov>div{background:var(--card);border-radius:16px;padding:16px;max-width:380px;width:100%}.ov .sp{margin:16px 0 14px}.ov button:disabled{opacity:.55}
+body.avecstk main{padding-bottom:170px}
 .legal{border-top:1px solid var(--line);margin-top:10px;padding-top:12px;font-size:13px;color:var(--mute)}
 nav{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom,0px)}
 nav button{flex:1;padding:12px 4px;font-size:13px;color:var(--mute);font-weight:600}nav b{display:block;font-size:20px}
@@ -78,9 +93,11 @@ nav button[aria-current="page"]{color:var(--v)}
  <div id="content"></div>
  <label class="load" id="loadbox">Charger un fichier analyse_du_jour.json<input id="file" type="file" accept=".json,application/json" style="display:none"></label>
  <p id="msg" class="mute" style="text-align:center"></p>
- <div class="legal"><p>Forme récente : <b>V</b> victoire, <b>N</b> nul, <b>D</b> défaite sur les 5 derniers matchs, du plus ancien au plus récent.</p><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
+ <div class="legal"><p id="pubnote" class="hidden">Les publicités sont signalées « Publicité ». ScoutFoot n'affiche aucune publicité de paris ni de jeux d'argent.</p><p>Forme récente : <b>V</b> victoire, <b>N</b> nul, <b>D</b> défaite sur les 5 derniers matchs, du plus ancien au plus récent.</p><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
 </section>
 </main>
+<div id="stickypub" class="hidden" aria-live="polite"></div>
+<div id="consent" class="hidden" role="dialog" aria-label="Publicités"></div>
 <nav id="nav" class="hidden" aria-label="Navigation">
  <button data-tab="matchs"><b>⚽</b>Matchs</button>
  <button data-tab="combines"><b>🎟</b>Combinés</button>
@@ -110,7 +127,7 @@ function liste(d){
     var o=d.matchs[k].slice().sort(function(x,y){return y.proba-x.proba});
     var f=function(n){var m=o.filter(function(x){return x.marche===n})[0];return m?Math.round(m.proba):null};
     var best=o.filter(function(x){return x.proba<=90})[0]||o[0];
-    return{k:k,a:a,b:b,o:o,p:[f("Victoire "+a),f("Match nul"),f("Victoire "+b)],best:best,info:(d.infos||{})[k]||null};
+    return{k:k,a:a,b:b,o:o,p:[f("Victoire "+a),f("Match nul"),f("Victoire "+b)],best:best||null,info:(d.infos||{})[k]||null};
   });
 }
 function row(x,top){return`<div class="opt"><div class="row"><span>${esc(x.marche)}${top?'<span class="top">Le + probable</span>':''}</span><span><span class="pc">${Math.round(x.proba)}%</span> <span class="cote">cote ≈ ${fmt(x.cote_estimee)}</span></span></div><div class="bar"><i style="width:${Math.min(100,x.proba)}%"></i></div></div>`}
@@ -130,7 +147,107 @@ function carte(m,i){
   var det=ouvert?`<div class="det">${why(m)}${m.o.map(function(x,j){return row(x,j===0)}).join("")}</div>`:"";
   return`<article class="card"><div class="hd"><span>${entete(m)}</span><button class="star" data-star="${i}" aria-label="${fav?'Retirer des favoris':'Ajouter aux favoris'}">${fav?'★':'☆'}</button></div>
   <button class="line" data-open="${i}" aria-expanded="${!!ouvert}"><span class="tm"><span class="tr">${badge(m.a,m.info&&m.info.logo_dom)}<span class="nm">${esc(m.a)}</span>${fm(m.info&&m.info.forme_dom)}</span><span class="tr">${badge(m.b,m.info&&m.info.logo_ext)}<span class="nm">${esc(m.b)}</span>${fm(m.info&&m.info.forme_ext)}</span></span><span class="p3">${p3}</span></button>
-  <div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>${meta(m)}${det}</article>`;
+  ${m.best?`<div class="best">Le + probable : ${esc(m.best.marche)} <b>${Math.round(m.best.proba)}%</b> · cote ≈ ${fmt(m.best.cote_estimee)}</div>`:`<div class="best">Analyse indisponible pour ce match${m.info&&m.info.raison?" : "+esc(m.info.raison):""}.</div>`}${meta(m)}${det}</article>`;
+}
+// ================= PUBLICITÉS : tout est ÉTEINT par défaut (réglages dans pubs.json) =================
+var OUTIL=((window.location&&window.location.search)||"").indexOf("outil=1")>=0;
+function QS(){return(window.location&&window.location.search)||""}
+var UA=(typeof navigator!=="undefined"&&navigator.userAgent)||"";
+var EST_APK=/; wv\)/i.test(UA)||/[?&]app=apk/.test(QS());          // habillage Android (WebView) : jamais de publicité Google
+var CFG=null,SP_PICK={},PUB_FERME=false,CONSENT=null,GOOGLE_OK=false;
+try{CONSENT=localStorage.getItem("pub_ok")}catch(e){}
+var INTERDIT=/\b(pari|paris|parier|pariez|parieur|parieurs|bookmakers?|betting|bets?|casinos?|loterie|lotto|poker|jeux? d'argent|1xbet|betclic|megapari|melbet|bet365|betway|sportybet|1win|mostbet|22bet|linebet|parimatch|premierbet|bwin|unibet|lonaci)\b/i;
+var CATEGORIES=["telecom","mobile-money","sport","restauration","commerce","education","sante","services","autre"];
+function estVip(){
+  try{if(window.SCOUTFOOT_VIP===true)return true;if(Number(localStorage.getItem("vip_fin")||0)>Date.now())return true}catch(e){}
+  return OUTIL&&/[?&]vip=1/.test(QS());      // VIP : provisoire. Le vrai statut viendra du serveur d'abonnement (abonne = true).
+}
+function pubsActives(){return !!CFG&&!estVip()&&(CFG.actif===true||OUTIL)}
+function apercu(){return !!CFG&&CFG.actif!==true}
+function googleConfig(){var a=CFG&&CFG.adsense;return !!(a&&a.client&&CFG.actif===true&&!EST_APK&&!estVip())}
+function googlePossible(slot){return googleConfig()&&!!CFG.adsense.slots&&!!CFG.adsense.slots[slot]&&CONSENT==="1"}
+function consentNecessaire(){return googleConfig()&&CONSENT===null}
+function sponsorOk(s,jour){
+  if(!s||!s.nom||!s.texte||!s.lien)return false;
+  if(!/^https:\/\//i.test(s.lien))return false;
+  if(s.image&&!/^https:\/\//i.test(s.image))return false;
+  if(CATEGORIES.indexOf(s.categorie)<0)return false;
+  if(String(s.texte).length>90||String(s.nom).length>40)return false;
+  if(s.debut&&jour<s.debut)return false;
+  if(s.fin&&jour>s.fin)return false;
+  if(INTERDIT.test([s.nom,s.texte,s.lien,s.categorie].join(" ")))return false;
+  return true;
+}
+function sponsorsPour(slot){
+  if(!pubsActives())return[];
+  var jour=iso(today);
+  return(CFG.sponsors||[]).filter(function(s){return(s.emplacement===slot||s.emplacement==="tous")&&sponsorOk(s,jour)});
+}
+function carteSponsor(s){
+  return`<a class="sp" href="${esc(s.lien)}" target="_blank" rel="sponsored noopener noreferrer"><small>Publicité${apercu()?" · APERÇU":""}</small>${s.image?`<img src="${esc(s.image)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:""}<span class="tx"><b>${esc(s.nom)}</b>${esc(s.texte)}</span><span class="go">${esc(s.bouton||"Voir")} ›</span></a>`;
+}
+function googleIns(slot){
+  var a=CFG.adsense,base=` data-ad-client="${esc(a.client)}" data-ad-slot="${esc(a.slots[slot])}"`;
+  if(slot==="sticky")return`<ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px"${base}></ins>`;
+  if(slot==="feed"&&a.layout_key)return`<ins class="adsbygoogle" style="display:block"${base} data-ad-format="fluid" data-ad-layout-key="${esc(a.layout_key)}"></ins>`;
+  return`<ins class="adsbygoogle" style="display:block"${base} data-ad-format="auto" data-full-width-responsive="true"></ins>`;
+}
+// Un emplacement : sponsor direct d'abord, puis Google (si autorisé et consenti), sinon rien (ou un cadre gris en aperçu).
+function pub(slot,k){
+  if(!pubsActives())return"";
+  var l=sponsorsPour(slot);
+  if(l.length){var s=(k===undefined)?(SP_PICK[slot]=SP_PICK[slot]||l[Math.floor(Math.random()*l.length)]):l[k%l.length];return carteSponsor(s)}
+  if(googlePossible(slot))return`<div class="gads"><small>Publicité</small>${googleIns(slot)}</div>`;
+  if(apercu())return`<div class="ph">Emplacement « ${esc(slot)} » (aperçu) : sponsor ou Google</div>`;
+  return"";
+}
+function avecPub(cartes){      // une publicité tous les N matchs (jamais avant le 3e, jamais après le dernier)
+  var n=Math.max(2,Number(CFG&&CFG.frequence_feed)||3),out=[],k=0;
+  cartes.forEach(function(c,i){out.push(c);if((i+1)%n===0&&i<cartes.length-1){var p=pub("feed",k++);if(p)out.push(p)}});
+  return out;
+}
+function googleCharger(){
+  if(!googleConfig()||CONSENT!=="1")return;
+  if(!GOOGLE_OK){
+    GOOGLE_OK=true;window.adsbygoogle=window.adsbygoogle||[];
+    if(CFG.adsense.personnalisees!==true)window.adsbygoogle.requestNonPersonalizedAds=1;
+    var sc=document.createElement("script");sc.async=true;sc.crossOrigin="anonymous";
+    sc.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client="+encodeURIComponent(CFG.adsense.client);
+    document.head.appendChild(sc);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("ins.adsbygoogle:not([data-pub])"),function(e){e.setAttribute("data-pub","1");try{window.adsbygoogle.push({})}catch(x){}});
+}
+function bandeauConsent(){
+  var c=$("consent");if(!c)return;
+  if(consentNecessaire()){
+    c.innerHTML=`<p>ScoutFoot peut afficher des publicités Google (non personnalisées, avec cookies). Acceptez-vous leur chargement ?</p><div class="row2"><button class="btn main" data-pub="ok">Accepter</button><button class="btn ghost" data-pub="non">Refuser</button></div>`;
+    var n=$("nav");c.style.bottom=(n?n.offsetHeight+8:70)+"px";c.classList.remove("hidden");
+  }else c.classList.add("hidden");
+}
+function majPubs(){
+  var st=$("stickypub"),note=$("pubnote");
+  if(note)note.classList.toggle("hidden",!(pubsActives()&&CFG.actif===true));
+  var html=(pubsActives()&&!PUB_FERME&&CFG.sticky_actif!==false)?pub("sticky"):"";
+  if(html){
+    st.innerHTML=`<div class="stk">${html}<button class="x" data-pub="fermer" aria-label="Fermer la publicité">×</button></div>`;
+    var n=$("nav");st.style.bottom=(n?n.offsetHeight+8:70)+"px";st.classList.remove("hidden");
+  }else{st.innerHTML="";st.classList.add("hidden")}
+  if(document.body)document.body.classList.toggle("avecstk",!!html);
+  bandeauConsent();googleCharger();
+}
+function interDispo(){      // fenêtre sponsor avant le premier détail : sponsors directs seulement, 1 fois par session
+  if(!pubsActives()||!CFG.interstitiel||CFG.interstitiel.actif!==true)return false;
+  try{if(sessionStorage.getItem("inter_vu")==="1")return false}catch(e){}
+  return sponsorsPour("inter").length>0;
+}
+function montrerInter(suite){
+  var l=sponsorsPour("inter"),s=l[Math.floor(Math.random()*l.length)],n=Math.max(3,Math.min(10,Number(CFG.interstitiel.secondes)||5));
+  try{sessionStorage.setItem("inter_vu","1")}catch(e){}
+  var ov=document.createElement("div");ov.className="ov";ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");
+  ov.innerHTML=`<div>${carteSponsor(s)}<button class="btn main" id="ovgo" disabled>Continuer (${n})</button></div>`;
+  document.body.appendChild(ov);
+  var b=ov.querySelector("#ovgo"),t=setInterval(function(){n--;if(n>0){b.textContent="Continuer ("+n+")"}else{clearInterval(t);b.disabled=false;b.textContent="Continuer"}},1000);
+  b.onclick=function(){document.body.removeChild(ov);suite()};
 }
 var cur=[];
 function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
@@ -154,26 +271,29 @@ function render(){
       h+=`<h2>Mes favoris</h2>`;
       h+=fs.length?fs.map(function(z){return carte(z[0],z[1])}).join(""):`<p class="mute">Touchez l'étoile d'un match pour le retrouver ici.</p>`;
     }else{
-      var tops=cur.map(function(m,i){return[m,i]}).sort(function(a,b){return b[0].best.proba-a[0].best.proba}).slice(0,3);
-      h+=`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join("");
+      var tops=cur.map(function(m,i){return[m,i]}).filter(function(z){return z[0].best}).sort(function(a,b){return b[0].best.proba-a[0].best.proba}).slice(0,3);
+      h+=pub("haut")+(tops.length?`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join(""):"");
       var rest=cur.map(function(m,i){return[m,i]}).filter(function(z){return tops.every(function(t){return t[1]!==z[1]})}).sort(function(a,b){var x=(a[0].info&&a[0].info.heure)||"",y=(b[0].info&&b[0].info.heure)||"";return x<y?-1:x>y?1:0});
-      if(rest.length)h+=`<h2>Tous les matchs</h2>`+rest.map(function(z){return carte(z[0],z[1])}).join("");
+      if(rest.length)h+=pub("milieu")+`<h2>Tous les matchs</h2>`+avecPub(rest.map(function(z){return carte(z[0],z[1])})).join("");
       if(!cur.length)h+=`<p class="mute">Aucun match analysé pour ce jour.</p>`;
     }
   }
   $("content").innerHTML=h;
+  majPubs();
 }
 document.addEventListener("click",function(e){
-  var t=e.target.closest("[data-star],[data-open],[data-day],[data-tab]");if(!t)return;
+  var t=e.target.closest("[data-star],[data-open],[data-day],[data-tab],[data-pub]");if(!t)return;
   if(t.dataset.star!==undefined){var k=cur[+t.dataset.star].k,i=S.fav.indexOf(k);if(i>=0)S.fav.splice(i,1);else S.fav.push(k);set("fav",JSON.stringify(S.fav))}
-  else if(t.dataset.open!==undefined){var m=cur[+t.dataset.open].k;S.open[m]=!S.open[m]}
+  else if(t.dataset.open!==undefined){var m=cur[+t.dataset.open].k;if(!S.open[m]&&interDispo()){montrerInter(function(){S.open[m]=true;render()});return}S.open[m]=!S.open[m]}
   else if(t.dataset.day){S.day=t.dataset.day}
   else if(t.dataset.tab){S.tab=t.dataset.tab;window.scrollTo(0,0)}
+  else if(t.dataset.pub){if(t.dataset.pub==="fermer")PUB_FERME=true;else{CONSENT=t.dataset.pub==="ok"?"1":"0";try{localStorage.setItem("pub_ok",CONSENT)}catch(x){}}}
   render();
 });
 function valide(d){if(!d||(typeof d.matchs!=="object"&&typeof d.jours!=="object"))throw new Error("format inattendu")}
 function utiliser(d,demo){S.data=d;S.demo=demo;var J=jours(d),k=Object.keys(J).sort();S.day=J[iso(today)]?iso(today):(k[0]||iso(today));render()}
-function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){})}
+function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){});
+  fetch("pubs.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(c){CFG=c;SP_PICK={};render()}).catch(function(){})}
 function entrer(){$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
 $("yes").onclick=function(){set("adulte","1");entrer()};
 $("no").onclick=function(){$("deny").classList.remove("hidden")};

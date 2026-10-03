@@ -90,8 +90,11 @@ def recuperer(p):
         ht = sc.get("halfTime") or {}
         return ({"home": ft["home"], "away": ft["away"]},
                 (ht["home"], ht["away"]) if ht.get("home") is not None else None)
-    import analyse_du_jour as api          # nécessite API_FOOTBALL_KEY
-    data = api.appel("/fixtures", {"id": p["fixture_id"]}, ttl=300)
+    import apif_api as api                 # API-Football (clé API_FOOTBALL_KEY)
+    try:
+        data = api.appel("/fixtures", {"id": p["fixture_id"]}, ttl=300)
+    except api.ErreurApif:
+        return None                        # offre, quota ou réseau : on réessaiera au prochain lancement
     if not data["response"]:
         return None
     f = data["response"][0]
