@@ -86,8 +86,6 @@
           }
         ],
         "Spain - Czechia": [],
-        "Switzerland - Slovenia": [],
-        "FYR Macedonia - Scotland": [],
         "Ivory Coast - Cameroon": [],
         "Sint Maarten - St. Vincent / Grenadines": []
       },
@@ -132,26 +130,6 @@
           "ext": "Czechia",
           "logo_dom": "https://media.api-sports.io/football/teams/9.png",
           "logo_ext": "https://media.api-sports.io/football/teams/770.png",
-          "sans_analyse": true,
-          "raison": "Offre gratuite : historique des équipes indisponible"
-        },
-        "Switzerland - Slovenia": {
-          "heure": "2026-10-03T18:45:00+00:00",
-          "ligue": "UEFA Nations League",
-          "dom": "Switzerland",
-          "ext": "Slovenia",
-          "logo_dom": "https://media.api-sports.io/football/teams/15.png",
-          "logo_ext": "https://media.api-sports.io/football/teams/1091.png",
-          "sans_analyse": true,
-          "raison": "Offre gratuite : historique des équipes indisponible"
-        },
-        "FYR Macedonia - Scotland": {
-          "heure": "2026-10-03T18:45:00+00:00",
-          "ligue": "UEFA Nations League",
-          "dom": "FYR Macedonia",
-          "ext": "Scotland",
-          "logo_dom": "https://media.api-sports.io/football/teams/1105.png",
-          "logo_ext": "https://media.api-sports.io/football/teams/1108.png",
           "sans_analyse": true,
           "raison": "Offre gratuite : historique des équipes indisponible"
         },
@@ -362,88 +340,6 @@
     },
     "2026-10-07": {
       "matchs": {
-        "Clube do Remo - Grêmio": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 74.4,
-            "cote_estimee": 1.34
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 73.4,
-            "cote_estimee": 1.36
-          },
-          {
-            "marche": "Clube do Remo ou nul",
-            "proba": 69.9,
-            "cote_estimee": 1.43
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 69.1,
-            "cote_estimee": 1.45
-          },
-          {
-            "marche": "Grêmio ou nul",
-            "proba": 58.2,
-            "cote_estimee": 1.72
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 53.6,
-            "cote_estimee": 1.86
-          },
-          {
-            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
-            "proba": 51.3,
-            "cote_estimee": 1.95
-          },
-          {
-            "marche": "1re équipe à marquer : Clube do Remo",
-            "proba": 50.8,
-            "cote_estimee": 1.97
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 48.3,
-            "cote_estimee": 2.07
-          },
-          {
-            "marche": "1re équipe à marquer : Grêmio",
-            "proba": 41.9,
-            "cote_estimee": 2.39
-          },
-          {
-            "marche": "Victoire Clube do Remo",
-            "proba": 41.8,
-            "cote_estimee": 2.39
-          },
-          {
-            "marche": "Clube do Remo gagne et plus de 1,5 but",
-            "proba": 32.3,
-            "cote_estimee": 3.1
-          },
-          {
-            "marche": "Victoire Grêmio",
-            "proba": 30.1,
-            "cote_estimee": 3.32
-          },
-          {
-            "marche": "Match nul",
-            "proba": 28.1,
-            "cote_estimee": 3.56
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 26.6,
-            "cote_estimee": 3.77
-          },
-          {
-            "marche": "Score exact : 1-1",
-            "proba": 13.4,
-            "cote_estimee": 7.46
-          }
-        ],
         "Internacional - Corinthians": [
           {
             "marche": "Moins de 3,5 buts",
@@ -524,6 +420,88 @@
             "marche": "Score exact : 1-0",
             "proba": 15.2,
             "cote_estimee": 6.58
+          }
+        ],
+        "Clube do Remo - Grêmio": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 74.4,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 73.4,
+            "cote_estimee": 1.36
+          },
+          {
+            "marche": "Clube do Remo ou nul",
+            "proba": 69.9,
+            "cote_estimee": 1.43
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 69.1,
+            "cote_estimee": 1.45
+          },
+          {
+            "marche": "Grêmio ou nul",
+            "proba": 58.2,
+            "cote_estimee": 1.72
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 53.6,
+            "cote_estimee": 1.86
+          },
+          {
+            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
+            "proba": 51.3,
+            "cote_estimee": 1.95
+          },
+          {
+            "marche": "1re équipe à marquer : Clube do Remo",
+            "proba": 50.8,
+            "cote_estimee": 1.97
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 48.3,
+            "cote_estimee": 2.07
+          },
+          {
+            "marche": "1re équipe à marquer : Grêmio",
+            "proba": 41.9,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "Victoire Clube do Remo",
+            "proba": 41.8,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "Clube do Remo gagne et plus de 1,5 but",
+            "proba": 32.3,
+            "cote_estimee": 3.1
+          },
+          {
+            "marche": "Victoire Grêmio",
+            "proba": 30.1,
+            "cote_estimee": 3.32
+          },
+          {
+            "marche": "Match nul",
+            "proba": 28.1,
+            "cote_estimee": 3.56
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 26.6,
+            "cote_estimee": 3.77
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 13.4,
+            "cote_estimee": 7.46
           }
         ],
         "Bragantino - Mirassol": [
@@ -774,39 +752,6 @@
         ]
       },
       "infos": {
-        "Clube do Remo - Grêmio": {
-          "heure": "2026-10-07T22:30:00Z",
-          "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Clube do Remo",
-          "ext": "Grêmio",
-          "logo_dom": "https://crests.football-data.org/4287.png",
-          "logo_ext": "https://crests.football-data.org/1767.png",
-          "forme_dom": "DDDDD",
-          "forme_ext": "VDDDN",
-          "buts_attendus": [
-            1.43,
-            1.18
-          ],
-          "scores": [
-            [
-              "1-1",
-              13.4
-            ],
-            [
-              "1-0",
-              9.5
-            ],
-            [
-              "2-1",
-              8.9
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
-            "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
-            "Match équilibré (1,4 - 1,2 buts attendus)."
-          ]
-        },
         "Internacional - Corinthians": {
           "heure": "2026-10-07T22:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
@@ -838,6 +783,39 @@
             "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
             "Internacional marque peu; Corinthians marque peu.",
             "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
+          ]
+        },
+        "Clube do Remo - Grêmio": {
+          "heure": "2026-10-07T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Clube do Remo",
+          "ext": "Grêmio",
+          "logo_dom": "https://crests.football-data.org/4287.png",
+          "logo_ext": "https://crests.football-data.org/1767.png",
+          "forme_dom": "DDDDD",
+          "forme_ext": "VDDDN",
+          "buts_attendus": [
+            1.43,
+            1.18
+          ],
+          "scores": [
+            [
+              "1-1",
+              13.4
+            ],
+            [
+              "1-0",
+              9.5
+            ],
+            [
+              "2-1",
+              8.9
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
+            "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
+            "Match équilibré (1,4 - 1,2 buts attendus)."
           ]
         },
         "Bragantino - Mirassol": {
@@ -1359,88 +1337,6 @@
     },
     "2026-10-09": {
       "matchs": {
-        "Palmeiras - Bahia": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 82.5,
-            "cote_estimee": 1.21
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 75.3,
-            "cote_estimee": 1.33
-          },
-          {
-            "marche": "Palmeiras ou nul",
-            "proba": 74.4,
-            "cote_estimee": 1.34
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 62.3,
-            "cote_estimee": 1.61
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 61.3,
-            "cote_estimee": 1.63
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 60.1,
-            "cote_estimee": 1.66
-          },
-          {
-            "marche": "1re équipe à marquer : Palmeiras",
-            "proba": 56.5,
-            "cote_estimee": 1.77
-          },
-          {
-            "marche": "Victoire Palmeiras",
-            "proba": 50.0,
-            "cote_estimee": 2.0
-          },
-          {
-            "marche": "Bahia ou nul",
-            "proba": 50.0,
-            "cote_estimee": 2.0
-          },
-          {
-            "marche": "Palmeiras ou nul et moins de 3,5 buts",
-            "proba": 45.7,
-            "cote_estimee": 2.19
-          },
-          {
-            "marche": "Palmeiras gagne et plus de 1,5 but",
-            "proba": 42.6,
-            "cote_estimee": 2.35
-          },
-          {
-            "marche": "1re équipe à marquer : Bahia",
-            "proba": 39.0,
-            "cote_estimee": 2.56
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 37.7,
-            "cote_estimee": 2.65
-          },
-          {
-            "marche": "Victoire Bahia",
-            "proba": 25.6,
-            "cote_estimee": 3.91
-          },
-          {
-            "marche": "Match nul",
-            "proba": 24.5,
-            "cote_estimee": 4.09
-          },
-          {
-            "marche": "Score exact : 1-1",
-            "proba": 11.3,
-            "cote_estimee": 8.89
-          }
-        ],
         "Fluminense - Coritiba": [
           {
             "marche": "Plus de 1,5 buts",
@@ -1521,6 +1417,88 @@
             "marche": "Score exact : 3-1",
             "proba": 7.8,
             "cote_estimee": 12.85
+          }
+        ],
+        "Palmeiras - Bahia": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 82.5,
+            "cote_estimee": 1.21
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 75.3,
+            "cote_estimee": 1.33
+          },
+          {
+            "marche": "Palmeiras ou nul",
+            "proba": 74.4,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 62.3,
+            "cote_estimee": 1.61
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 61.3,
+            "cote_estimee": 1.63
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 60.1,
+            "cote_estimee": 1.66
+          },
+          {
+            "marche": "1re équipe à marquer : Palmeiras",
+            "proba": 56.5,
+            "cote_estimee": 1.77
+          },
+          {
+            "marche": "Victoire Palmeiras",
+            "proba": 50.0,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "Bahia ou nul",
+            "proba": 50.0,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "Palmeiras ou nul et moins de 3,5 buts",
+            "proba": 45.7,
+            "cote_estimee": 2.19
+          },
+          {
+            "marche": "Palmeiras gagne et plus de 1,5 but",
+            "proba": 42.6,
+            "cote_estimee": 2.35
+          },
+          {
+            "marche": "1re équipe à marquer : Bahia",
+            "proba": 39.0,
+            "cote_estimee": 2.56
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 37.7,
+            "cote_estimee": 2.65
+          },
+          {
+            "marche": "Victoire Bahia",
+            "proba": 25.6,
+            "cote_estimee": 3.91
+          },
+          {
+            "marche": "Match nul",
+            "proba": 24.5,
+            "cote_estimee": 4.09
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 11.3,
+            "cote_estimee": 8.89
           }
         ],
         "Moreirense - Gil Vicente": [
@@ -1690,22 +1668,22 @@
         "RC Lens - Olympique Lyon": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 81.0,
+            "proba": 81.1,
             "cote_estimee": 1.23
           },
           {
             "marche": "Olympique Lyon ou nul",
-            "proba": 78.8,
+            "proba": 78.7,
             "cote_estimee": 1.27
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 74.1,
+            "proba": 74.2,
             "cote_estimee": 1.35
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 64.6,
+            "proba": 64.5,
             "cote_estimee": 1.55
           },
           {
@@ -1715,33 +1693,33 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 57.8,
+            "proba": 57.9,
             "cote_estimee": 1.73
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 57.8,
+            "proba": 57.9,
             "cote_estimee": 1.73
           },
           {
             "marche": "Victoire Olympique Lyon",
-            "proba": 54.8,
-            "cote_estimee": 1.82
+            "proba": 54.7,
+            "cote_estimee": 1.83
           },
           {
             "marche": "RC Lens ou nul",
-            "proba": 45.2,
+            "proba": 45.3,
             "cote_estimee": 2.21
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 35.4,
+            "proba": 35.5,
             "cote_estimee": 2.82
           },
           {
             "marche": "1re équipe à marquer : RC Lens",
-            "proba": 35.1,
-            "cote_estimee": 2.85
+            "proba": 35.2,
+            "cote_estimee": 2.84
           },
           {
             "marche": "RC Lens ou nul et moins de 3,5 buts",
@@ -1755,100 +1733,18 @@
           },
           {
             "marche": "Victoire RC Lens",
-            "proba": 21.2,
-            "cote_estimee": 4.72
+            "proba": 21.3,
+            "cote_estimee": 4.7
           },
           {
             "marche": "RC Lens gagne et plus de 1,5 but",
-            "proba": 16.5,
-            "cote_estimee": 6.05
+            "proba": 16.6,
+            "cote_estimee": 6.03
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 11.3,
             "cote_estimee": 8.89
-          }
-        ],
-        "West Ham - QPR": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 81.8,
-            "cote_estimee": 1.22
-          },
-          {
-            "marche": "West Ham ou nul",
-            "proba": 80.4,
-            "cote_estimee": 1.24
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 74.8,
-            "cote_estimee": 1.34
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 63.4,
-            "cote_estimee": 1.58
-          },
-          {
-            "marche": "1re équipe à marquer : West Ham",
-            "proba": 61.5,
-            "cote_estimee": 1.63
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 59.0,
-            "cote_estimee": 1.7
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 57.8,
-            "cote_estimee": 1.73
-          },
-          {
-            "marche": "Victoire West Ham",
-            "proba": 57.2,
-            "cote_estimee": 1.75
-          },
-          {
-            "marche": "West Ham ou nul et moins de 3,5 buts",
-            "proba": 49.9,
-            "cote_estimee": 2.0
-          },
-          {
-            "marche": "West Ham gagne et plus de 1,5 but",
-            "proba": 48.7,
-            "cote_estimee": 2.05
-          },
-          {
-            "marche": "QPR ou nul",
-            "proba": 42.8,
-            "cote_estimee": 2.34
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 36.6,
-            "cote_estimee": 2.73
-          },
-          {
-            "marche": "1re équipe à marquer : QPR",
-            "proba": 33.8,
-            "cote_estimee": 2.96
-          },
-          {
-            "marche": "Match nul",
-            "proba": 23.2,
-            "cote_estimee": 4.31
-          },
-          {
-            "marche": "Victoire QPR",
-            "proba": 19.6,
-            "cote_estimee": 5.1
-          },
-          {
-            "marche": "Score exact : 1-1",
-            "proba": 10.9,
-            "cote_estimee": 9.21
           }
         ],
         "Málaga - Espanyol": [
@@ -1931,6 +1827,88 @@
             "marche": "Score exact : 1-1",
             "proba": 13.8,
             "cote_estimee": 7.26
+          }
+        ],
+        "West Ham - QPR": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 81.7,
+            "cote_estimee": 1.22
+          },
+          {
+            "marche": "West Ham ou nul",
+            "proba": 80.4,
+            "cote_estimee": 1.24
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 74.7,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 63.4,
+            "cote_estimee": 1.58
+          },
+          {
+            "marche": "1re équipe à marquer : West Ham",
+            "proba": 61.5,
+            "cote_estimee": 1.63
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 59.0,
+            "cote_estimee": 1.7
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 57.8,
+            "cote_estimee": 1.73
+          },
+          {
+            "marche": "Victoire West Ham",
+            "proba": 57.2,
+            "cote_estimee": 1.75
+          },
+          {
+            "marche": "West Ham ou nul et moins de 3,5 buts",
+            "proba": 49.9,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "West Ham gagne et plus de 1,5 but",
+            "proba": 48.7,
+            "cote_estimee": 2.05
+          },
+          {
+            "marche": "QPR ou nul",
+            "proba": 42.8,
+            "cote_estimee": 2.34
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 36.6,
+            "cote_estimee": 2.74
+          },
+          {
+            "marche": "1re équipe à marquer : QPR",
+            "proba": 33.8,
+            "cote_estimee": 2.96
+          },
+          {
+            "marche": "Match nul",
+            "proba": 23.2,
+            "cote_estimee": 4.31
+          },
+          {
+            "marche": "Victoire QPR",
+            "proba": 19.6,
+            "cote_estimee": 5.1
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 10.9,
+            "cote_estimee": 9.21
           }
         ],
         "Braga - Sporting CP": [
@@ -2017,39 +1995,6 @@
         ]
       },
       "infos": {
-        "Palmeiras - Bahia": {
-          "heure": "2026-10-09T00:30:00Z",
-          "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Palmeiras",
-          "ext": "Bahia",
-          "logo_dom": "https://crests.football-data.org/1769.png",
-          "logo_ext": "https://crests.football-data.org/1777.png",
-          "forme_dom": "NVVNN",
-          "forme_ext": "VVVVD",
-          "buts_attendus": [
-            1.84,
-            1.27
-          ],
-          "scores": [
-            [
-              "1-1",
-              11.3
-            ],
-            [
-              "2-1",
-              9.6
-            ],
-            [
-              "2-0",
-              7.6
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Palmeiras 2V 3N 0D, Bahia 4V 0N 1D.",
-            "Palmeiras marque plus que la moyenne; Bahia marque plus que la moyenne.",
-            "Palmeiras est favori (1,8 but attendu contre 1,3), aidé par le terrain."
-          ]
-        },
         "Fluminense - Coritiba": {
           "heure": "2026-10-09T00:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
@@ -2081,6 +2026,39 @@
             "Forme sur les 5 derniers matchs : Fluminense 3V 0N 2D, Coritiba 2V 1N 2D.",
             "Fluminense marque plus que la moyenne; Fluminense encaisse beaucoup; Coritiba encaisse beaucoup.",
             "Fluminense est favori (3,0 buts attendus contre 1,4), aidé par le terrain."
+          ]
+        },
+        "Palmeiras - Bahia": {
+          "heure": "2026-10-09T00:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Palmeiras",
+          "ext": "Bahia",
+          "logo_dom": "https://crests.football-data.org/1769.png",
+          "logo_ext": "https://crests.football-data.org/1777.png",
+          "forme_dom": "NVVNN",
+          "forme_ext": "VVVVD",
+          "buts_attendus": [
+            1.84,
+            1.27
+          ],
+          "scores": [
+            [
+              "1-1",
+              11.3
+            ],
+            [
+              "2-1",
+              9.6
+            ],
+            [
+              "2-0",
+              7.6
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Palmeiras 2V 3N 0D, Bahia 4V 0N 1D.",
+            "Palmeiras marque plus que la moyenne; Bahia marque plus que la moyenne.",
+            "Palmeiras est favori (1,8 but attendu contre 1,3), aidé par le terrain."
           ]
         },
         "Moreirense - Gil Vicente": {
@@ -2160,7 +2138,7 @@
           "forme_ext": "VNVNV",
           "buts_attendus": [
             1.11,
-            1.9
+            1.89
           ],
           "scores": [
             [
@@ -2180,39 +2158,6 @@
             "Forme sur les 5 derniers matchs : RC Lens 1V 1N 3D, Olympique Lyon 3V 2N 0D.",
             "RC Lens marque plus que la moyenne; RC Lens encaisse beaucoup; Olympique Lyon marque plus que la moyenne.",
             "Olympique Lyon est favori (1,9 but attendu contre 1,1) malgré le déplacement."
-          ]
-        },
-        "West Ham - QPR": {
-          "heure": "2026-10-09T19:00:00Z",
-          "ligue": "Championship",
-          "dom": "West Ham",
-          "ext": "QPR",
-          "logo_dom": "https://crests.football-data.org/563.png",
-          "logo_ext": "https://crests.football-data.org/69.png",
-          "forme_dom": "VVVVN",
-          "forme_ext": "VDNNN",
-          "buts_attendus": [
-            1.97,
-            1.09
-          ],
-          "scores": [
-            [
-              "1-1",
-              10.9
-            ],
-            [
-              "2-1",
-              9.9
-            ],
-            [
-              "2-0",
-              9.1
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : West Ham 4V 1N 0D, QPR 1V 3N 1D.",
-            "West Ham marque plus que la moyenne; QPR encaisse peu.",
-            "West Ham est favori (2,0 buts attendus contre 1,1), aidé par le terrain."
           ]
         },
         "Málaga - Espanyol": {
@@ -2246,6 +2191,39 @@
             "Forme sur les 5 derniers matchs : Málaga 0V 2N 3D, Espanyol 1V 1N 3D.",
             "Málaga marque peu.",
             "Espanyol est favori (1,4 but attendu contre 0,9) malgré le déplacement."
+          ]
+        },
+        "West Ham - QPR": {
+          "heure": "2026-10-09T19:00:00Z",
+          "ligue": "Championship",
+          "dom": "West Ham",
+          "ext": "QPR",
+          "logo_dom": "https://crests.football-data.org/563.png",
+          "logo_ext": "https://crests.football-data.org/69.png",
+          "forme_dom": "VVVVN",
+          "forme_ext": "VDNNN",
+          "buts_attendus": [
+            1.97,
+            1.08
+          ],
+          "scores": [
+            [
+              "1-1",
+              10.9
+            ],
+            [
+              "2-1",
+              9.9
+            ],
+            [
+              "2-0",
+              9.1
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : West Ham 4V 1N 0D, QPR 1V 3N 1D.",
+            "West Ham marque plus que la moyenne; QPR encaisse peu.",
+            "West Ham est favori (2,0 buts attendus contre 1,1), aidé par le terrain."
           ]
         },
         "Braga - Sporting CP": {
@@ -2304,25 +2282,25 @@
         },
         {
           "taille": 4,
-          "proba": 50.5,
+          "proba": 50.4,
           "cote_estimee": 1.98,
           "selections": [
             "PSV - Heerenveen : Plus de 1,5 buts (86.8 %)",
             "Fluminense - Coritiba : But en 1re mi-temps (86.2 %)",
             "Palmeiras - Bahia : Plus de 1,5 buts (82.5 %)",
-            "West Ham - QPR : Plus de 1,5 buts (81.8 %)"
+            "West Ham - QPR : Plus de 1,5 buts (81.7 %)"
           ]
         },
         {
           "taille": 5,
           "proba": 40.9,
-          "cote_estimee": 2.45,
+          "cote_estimee": 2.44,
           "selections": [
             "PSV - Heerenveen : Plus de 1,5 buts (86.8 %)",
             "Fluminense - Coritiba : But en 1re mi-temps (86.2 %)",
             "Palmeiras - Bahia : Plus de 1,5 buts (82.5 %)",
-            "West Ham - QPR : Plus de 1,5 buts (81.8 %)",
-            "RC Lens - Olympique Lyon : Plus de 1,5 buts (81.0 %)"
+            "West Ham - QPR : Plus de 1,5 buts (81.7 %)",
+            "RC Lens - Olympique Lyon : Plus de 1,5 buts (81.1 %)"
           ]
         }
       ]
@@ -2412,8 +2390,6 @@
       }
     ],
     "Spain - Czechia": [],
-    "Switzerland - Slovenia": [],
-    "FYR Macedonia - Scotland": [],
     "Ivory Coast - Cameroon": [],
     "Sint Maarten - St. Vincent / Grenadines": []
   },
@@ -2458,26 +2434,6 @@
       "ext": "Czechia",
       "logo_dom": "https://media.api-sports.io/football/teams/9.png",
       "logo_ext": "https://media.api-sports.io/football/teams/770.png",
-      "sans_analyse": true,
-      "raison": "Offre gratuite : historique des équipes indisponible"
-    },
-    "Switzerland - Slovenia": {
-      "heure": "2026-10-03T18:45:00+00:00",
-      "ligue": "UEFA Nations League",
-      "dom": "Switzerland",
-      "ext": "Slovenia",
-      "logo_dom": "https://media.api-sports.io/football/teams/15.png",
-      "logo_ext": "https://media.api-sports.io/football/teams/1091.png",
-      "sans_analyse": true,
-      "raison": "Offre gratuite : historique des équipes indisponible"
-    },
-    "FYR Macedonia - Scotland": {
-      "heure": "2026-10-03T18:45:00+00:00",
-      "ligue": "UEFA Nations League",
-      "dom": "FYR Macedonia",
-      "ext": "Scotland",
-      "logo_dom": "https://media.api-sports.io/football/teams/1105.png",
-      "logo_ext": "https://media.api-sports.io/football/teams/1108.png",
       "sans_analyse": true,
       "raison": "Offre gratuite : historique des équipes indisponible"
     },
