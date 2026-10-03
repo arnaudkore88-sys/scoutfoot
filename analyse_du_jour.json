@@ -84,7 +84,12 @@
             "proba": 13.3,
             "cote_estimee": 7.5
           }
-        ]
+        ],
+        "Spain - Czechia": [],
+        "Switzerland - Slovenia": [],
+        "FYR Macedonia - Scotland": [],
+        "Ivory Coast - Cameroon": [],
+        "Sint Maarten - St. Vincent / Grenadines": []
       },
       "infos": {
         "Mineiro - Bragantino": {
@@ -119,13 +124,230 @@
             "Mineiro encaisse peu; Bragantino marque peu.",
             "Mineiro est favori (1,7 but attendu contre 0,8), aidé par le terrain."
           ]
+        },
+        "Spain - Czechia": {
+          "heure": "2026-10-03T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Spain",
+          "ext": "Czechia",
+          "logo_dom": "https://media.api-sports.io/football/teams/9.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/770.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Switzerland - Slovenia": {
+          "heure": "2026-10-03T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Switzerland",
+          "ext": "Slovenia",
+          "logo_dom": "https://media.api-sports.io/football/teams/15.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1091.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "FYR Macedonia - Scotland": {
+          "heure": "2026-10-03T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "FYR Macedonia",
+          "ext": "Scotland",
+          "logo_dom": "https://media.api-sports.io/football/teams/1105.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1108.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Ivory Coast - Cameroon": {
+          "heure": "2026-10-03T19:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "Ivory Coast",
+          "ext": "Cameroon",
+          "logo_dom": "https://media.api-sports.io/football/teams/1501.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1530.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Sint Maarten - St. Vincent / Grenadines": {
+          "heure": "2026-10-03T21:00:00+00:00",
+          "ligue": "CONCACAF Nations League",
+          "dom": "Sint Maarten",
+          "ext": "St. Vincent / Grenadines",
+          "logo_dom": "https://media.api-sports.io/football/teams/10985.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/5541.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
         }
       },
       "combines": []
     },
     "2026-10-04": {
-      "matchs": {},
-      "infos": {},
+      "matchs": {
+        "Argentina - Burkina Faso": [],
+        "USA - Mexico": [],
+        "Belize - French Guyana": [],
+        "Kyrgyzstan - Lebanon": [],
+        "Azerbaijan - Lithuania": [],
+        "Comoros - Senegal": [],
+        "Kosovo - Austria": [],
+        "Malta - Andorra": [],
+        "Egypt - South Africa": [],
+        "Greece - Germany": [],
+        "Netherlands - Serbia": [],
+        "Portugal - Norway": [],
+        "Wales - Denmark": [],
+        "Rep. Of Ireland - Israel": [],
+        "Guyana - Dominica": []
+      },
+      "infos": {
+        "Argentina - Burkina Faso": {
+          "heure": "2026-10-04T00:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "Argentina",
+          "ext": "Burkina Faso",
+          "logo_dom": "https://media.api-sports.io/football/teams/26.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1502.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "USA - Mexico": {
+          "heure": "2026-10-04T02:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "USA",
+          "ext": "Mexico",
+          "logo_dom": "https://media.api-sports.io/football/teams/2384.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/16.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Belize - French Guyana": {
+          "heure": "2026-10-04T02:00:00+00:00",
+          "ligue": "CONCACAF Nations League",
+          "dom": "Belize",
+          "ext": "French Guyana",
+          "logo_dom": "https://media.api-sports.io/football/teams/5528.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/8118.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Kyrgyzstan - Lebanon": {
+          "heure": "2026-10-04T12:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "Kyrgyzstan",
+          "ext": "Lebanon",
+          "logo_dom": "https://media.api-sports.io/football/teams/1554.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1551.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Azerbaijan - Lithuania": {
+          "heure": "2026-10-04T13:00:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Azerbaijan",
+          "ext": "Lithuania",
+          "logo_dom": "https://media.api-sports.io/football/teams/1096.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1097.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Comoros - Senegal": {
+          "heure": "2026-10-04T13:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "Comoros",
+          "ext": "Senegal",
+          "logo_dom": "https://media.api-sports.io/football/teams/1524.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/13.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Kosovo - Austria": {
+          "heure": "2026-10-04T16:00:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Kosovo",
+          "ext": "Austria",
+          "logo_dom": "https://media.api-sports.io/football/teams/1111.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/775.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Malta - Andorra": {
+          "heure": "2026-10-04T16:00:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Malta",
+          "ext": "Andorra",
+          "logo_dom": "https://media.api-sports.io/football/teams/1112.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1110.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Egypt - South Africa": {
+          "heure": "2026-10-04T18:00:00+00:00",
+          "ligue": "Friendlies",
+          "dom": "Egypt",
+          "ext": "South Africa",
+          "logo_dom": "https://media.api-sports.io/football/teams/32.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1531.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Greece - Germany": {
+          "heure": "2026-10-04T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Greece",
+          "ext": "Germany",
+          "logo_dom": "https://media.api-sports.io/football/teams/1117.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/25.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Netherlands - Serbia": {
+          "heure": "2026-10-04T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Netherlands",
+          "ext": "Serbia",
+          "logo_dom": "https://media.api-sports.io/football/teams/1118.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/14.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Portugal - Norway": {
+          "heure": "2026-10-04T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Portugal",
+          "ext": "Norway",
+          "logo_dom": "https://media.api-sports.io/football/teams/27.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1090.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Wales - Denmark": {
+          "heure": "2026-10-04T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Wales",
+          "ext": "Denmark",
+          "logo_dom": "https://media.api-sports.io/football/teams/767.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/21.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Rep. Of Ireland - Israel": {
+          "heure": "2026-10-04T18:45:00+00:00",
+          "ligue": "UEFA Nations League",
+          "dom": "Rep. Of Ireland",
+          "ext": "Israel",
+          "logo_dom": "https://media.api-sports.io/football/teams/776.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/1116.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        },
+        "Guyana - Dominica": {
+          "heure": "2026-10-04T19:00:00+00:00",
+          "ligue": "CONCACAF Nations League",
+          "dom": "Guyana",
+          "ext": "Dominica",
+          "logo_dom": "https://media.api-sports.io/football/teams/5162.png",
+          "logo_ext": "https://media.api-sports.io/football/teams/5531.png",
+          "sans_analyse": true,
+          "raison": "Offre gratuite : historique des équipes indisponible"
+        }
+      },
       "combines": []
     },
     "2026-10-05": {
@@ -1137,88 +1359,6 @@
     },
     "2026-10-09": {
       "matchs": {
-        "Fluminense - Coritiba": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 93.8,
-            "cote_estimee": 1.07
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 86.2,
-            "cote_estimee": 1.16
-          },
-          {
-            "marche": "Fluminense ou nul",
-            "proba": 85.8,
-            "cote_estimee": 1.16
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 81.5,
-            "cote_estimee": 1.23
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 71.6,
-            "cote_estimee": 1.4
-          },
-          {
-            "marche": "Victoire Fluminense",
-            "proba": 70.1,
-            "cote_estimee": 1.43
-          },
-          {
-            "marche": "1re équipe à marquer : Fluminense",
-            "proba": 67.8,
-            "cote_estimee": 1.47
-          },
-          {
-            "marche": "Fluminense gagne et plus de 1,5 but",
-            "proba": 66.8,
-            "cote_estimee": 1.5
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 64.1,
-            "cote_estimee": 1.56
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 35.9,
-            "cote_estimee": 2.78
-          },
-          {
-            "marche": "1re équipe à marquer : Coritiba",
-            "proba": 31.0,
-            "cote_estimee": 3.23
-          },
-          {
-            "marche": "Coritiba ou nul",
-            "proba": 29.9,
-            "cote_estimee": 3.35
-          },
-          {
-            "marche": "Fluminense ou nul et moins de 3,5 buts",
-            "proba": 29.4,
-            "cote_estimee": 3.4
-          },
-          {
-            "marche": "Match nul",
-            "proba": 15.7,
-            "cote_estimee": 6.36
-          },
-          {
-            "marche": "Victoire Coritiba",
-            "proba": 14.2,
-            "cote_estimee": 7.06
-          },
-          {
-            "marche": "Score exact : 3-1",
-            "proba": 7.8,
-            "cote_estimee": 12.85
-          }
-        ],
         "Palmeiras - Bahia": [
           {
             "marche": "Plus de 1,5 buts",
@@ -1299,6 +1439,88 @@
             "marche": "Score exact : 1-1",
             "proba": 11.3,
             "cote_estimee": 8.89
+          }
+        ],
+        "Fluminense - Coritiba": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 93.8,
+            "cote_estimee": 1.07
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 86.2,
+            "cote_estimee": 1.16
+          },
+          {
+            "marche": "Fluminense ou nul",
+            "proba": 85.8,
+            "cote_estimee": 1.16
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 81.5,
+            "cote_estimee": 1.23
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 71.6,
+            "cote_estimee": 1.4
+          },
+          {
+            "marche": "Victoire Fluminense",
+            "proba": 70.1,
+            "cote_estimee": 1.43
+          },
+          {
+            "marche": "1re équipe à marquer : Fluminense",
+            "proba": 67.8,
+            "cote_estimee": 1.47
+          },
+          {
+            "marche": "Fluminense gagne et plus de 1,5 but",
+            "proba": 66.8,
+            "cote_estimee": 1.5
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 64.1,
+            "cote_estimee": 1.56
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 35.9,
+            "cote_estimee": 2.78
+          },
+          {
+            "marche": "1re équipe à marquer : Coritiba",
+            "proba": 31.0,
+            "cote_estimee": 3.23
+          },
+          {
+            "marche": "Coritiba ou nul",
+            "proba": 29.9,
+            "cote_estimee": 3.35
+          },
+          {
+            "marche": "Fluminense ou nul et moins de 3,5 buts",
+            "proba": 29.4,
+            "cote_estimee": 3.4
+          },
+          {
+            "marche": "Match nul",
+            "proba": 15.7,
+            "cote_estimee": 6.36
+          },
+          {
+            "marche": "Victoire Coritiba",
+            "proba": 14.2,
+            "cote_estimee": 7.06
+          },
+          {
+            "marche": "Score exact : 3-1",
+            "proba": 7.8,
+            "cote_estimee": 12.85
           }
         ],
         "Moreirense - Gil Vicente": [
@@ -1795,39 +2017,6 @@
         ]
       },
       "infos": {
-        "Fluminense - Coritiba": {
-          "heure": "2026-10-09T00:30:00Z",
-          "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Fluminense",
-          "ext": "Coritiba",
-          "logo_dom": "https://crests.football-data.org/1765.png",
-          "logo_ext": "https://crests.football-data.org/4241.png",
-          "forme_dom": "VVDDV",
-          "forme_ext": "VVDND",
-          "buts_attendus": [
-            3.02,
-            1.38
-          ],
-          "scores": [
-            [
-              "3-1",
-              7.8
-            ],
-            [
-              "2-1",
-              7.7
-            ],
-            [
-              "4-1",
-              5.9
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Fluminense 3V 0N 2D, Coritiba 2V 1N 2D.",
-            "Fluminense marque plus que la moyenne; Fluminense encaisse beaucoup; Coritiba encaisse beaucoup.",
-            "Fluminense est favori (3,0 buts attendus contre 1,4), aidé par le terrain."
-          ]
-        },
         "Palmeiras - Bahia": {
           "heure": "2026-10-09T00:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
@@ -1859,6 +2048,39 @@
             "Forme sur les 5 derniers matchs : Palmeiras 2V 3N 0D, Bahia 4V 0N 1D.",
             "Palmeiras marque plus que la moyenne; Bahia marque plus que la moyenne.",
             "Palmeiras est favori (1,8 but attendu contre 1,3), aidé par le terrain."
+          ]
+        },
+        "Fluminense - Coritiba": {
+          "heure": "2026-10-09T00:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Fluminense",
+          "ext": "Coritiba",
+          "logo_dom": "https://crests.football-data.org/1765.png",
+          "logo_ext": "https://crests.football-data.org/4241.png",
+          "forme_dom": "VVDDV",
+          "forme_ext": "VVDND",
+          "buts_attendus": [
+            3.02,
+            1.38
+          ],
+          "scores": [
+            [
+              "3-1",
+              7.8
+            ],
+            [
+              "2-1",
+              7.7
+            ],
+            [
+              "4-1",
+              5.9
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Fluminense 3V 0N 2D, Coritiba 2V 1N 2D.",
+            "Fluminense marque plus que la moyenne; Fluminense encaisse beaucoup; Coritiba encaisse beaucoup.",
+            "Fluminense est favori (3,0 buts attendus contre 1,4), aidé par le terrain."
           ]
         },
         "Moreirense - Gil Vicente": {
@@ -2188,7 +2410,12 @@
         "proba": 13.3,
         "cote_estimee": 7.5
       }
-    ]
+    ],
+    "Spain - Czechia": [],
+    "Switzerland - Slovenia": [],
+    "FYR Macedonia - Scotland": [],
+    "Ivory Coast - Cameroon": [],
+    "Sint Maarten - St. Vincent / Grenadines": []
   },
   "infos": {
     "Mineiro - Bragantino": {
@@ -2223,6 +2450,56 @@
         "Mineiro encaisse peu; Bragantino marque peu.",
         "Mineiro est favori (1,7 but attendu contre 0,8), aidé par le terrain."
       ]
+    },
+    "Spain - Czechia": {
+      "heure": "2026-10-03T18:45:00+00:00",
+      "ligue": "UEFA Nations League",
+      "dom": "Spain",
+      "ext": "Czechia",
+      "logo_dom": "https://media.api-sports.io/football/teams/9.png",
+      "logo_ext": "https://media.api-sports.io/football/teams/770.png",
+      "sans_analyse": true,
+      "raison": "Offre gratuite : historique des équipes indisponible"
+    },
+    "Switzerland - Slovenia": {
+      "heure": "2026-10-03T18:45:00+00:00",
+      "ligue": "UEFA Nations League",
+      "dom": "Switzerland",
+      "ext": "Slovenia",
+      "logo_dom": "https://media.api-sports.io/football/teams/15.png",
+      "logo_ext": "https://media.api-sports.io/football/teams/1091.png",
+      "sans_analyse": true,
+      "raison": "Offre gratuite : historique des équipes indisponible"
+    },
+    "FYR Macedonia - Scotland": {
+      "heure": "2026-10-03T18:45:00+00:00",
+      "ligue": "UEFA Nations League",
+      "dom": "FYR Macedonia",
+      "ext": "Scotland",
+      "logo_dom": "https://media.api-sports.io/football/teams/1105.png",
+      "logo_ext": "https://media.api-sports.io/football/teams/1108.png",
+      "sans_analyse": true,
+      "raison": "Offre gratuite : historique des équipes indisponible"
+    },
+    "Ivory Coast - Cameroon": {
+      "heure": "2026-10-03T19:00:00+00:00",
+      "ligue": "Friendlies",
+      "dom": "Ivory Coast",
+      "ext": "Cameroon",
+      "logo_dom": "https://media.api-sports.io/football/teams/1501.png",
+      "logo_ext": "https://media.api-sports.io/football/teams/1530.png",
+      "sans_analyse": true,
+      "raison": "Offre gratuite : historique des équipes indisponible"
+    },
+    "Sint Maarten - St. Vincent / Grenadines": {
+      "heure": "2026-10-03T21:00:00+00:00",
+      "ligue": "CONCACAF Nations League",
+      "dom": "Sint Maarten",
+      "ext": "St. Vincent / Grenadines",
+      "logo_dom": "https://media.api-sports.io/football/teams/10985.png",
+      "logo_ext": "https://media.api-sports.io/football/teams/5541.png",
+      "sans_analyse": true,
+      "raison": "Offre gratuite : historique des équipes indisponible"
     }
   },
   "combines": []
