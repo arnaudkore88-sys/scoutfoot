@@ -29,12 +29,27 @@ jobs:
         continue-on-error: true
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: python mise_a_jour_resultats.py
 
       - name: Analyse du jour
         env:
           FOOTBALL_DATA_KEY: ${{ secrets.FOOTBALL_DATA_KEY }}
         run: python analyse_du_jour_fd.py --date "$(date -u +%F)"
+
+      - name: Analyse des sélections nationales (API-Football)
+        continue-on-error: true
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          if [ -n "$API_FOOTBALL_KEY" ]; then
+            python analyse_apifootball.py --date "$(date -u +%F)"
+          else
+            echo "Secret API_FOOTBALL_KEY absent : étape ignorée."
+          fi
+
+      - name: Fusionner clubs et sélections
+        run: python fusionner.py
 
       - name: Rapport de fiabilité
         run: |
@@ -58,6 +73,7 @@ jobs:
         run: |
           mkdir public
           cp index.html manifest.webmanifest sw.js icon-192.png icon-512.png analyse_du_jour.json public/
+          [ -f pubs.json ] && cp pubs.json public/ || true
 
       - uses: actions/upload-pages-artifact@v3
         with:
