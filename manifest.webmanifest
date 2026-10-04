@@ -3,8 +3,8 @@
   "short_name": "ScoutFoot",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#140b33",
-  "theme_color": "#7b2ff7",
+  "background_color": "#0C0720",
+  "theme_color": "#4C1D95",
   "lang": "fr",
   "icons": [
     {
