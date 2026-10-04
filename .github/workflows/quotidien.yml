@@ -2,7 +2,7 @@ name: Analyse quotidienne
 
 on:
   schedule:
-    - cron: "0 7 * * *"      # tous les jours à 07:00 UTC (= heure de la Côte d'Ivoire)
+    - cron: "0 0 * * *"      # chaque jour à minuit : 00:00 UTC = 00:00 heure de la Côte d'Ivoire
   workflow_dispatch:          # permet de lancer à la main depuis l'onglet Actions
 
 permissions:
