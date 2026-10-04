@@ -434,88 +434,6 @@
             "cote_estimee": 7.73
           }
         ],
-        "Internacional - Corinthians": [
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 84.5,
-            "cote_estimee": 1.18
-          },
-          {
-            "marche": "Internacional ou nul",
-            "proba": 78.1,
-            "cote_estimee": 1.28
-          },
-          {
-            "marche": "Internacional ou nul et moins de 3,5 buts",
-            "proba": 65.6,
-            "cote_estimee": 1.53
-          },
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 62.2,
-            "cote_estimee": 1.61
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 60.5,
-            "cote_estimee": 1.65
-          },
-          {
-            "marche": "1re équipe à marquer : Internacional",
-            "proba": 54.0,
-            "cote_estimee": 1.85
-          },
-          {
-            "marche": "Corinthians ou nul",
-            "proba": 53.0,
-            "cote_estimee": 1.89
-          },
-          {
-            "marche": "Victoire Internacional",
-            "proba": 47.0,
-            "cote_estimee": 2.13
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 40.3,
-            "cote_estimee": 2.48
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 34.1,
-            "cote_estimee": 2.93
-          },
-          {
-            "marche": "1re équipe à marquer : Corinthians",
-            "proba": 33.3,
-            "cote_estimee": 3.0
-          },
-          {
-            "marche": "Internacional gagne et plus de 1,5 but",
-            "proba": 31.8,
-            "cote_estimee": 3.14
-          },
-          {
-            "marche": "Match nul",
-            "proba": 31.1,
-            "cote_estimee": 3.22
-          },
-          {
-            "marche": "Victoire Corinthians",
-            "proba": 21.9,
-            "cote_estimee": 4.56
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 15.5,
-            "cote_estimee": 6.46
-          },
-          {
-            "marche": "Score exact : 1-0",
-            "proba": 15.2,
-            "cote_estimee": 6.59
-          }
-        ],
         "Clube do Remo - Grêmio": [
           {
             "marche": "Plus de 1,5 buts",
@@ -596,6 +514,88 @@
             "marche": "Score exact : 1-1",
             "proba": 13.4,
             "cote_estimee": 7.46
+          }
+        ],
+        "Internacional - Corinthians": [
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 84.5,
+            "cote_estimee": 1.18
+          },
+          {
+            "marche": "Internacional ou nul",
+            "proba": 78.1,
+            "cote_estimee": 1.28
+          },
+          {
+            "marche": "Internacional ou nul et moins de 3,5 buts",
+            "proba": 65.6,
+            "cote_estimee": 1.53
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 62.2,
+            "cote_estimee": 1.61
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 60.5,
+            "cote_estimee": 1.65
+          },
+          {
+            "marche": "1re équipe à marquer : Internacional",
+            "proba": 54.0,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Corinthians ou nul",
+            "proba": 53.0,
+            "cote_estimee": 1.89
+          },
+          {
+            "marche": "Victoire Internacional",
+            "proba": 47.0,
+            "cote_estimee": 2.13
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 40.3,
+            "cote_estimee": 2.48
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 34.1,
+            "cote_estimee": 2.93
+          },
+          {
+            "marche": "1re équipe à marquer : Corinthians",
+            "proba": 33.3,
+            "cote_estimee": 3.0
+          },
+          {
+            "marche": "Internacional gagne et plus de 1,5 but",
+            "proba": 31.8,
+            "cote_estimee": 3.14
+          },
+          {
+            "marche": "Match nul",
+            "proba": 31.1,
+            "cote_estimee": 3.22
+          },
+          {
+            "marche": "Victoire Corinthians",
+            "proba": 21.9,
+            "cote_estimee": 4.56
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 15.5,
+            "cote_estimee": 6.46
+          },
+          {
+            "marche": "Score exact : 1-0",
+            "proba": 15.2,
+            "cote_estimee": 6.59
           }
         ],
         "Vitória - Chapecoense": [
@@ -797,39 +797,6 @@
             "Match équilibré (1,5 - 1,3 buts attendus)."
           ]
         },
-        "Internacional - Corinthians": {
-          "heure": "2026-10-07T22:30:00Z",
-          "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Internacional",
-          "ext": "Corinthians",
-          "logo_dom": "https://crests.football-data.org/6684.png",
-          "logo_ext": "https://crests.football-data.org/1779.png",
-          "forme_dom": "NDDVD",
-          "forme_ext": "DNDDD",
-          "buts_attendus": [
-            1.28,
-            0.79
-          ],
-          "scores": [
-            [
-              "1-0",
-              15.2
-            ],
-            [
-              "1-1",
-              13.8
-            ],
-            [
-              "0-0",
-              13.7
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
-            "Internacional marque peu; Corinthians marque peu.",
-            "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
-          ]
-        },
         "Clube do Remo - Grêmio": {
           "heure": "2026-10-07T22:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
@@ -861,6 +828,39 @@
             "Forme sur les 5 derniers matchs : Clube do Remo 0V 0N 5D, Grêmio 1V 1N 3D.",
             "Clube do Remo encaisse beaucoup; Grêmio marque peu.",
             "Match équilibré (1,4 - 1,2 buts attendus)."
+          ]
+        },
+        "Internacional - Corinthians": {
+          "heure": "2026-10-07T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Internacional",
+          "ext": "Corinthians",
+          "logo_dom": "https://crests.football-data.org/6684.png",
+          "logo_ext": "https://crests.football-data.org/1779.png",
+          "forme_dom": "NDDVD",
+          "forme_ext": "DNDDD",
+          "buts_attendus": [
+            1.28,
+            0.79
+          ],
+          "scores": [
+            [
+              "1-0",
+              15.2
+            ],
+            [
+              "1-1",
+              13.8
+            ],
+            [
+              "0-0",
+              13.7
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Internacional 1V 1N 3D, Corinthians 0V 1N 4D.",
+            "Internacional marque peu; Corinthians marque peu.",
+            "Internacional est favori (1,3 but attendu contre 0,8), aidé par le terrain."
           ]
         },
         "Vitória - Chapecoense": {
@@ -1349,88 +1349,6 @@
     },
     "2026-10-09": {
       "matchs": {
-        "Palmeiras - Bahia": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 82.5,
-            "cote_estimee": 1.21
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 75.4,
-            "cote_estimee": 1.33
-          },
-          {
-            "marche": "Palmeiras ou nul",
-            "proba": 74.5,
-            "cote_estimee": 1.34
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 62.2,
-            "cote_estimee": 1.61
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 61.3,
-            "cote_estimee": 1.63
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 60.2,
-            "cote_estimee": 1.66
-          },
-          {
-            "marche": "1re équipe à marquer : Palmeiras",
-            "proba": 56.6,
-            "cote_estimee": 1.77
-          },
-          {
-            "marche": "Victoire Palmeiras",
-            "proba": 50.1,
-            "cote_estimee": 2.0
-          },
-          {
-            "marche": "Bahia ou nul",
-            "proba": 49.9,
-            "cote_estimee": 2.0
-          },
-          {
-            "marche": "Palmeiras ou nul et moins de 3,5 buts",
-            "proba": 45.7,
-            "cote_estimee": 2.19
-          },
-          {
-            "marche": "Palmeiras gagne et plus de 1,5 but",
-            "proba": 42.7,
-            "cote_estimee": 2.34
-          },
-          {
-            "marche": "1re équipe à marquer : Bahia",
-            "proba": 38.9,
-            "cote_estimee": 2.57
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 37.8,
-            "cote_estimee": 2.65
-          },
-          {
-            "marche": "Victoire Bahia",
-            "proba": 25.5,
-            "cote_estimee": 3.92
-          },
-          {
-            "marche": "Match nul",
-            "proba": 24.4,
-            "cote_estimee": 4.09
-          },
-          {
-            "marche": "Score exact : 1-1",
-            "proba": 11.2,
-            "cote_estimee": 8.9
-          }
-        ],
         "Fluminense - Coritiba": [
           {
             "marche": "Plus de 1,5 buts",
@@ -1511,6 +1429,88 @@
             "marche": "Score exact : 3-1",
             "proba": 7.8,
             "cote_estimee": 12.85
+          }
+        ],
+        "Palmeiras - Bahia": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 82.5,
+            "cote_estimee": 1.21
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 75.4,
+            "cote_estimee": 1.33
+          },
+          {
+            "marche": "Palmeiras ou nul",
+            "proba": 74.5,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 62.2,
+            "cote_estimee": 1.61
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 61.3,
+            "cote_estimee": 1.63
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 60.2,
+            "cote_estimee": 1.66
+          },
+          {
+            "marche": "1re équipe à marquer : Palmeiras",
+            "proba": 56.6,
+            "cote_estimee": 1.77
+          },
+          {
+            "marche": "Victoire Palmeiras",
+            "proba": 50.1,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "Bahia ou nul",
+            "proba": 49.9,
+            "cote_estimee": 2.0
+          },
+          {
+            "marche": "Palmeiras ou nul et moins de 3,5 buts",
+            "proba": 45.7,
+            "cote_estimee": 2.19
+          },
+          {
+            "marche": "Palmeiras gagne et plus de 1,5 but",
+            "proba": 42.7,
+            "cote_estimee": 2.34
+          },
+          {
+            "marche": "1re équipe à marquer : Bahia",
+            "proba": 38.9,
+            "cote_estimee": 2.57
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 37.8,
+            "cote_estimee": 2.65
+          },
+          {
+            "marche": "Victoire Bahia",
+            "proba": 25.5,
+            "cote_estimee": 3.92
+          },
+          {
+            "marche": "Match nul",
+            "proba": 24.4,
+            "cote_estimee": 4.09
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 11.2,
+            "cote_estimee": 8.9
           }
         ],
         "Moreirense - Gil Vicente": [
@@ -2007,39 +2007,6 @@
         ]
       },
       "infos": {
-        "Palmeiras - Bahia": {
-          "heure": "2026-10-09T00:30:00Z",
-          "ligue": "Campeonato Brasileiro Série A",
-          "dom": "Palmeiras",
-          "ext": "Bahia",
-          "logo_dom": "https://crests.football-data.org/1769.png",
-          "logo_ext": "https://crests.football-data.org/1777.png",
-          "forme_dom": "NVVNN",
-          "forme_ext": "VVVVD",
-          "buts_attendus": [
-            1.84,
-            1.27
-          ],
-          "scores": [
-            [
-              "1-1",
-              11.2
-            ],
-            [
-              "2-1",
-              9.6
-            ],
-            [
-              "2-0",
-              7.6
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Palmeiras 2V 3N 0D, Bahia 4V 0N 1D.",
-            "Palmeiras marque plus que la moyenne; Bahia marque plus que la moyenne.",
-            "Palmeiras est favori (1,8 but attendu contre 1,3), aidé par le terrain."
-          ]
-        },
         "Fluminense - Coritiba": {
           "heure": "2026-10-09T00:30:00Z",
           "ligue": "Campeonato Brasileiro Série A",
@@ -2071,6 +2038,39 @@
             "Forme sur les 5 derniers matchs : Fluminense 3V 0N 2D, Coritiba 2V 1N 2D.",
             "Fluminense marque plus que la moyenne; Fluminense encaisse beaucoup; Coritiba encaisse beaucoup.",
             "Fluminense est favori (3,0 buts attendus contre 1,4), aidé par le terrain."
+          ]
+        },
+        "Palmeiras - Bahia": {
+          "heure": "2026-10-09T00:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Palmeiras",
+          "ext": "Bahia",
+          "logo_dom": "https://crests.football-data.org/1769.png",
+          "logo_ext": "https://crests.football-data.org/1777.png",
+          "forme_dom": "NVVNN",
+          "forme_ext": "VVVVD",
+          "buts_attendus": [
+            1.84,
+            1.27
+          ],
+          "scores": [
+            [
+              "1-1",
+              11.2
+            ],
+            [
+              "2-1",
+              9.6
+            ],
+            [
+              "2-0",
+              7.6
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Palmeiras 2V 3N 0D, Bahia 4V 0N 1D.",
+            "Palmeiras marque plus que la moyenne; Bahia marque plus que la moyenne.",
+            "Palmeiras est favori (1,8 but attendu contre 1,3), aidé par le terrain."
           ]
         },
         "Moreirense - Gil Vicente": {
@@ -2319,88 +2319,6 @@
     },
     "2026-10-10": {
       "matchs": {
-        "Arsenal - Leeds United": [
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 86.8,
-            "cote_estimee": 1.15
-          },
-          {
-            "marche": "Arsenal ou nul",
-            "proba": 70.2,
-            "cote_estimee": 1.43
-          },
-          {
-            "marche": "Leeds United ou nul",
-            "proba": 63.3,
-            "cote_estimee": 1.58
-          },
-          {
-            "marche": "Arsenal ou nul et moins de 3,5 buts",
-            "proba": 61.1,
-            "cote_estimee": 1.64
-          },
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 58.9,
-            "cote_estimee": 1.7
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 58.3,
-            "cote_estimee": 1.72
-          },
-          {
-            "marche": "1re équipe à marquer : Arsenal",
-            "proba": 45.7,
-            "cote_estimee": 2.19
-          },
-          {
-            "marche": "1re équipe à marquer : Leeds United",
-            "proba": 40.0,
-            "cote_estimee": 2.5
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 39.5,
-            "cote_estimee": 2.53
-          },
-          {
-            "marche": "Victoire Arsenal",
-            "proba": 36.7,
-            "cote_estimee": 2.73
-          },
-          {
-            "marche": "Match nul",
-            "proba": 33.5,
-            "cote_estimee": 2.99
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 30.8,
-            "cote_estimee": 3.25
-          },
-          {
-            "marche": "Victoire Leeds United",
-            "proba": 29.8,
-            "cote_estimee": 3.35
-          },
-          {
-            "marche": "Arsenal gagne et plus de 1,5 but",
-            "proba": 22.9,
-            "cote_estimee": 4.37
-          },
-          {
-            "marche": "Score exact : 0-0",
-            "proba": 15.4,
-            "cote_estimee": 6.48
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 13.2,
-            "cote_estimee": 7.55
-          }
-        ],
         "Charlton - Bristol City": [
           {
             "marche": "Moins de 3,5 buts",
@@ -2483,86 +2401,86 @@
             "cote_estimee": 6.98
           }
         ],
-        "Swansea - Norwich": [
+        "Arsenal - Leeds United": [
           {
-            "marche": "Plus de 1,5 buts",
-            "proba": 86.9,
+            "marche": "Moins de 3,5 buts",
+            "proba": 86.8,
             "cote_estimee": 1.15
           },
           {
-            "marche": "Swansea ou nul",
-            "proba": 84.3,
-            "cote_estimee": 1.19
+            "marche": "Arsenal ou nul",
+            "proba": 70.2,
+            "cote_estimee": 1.43
+          },
+          {
+            "marche": "Leeds United ou nul",
+            "proba": 63.3,
+            "cote_estimee": 1.58
+          },
+          {
+            "marche": "Arsenal ou nul et moins de 3,5 buts",
+            "proba": 61.1,
+            "cote_estimee": 1.64
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 58.9,
+            "cote_estimee": 1.7
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 79.1,
-            "cote_estimee": 1.26
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 67.6,
-            "cote_estimee": 1.48
-          },
-          {
-            "marche": "1re équipe à marquer : Swansea",
-            "proba": 66.0,
-            "cote_estimee": 1.52
-          },
-          {
-            "marche": "Victoire Swansea",
-            "proba": 64.6,
-            "cote_estimee": 1.55
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 61.5,
-            "cote_estimee": 1.63
-          },
-          {
-            "marche": "Swansea gagne et plus de 1,5 but",
-            "proba": 58.0,
+            "proba": 58.3,
             "cote_estimee": 1.72
           },
           {
-            "marche": "Moins de 3,5 buts",
-            "proba": 54.0,
-            "cote_estimee": 1.85
+            "marche": "1re équipe à marquer : Arsenal",
+            "proba": 45.7,
+            "cote_estimee": 2.19
           },
           {
-            "marche": "Plus de 3,5 buts",
-            "proba": 46.0,
-            "cote_estimee": 2.17
+            "marche": "1re équipe à marquer : Leeds United",
+            "proba": 40.0,
+            "cote_estimee": 2.5
           },
           {
-            "marche": "Swansea ou nul et moins de 3,5 buts",
-            "proba": 44.1,
-            "cote_estimee": 2.27
+            "marche": "Les deux équipes marquent",
+            "proba": 39.5,
+            "cote_estimee": 2.53
           },
           {
-            "marche": "Norwich ou nul",
-            "proba": 35.4,
-            "cote_estimee": 2.83
-          },
-          {
-            "marche": "1re équipe à marquer : Norwich",
-            "proba": 31.0,
-            "cote_estimee": 3.23
+            "marche": "Victoire Arsenal",
+            "proba": 36.7,
+            "cote_estimee": 2.73
           },
           {
             "marche": "Match nul",
-            "proba": 19.7,
-            "cote_estimee": 5.08
+            "proba": 33.5,
+            "cote_estimee": 2.99
           },
           {
-            "marche": "Victoire Norwich",
-            "proba": 15.7,
-            "cote_estimee": 6.36
+            "marche": "Plus de 2,5 buts",
+            "proba": 30.8,
+            "cote_estimee": 3.25
           },
           {
-            "marche": "Score exact : 2-1",
-            "proba": 9.6,
-            "cote_estimee": 10.42
+            "marche": "Victoire Leeds United",
+            "proba": 29.8,
+            "cote_estimee": 3.35
+          },
+          {
+            "marche": "Arsenal gagne et plus de 1,5 but",
+            "proba": 22.9,
+            "cote_estimee": 4.37
+          },
+          {
+            "marche": "Score exact : 0-0",
+            "proba": 15.4,
+            "cote_estimee": 6.48
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 13.2,
+            "cote_estimee": 7.55
           }
         ],
         "West Brom - Birmingham": [
@@ -2645,6 +2563,88 @@
             "marche": "Score exact : 1-1",
             "proba": 13.7,
             "cote_estimee": 7.31
+          }
+        ],
+        "Swansea - Norwich": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 86.9,
+            "cote_estimee": 1.15
+          },
+          {
+            "marche": "Swansea ou nul",
+            "proba": 84.3,
+            "cote_estimee": 1.19
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 79.1,
+            "cote_estimee": 1.26
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 67.6,
+            "cote_estimee": 1.48
+          },
+          {
+            "marche": "1re équipe à marquer : Swansea",
+            "proba": 66.0,
+            "cote_estimee": 1.52
+          },
+          {
+            "marche": "Victoire Swansea",
+            "proba": 64.6,
+            "cote_estimee": 1.55
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 61.5,
+            "cote_estimee": 1.63
+          },
+          {
+            "marche": "Swansea gagne et plus de 1,5 but",
+            "proba": 58.0,
+            "cote_estimee": 1.72
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 54.0,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 46.0,
+            "cote_estimee": 2.17
+          },
+          {
+            "marche": "Swansea ou nul et moins de 3,5 buts",
+            "proba": 44.1,
+            "cote_estimee": 2.27
+          },
+          {
+            "marche": "Norwich ou nul",
+            "proba": 35.4,
+            "cote_estimee": 2.83
+          },
+          {
+            "marche": "1re équipe à marquer : Norwich",
+            "proba": 31.0,
+            "cote_estimee": 3.23
+          },
+          {
+            "marche": "Match nul",
+            "proba": 19.7,
+            "cote_estimee": 5.08
+          },
+          {
+            "marche": "Victoire Norwich",
+            "proba": 15.7,
+            "cote_estimee": 6.36
+          },
+          {
+            "marche": "Score exact : 2-1",
+            "proba": 9.6,
+            "cote_estimee": 10.42
           }
         ],
         "Rayo Vallecano - Athletic": [
@@ -2813,39 +2813,6 @@
         ]
       },
       "infos": {
-        "Arsenal - Leeds United": {
-          "heure": "2026-10-10T11:30:00Z",
-          "ligue": "Premier League",
-          "dom": "Arsenal",
-          "ext": "Leeds United",
-          "logo_dom": "https://crests.football-data.org/57.png",
-          "logo_ext": "https://crests.football-data.org/341.png",
-          "forme_dom": "VVVVD",
-          "forme_ext": "VNNVN",
-          "buts_attendus": [
-            1.04,
-            0.91
-          ],
-          "scores": [
-            [
-              "0-0",
-              15.4
-            ],
-            [
-              "1-1",
-              14.5
-            ],
-            [
-              "1-0",
-              13.8
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Arsenal 4V 0N 1D, Leeds United 2V 3N 0D.",
-            "Arsenal encaisse peu; Leeds United encaisse peu.",
-            "Match équilibré (1,0 - 0,9 buts attendus)."
-          ]
-        },
         "Charlton - Bristol City": {
           "heure": "2026-10-10T11:30:00Z",
           "ligue": "Championship",
@@ -2879,37 +2846,37 @@
             "Match équilibré (1,2 - 1,1 buts attendus)."
           ]
         },
-        "Swansea - Norwich": {
+        "Arsenal - Leeds United": {
           "heure": "2026-10-10T11:30:00Z",
-          "ligue": "Championship",
-          "dom": "Swansea",
-          "ext": "Norwich",
-          "logo_dom": "https://crests.football-data.org/72.png",
-          "logo_ext": "https://crests.football-data.org/68.png",
-          "forme_dom": "VNDVV",
-          "forme_ext": "DVVDD",
+          "ligue": "Premier League",
+          "dom": "Arsenal",
+          "ext": "Leeds United",
+          "logo_dom": "https://crests.football-data.org/57.png",
+          "logo_ext": "https://crests.football-data.org/341.png",
+          "forme_dom": "VVVVD",
+          "forme_ext": "VNNVN",
           "buts_attendus": [
-            2.37,
-            1.11
+            1.04,
+            0.91
           ],
           "scores": [
             [
-              "2-1",
-              9.6
+              "0-0",
+              15.4
             ],
             [
               "1-1",
-              8.7
+              14.5
             ],
             [
-              "2-0",
-              8.6
+              "1-0",
+              13.8
             ]
           ],
           "explication": [
-            "Forme sur les 5 derniers matchs : Swansea 3V 1N 1D, Norwich 2V 0N 3D.",
-            "Swansea encaisse peu; Norwich marque plus que la moyenne; Norwich encaisse beaucoup.",
-            "Swansea est favori (2,4 buts attendus contre 1,1), aidé par le terrain."
+            "Forme sur les 5 derniers matchs : Arsenal 4V 0N 1D, Leeds United 2V 3N 0D.",
+            "Arsenal encaisse peu; Leeds United encaisse peu.",
+            "Match équilibré (1,0 - 0,9 buts attendus)."
           ]
         },
         "West Brom - Birmingham": {
@@ -2943,6 +2910,39 @@
             "Forme sur les 5 derniers matchs : West Brom 2V 2N 1D, Birmingham 1V 3N 1D.",
             "West Brom encaisse peu.",
             "West Brom est favori (1,4 but attendu contre 1,0), aidé par le terrain."
+          ]
+        },
+        "Swansea - Norwich": {
+          "heure": "2026-10-10T11:30:00Z",
+          "ligue": "Championship",
+          "dom": "Swansea",
+          "ext": "Norwich",
+          "logo_dom": "https://crests.football-data.org/72.png",
+          "logo_ext": "https://crests.football-data.org/68.png",
+          "forme_dom": "VNDVV",
+          "forme_ext": "DVVDD",
+          "buts_attendus": [
+            2.37,
+            1.11
+          ],
+          "scores": [
+            [
+              "2-1",
+              9.6
+            ],
+            [
+              "1-1",
+              8.7
+            ],
+            [
+              "2-0",
+              8.6
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Swansea 3V 1N 1D, Norwich 2V 0N 3D.",
+            "Swansea encaisse peu; Norwich marque plus que la moyenne; Norwich encaisse beaucoup.",
+            "Swansea est favori (2,4 buts attendus contre 1,1), aidé par le terrain."
           ]
         },
         "Rayo Vallecano - Athletic": {
