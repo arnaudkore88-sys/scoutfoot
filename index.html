@@ -94,7 +94,7 @@ nav button[aria-current="page"]{color:var(--v)}
  <div id="content"></div>
  <label class="load" id="loadbox">Charger un fichier analyse_du_jour.json<input id="file" type="file" accept=".json,application/json" style="display:none"></label>
  <p id="msg" class="mute" style="text-align:center"></p>
- <div class="legal"><p id="pubnote" class="hidden">Les publicités sont signalées « Publicité ». ScoutFoot n'affiche aucune publicité de paris ni de jeux d'argent.</p><p>Forme récente : <b>V</b> victoire, <b>N</b> nul, <b>D</b> défaite sur les 5 derniers matchs, du plus ancien au plus récent.</p><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p></div>
+ <div class="legal"><p id="pubnote" class="hidden">Les publicités sont signalées « Publicité ». ScoutFoot n'affiche aucune publicité de paris ni de jeux d'argent.</p><p>Forme récente : <b>V</b> victoire, <b>N</b> nul, <b>D</b> défaite sur les 5 derniers matchs, du plus ancien au plus récent.</p><p><b>Jeu responsable.</b> Réservé aux 18 ans et plus. Ces analyses sont indicatives : elles ne garantissent aucun résultat et ne constituent pas un conseil de pari. Les cotes sont des estimations (100 ÷ probabilité) à comparer avec celles de votre opérateur. Ne jouez jamais plus que ce que vous pouvez perdre.</p><p class="mute" id="maj" style="font-size:12px"></p></div>
 </section>
 </main>
 <div id="stickypub" class="hidden" aria-live="polite"></div>
@@ -257,6 +257,12 @@ function noteSel(){var l=limiteSel();
   return(l&&S.day>l)?`<div class="info">Matchs de sélections (qualifications, amicaux, CAN, Mondial…) non affichés pour cette date : visibles jusqu'au ${dateFr(l)} avec l'offre actuelle.</div>`:""}
 function msgVide(){var l=limiteSel(),m=`<p class="mute" style="text-align:center;margin-top:30px">Aucun match de club analysé ce jour-là.</p>`;
   return m+((l&&S.day>l)?`<div class="info" style="margin-top:14px">Les matchs de sélections (qualifications, amicaux, CAN, Mondial…) ne sont visibles que jusqu'au ${dateFr(l)} avec l'offre actuelle : il peut y en avoir ce jour-là sans qu'ils soient affichés.</div>`:"")}
+var VERSION="v4 · palette sombre";
+function majTexte(d){
+  var e=$("maj");if(!e)return;var t="ScoutFoot "+VERSION;
+  if(d&&d.genere_le){var x=new Date(d.genere_le);if(!isNaN(x))t+=" · analyse du "+p2(x.getDate())+"/"+p2(x.getMonth()+1)+" à "+p2(x.getHours())+":"+p2(x.getMinutes())}
+  e.textContent=t;
+}
 var cur=[];
 function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
 function render(){
@@ -299,10 +305,10 @@ document.addEventListener("click",function(e){
   render();
 });
 function valide(d){if(!d||(typeof d.matchs!=="object"&&typeof d.jours!=="object"))throw new Error("format inattendu")}
-function utiliser(d,demo){S.data=d;S.demo=demo;var J=jours(d),k=Object.keys(J).sort();S.day=J[iso(today)]?iso(today):(k[0]||iso(today));render()}
+function utiliser(d,demo){S.data=d;S.demo=demo;majTexte(d);var J=jours(d),k=Object.keys(J).sort();S.day=J[iso(today)]?iso(today):(k[0]||iso(today));render()}
 function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){});
   fetch("pubs.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(c){CFG=c;SP_PICK={};render()}).catch(function(){})}
-function entrer(){$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
+function entrer(){majTexte(null);$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
 $("yes").onclick=function(){set("adulte","1");entrer()};
 $("no").onclick=function(){$("deny").classList.remove("hidden")};
 $("file").onchange=function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();

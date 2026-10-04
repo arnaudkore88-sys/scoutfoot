@@ -6,6 +6,7 @@ import json
 import os
 import re
 import unicodedata
+from datetime import datetime, timezone
 
 import moteur_analyse as moteur
 
@@ -33,9 +34,10 @@ def cle_paire(titre):
 
 def main():
     clubs, sel = charger("analyse_du_jour.json"), charger("analyse_apif.json")
-    if not sel:
-        print("Pas d'analyse des sélections : rien à fusionner.")
+    if not clubs and not sel:
+        print("Aucune analyse à publier.")
         return
+    sel = sel or {"jours": {}}
     base = clubs or {"date": sel.get("date"), "jours": {}}
     jours = {j: {"matchs": dict(c.get("matchs", {})), "infos": dict(c.get("infos", {}))}
              for j, c in (base.get("jours") or {}).items()}
@@ -55,7 +57,8 @@ def main():
     premier = jours.get(aujourdhui, {"matchs": {}, "infos": {}, "combines": []})
     with open("analyse_du_jour.json", "w", encoding="utf-8") as f:
         json.dump({"date": aujourdhui, "jours": jours, "matchs": premier["matchs"], "infos": premier["infos"],
-                   "combines": premier["combines"], "couverture_selections": sel.get("couverture")},
+                   "combines": premier["combines"], "couverture_selections": sel.get("couverture"),
+                   "genere_le": datetime.now(timezone.utc).isoformat()},
                   f, ensure_ascii=False, indent=2)
     print(f"Fusion terminée : {ajoutes} match(s) de sélections ajouté(s).")
 
