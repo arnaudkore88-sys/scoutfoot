@@ -53,12 +53,21 @@ def main():
             ajoutes += 1
     for contenu in jours.values():
         contenu["combines"] = moteur.combines({k: v for k, v in contenu["matchs"].items() if v})
+    # Combinés de la semaine : 10 et 12 matchs choisis parmi TOUS les matchs analysés de la période (une sélection par match)
+    semaine = {}
+    for jour, contenu in sorted(jours.items()):
+        for titre, marches in contenu["matchs"].items():
+            if marches:
+                semaine[f"{jour[8:10]}/{jour[5:7]} · {titre}"] = marches
+    eligibles = sum(1 for m in semaine.values() if any(65 <= d["proba"] <= 90 for d in m))
+    combines_semaine = moteur.combines(semaine, tailles=(10, 12))
     aujourdhui = base.get("date") or sel.get("date")
     premier = jours.get(aujourdhui, {"matchs": {}, "infos": {}, "combines": []})
     with open("analyse_du_jour.json", "w", encoding="utf-8") as f:
         json.dump({"date": aujourdhui, "jours": jours, "matchs": premier["matchs"], "infos": premier["infos"],
                    "combines": premier["combines"], "couverture_selections": sel.get("couverture"),
-                   "genere_le": datetime.now(timezone.utc).isoformat()},
+                   "genere_le": datetime.now(timezone.utc).isoformat(),
+                   "combines_semaine": combines_semaine, "combines_semaine_info": {"matchs_eligibles": eligibles}},
                   f, ensure_ascii=False, indent=2)
     print(f"Fusion terminée : {ajoutes} match(s) de sélections ajouté(s).")
 

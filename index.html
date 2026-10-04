@@ -68,6 +68,10 @@ ul{margin:10px 0 0;padding-left:18px}li{margin-bottom:4px}
 .ov>div{background:var(--card);border-radius:16px;padding:16px;max-width:380px;width:100%}.ov .sp{margin:16px 0 14px}.ov button:disabled{opacity:.55}
 body.avecstk main{padding-bottom:170px}
 .info{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font-size:12px;color:var(--mute);margin:8px 0}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;color:var(--v)}
+.lien{background:none;color:var(--v);font-size:12px;font-weight:700;text-decoration:underline;padding:2px 0;margin:0 0 8px}
+.ov h3{margin:0 0 8px;font-size:18px}.ov p{font-size:14px}
 .legal{border-top:1px solid var(--line);margin-top:10px;padding-top:12px;font-size:13px;color:var(--mute)}
 nav{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom,0px)}
 nav button{flex:1;padding:12px 4px;font-size:13px;color:var(--mute);font-weight:600}nav b{display:block;font-size:20px}
@@ -89,6 +93,7 @@ nav button[aria-current="page"]{color:var(--v)}
 </section>
 <section id="app" class="hidden">
  <div class="brand"><svg class="lg" width="38" height="38" viewBox="0 0 100 100" aria-hidden="true"><use href="#logo"/></svg><h1>ScoutFoot</h1></div>
+ <div class="acts"><button class="mini" id="bInstall" data-act="install">⬇ Installer</button><button class="mini" data-act="partager">↗ Partager</button><button class="mini hidden" id="bNotif" data-act="notif">🔔 Notifications</button></div>
  <div class="days" id="days"></div>
  <div id="demo" class="banner hidden">Données de démonstration (fictives) pour tester l'application.</div>
  <div id="content"></div>
@@ -257,11 +262,103 @@ function noteSel(){var l=limiteSel();
   return(l&&S.day>l)?`<div class="info">Matchs de sélections (qualifications, amicaux, CAN, Mondial…) non affichés pour cette date : visibles jusqu'au ${dateFr(l)} avec l'offre actuelle.</div>`:""}
 function msgVide(){var l=limiteSel(),m=`<p class="mute" style="text-align:center;margin-top:30px">Aucun match de club analysé ce jour-là.</p>`;
   return m+((l&&S.day>l)?`<div class="info" style="margin-top:14px">Les matchs de sélections (qualifications, amicaux, CAN, Mondial…) ne sont visibles que jusqu'au ${dateFr(l)} avec l'offre actuelle : il peut y en avoir ce jour-là sans qu'ils soient affichés.</div>`:"")}
-var VERSION="v4 · palette sombre";
+var VERSION="v5 · installer, partage, combinés semaine";
 function majTexte(d){
   var e=$("maj");if(!e)return;var t="ScoutFoot "+VERSION;
   if(d&&d.genere_le){var x=new Date(d.genere_le);if(!isNaN(x))t+=" · analyse du "+p2(x.getDate())+"/"+p2(x.getMonth()+1)+" à "+p2(x.getHours())+":"+p2(x.getMinutes())}
   e.textContent=t;
+}
+// ================= Installer / Partager / Notifications / image « Top 3 » / combinés de la semaine =================
+var LIENS={telegram:"",whatsapp:"",site:""},PROMPT_INSTALL=null;
+if(window.addEventListener){
+  window.addEventListener("beforeinstallprompt",function(e){e.preventDefault();PROMPT_INSTALL=e;majActions()});
+  window.addEventListener("appinstalled",function(){PROMPT_INSTALL=null;majActions()});
+}
+function enApp(){return !!(window.matchMedia&&window.matchMedia("(display-mode: standalone)").matches)||(navigator&&navigator.standalone===true)||EST_APK}
+function estIOS(){return /iphone|ipad|ipod/i.test(UA)}
+function urlSite(){if(LIENS.site)return LIENS.site;var l=window.location;return(l&&l.origin&&l.pathname)?l.origin+l.pathname:""}
+function majActions(){
+  var i=$("bInstall"),n=$("bNotif");
+  if(i)i.classList.toggle("hidden",enApp());
+  if(n)n.classList.toggle("hidden",!(LIENS.telegram||LIENS.whatsapp));
+}
+function modal(html){
+  var ov=document.createElement("div");ov.className="ov";ov.setAttribute("role","dialog");ov.setAttribute("aria-modal","true");
+  ov.innerHTML="<div>"+html+"</div>";document.body.appendChild(ov);return ov;
+}
+function aideInstall(){
+  var ios=`<p><b>iPhone (Safari)</b> : ouvrez ce site dans <b>Safari</b>, touchez <b>Partager</b> (le carré avec une flèche), puis <b>« Sur l'écran d'accueil »</b>, puis <b>Ajouter</b>.</p>`;
+  var and=`<p><b>Android (Chrome)</b> : touchez le menu <b>⋮</b>, puis <b>« Installer l'application »</b> ou <b>« Ajouter à l'écran d'accueil »</b>.</p>`;
+  return`<h3>Installer ScoutFoot</h3>${estIOS()?ios+and:and+ios}<p class="mute">L'application s'ouvre ensuite en plein écran, comme une application normale, et se met à jour toute seule.</p><button class="btn main" data-act="fermer">Compris</button>`;
+}
+function installer(){
+  if(PROMPT_INSTALL){try{PROMPT_INSTALL.prompt()}catch(e){modal(aideInstall())}return}
+  modal(aideInstall());
+}
+function partagerSite(){
+  var url=urlSite(),texte="ScoutFoot : analyses statistiques de matchs de football (réservé aux 18 ans et plus, indicatif, aucun gain garanti).";
+  if(navigator.share){navigator.share({title:"ScoutFoot",text:texte,url:url}).catch(function(){});return}
+  var w="https://wa.me/?text="+encodeURIComponent(texte+" "+url);
+  modal(`<h3>Partager ScoutFoot</h3><a class="btn main" style="display:block;text-align:center;text-decoration:none;margin-bottom:10px" href="${esc(w)}" target="_blank" rel="noopener">Envoyer sur WhatsApp</a><p class="mute" style="word-break:break-all">Ou copiez ce lien : ${esc(url)}</p><button class="btn ghost" data-act="fermer">Fermer</button>`);
+}
+function notifHTML(){
+  var h=`<h3>Recevoir le Top 3 chaque jour</h3><p class="mute">Une notification par jour sur votre téléphone, avec les 3 analyses les plus probables.</p>`;
+  if(LIENS.telegram)h+=`<a class="btn main" style="display:block;text-align:center;text-decoration:none;margin-bottom:10px" href="${esc(LIENS.telegram)}" target="_blank" rel="noopener">Rejoindre le canal Telegram</a>`;
+  if(LIENS.whatsapp)h+=`<a class="btn main" style="display:block;text-align:center;text-decoration:none;margin-bottom:10px" href="${esc(LIENS.whatsapp)}" target="_blank" rel="noopener">Rejoindre la chaîne WhatsApp</a>`;
+  return h+`<button class="btn ghost" data-act="fermer">Fermer</button>`;
+}
+function top3(){return cur.filter(function(m){return m.best}).sort(function(a,b){return b.best.proba-a.best.proba}).slice(0,3)}
+var JOURS_LONGS=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+function dateLongue(iso){var p=String(iso).split("-");if(p.length!==3)return iso;var d=new Date(Number(p[0]),Number(p[1])-1,Number(p[2]));return JOURS_LONGS[d.getDay()]+" "+Number(p[2])+" "+MOIS[Number(p[1])-1]}
+function rectArrondi(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.lineTo(x+w-r,y);c.quadraticCurveTo(x+w,y,x+w,y+r);c.lineTo(x+w,y+h-r);c.quadraticCurveTo(x+w,y+h,x+w-r,y+h);c.lineTo(x+r,y+h);c.quadraticCurveTo(x,y+h,x,y+h-r);c.lineTo(x,y+r);c.quadraticCurveTo(x,y,x+r,y);c.closePath()}
+function ajuster(c,texte,maxW,taille,poids){var t=taille;c.font=poids+" "+t+"px Poppins,Arial,sans-serif";while(t>22&&c.measureText(texte).width>maxW){t-=2;c.font=poids+" "+t+"px Poppins,Arial,sans-serif"}return t}
+function dessinerTop3(cv,liste,jourTexte){
+  var W=1080,H=1350,c=cv.getContext("2d");cv.width=W;cv.height=H;
+  var g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,"#1B0F4A");g.addColorStop(1,"#0C0720");c.fillStyle=g;c.fillRect(0,0,W,H);
+  c.fillStyle="#BE185D";c.fillRect(0,0,W,14);
+  c.fillStyle="#F7F4FF";c.font="800 70px Poppins,Arial,sans-serif";c.fillText("ScoutFoot",70,140);
+  c.fillStyle="#C9BFEF";c.font="600 40px Poppins,Arial,sans-serif";c.fillText("Top 3 du jour · "+jourTexte,70,205);
+  var y=260;
+  liste.forEach(function(m,i){
+    c.fillStyle="#171033";rectArrondi(c,60,y,W-120,300,30);c.fill();
+    c.fillStyle="#B794FF";c.font="800 72px Poppins,Arial,sans-serif";c.fillText(String(i+1),100,y+105);
+    var inf=m.info||{},heure=inf.heure?heureLocale(inf.heure):"";
+    c.fillStyle="#C9BFEF";c.font="600 28px Poppins,Arial,sans-serif";c.fillText((heure?heure+" · ":"")+(inf.ligue||""),190,y+55);
+    var titre=m.a+" - "+m.b;ajuster(c,titre,W-300,40,"800");c.fillStyle="#F7F4FF";c.fillText(titre,190,y+115);
+    var pick=m.best.marche;ajuster(c,pick,560,34,"600");c.fillStyle="#C9BFEF";c.fillText(pick,190,y+185);
+    c.fillStyle="#FFC933";c.font="800 78px Poppins,Arial,sans-serif";c.fillText(Math.round(m.best.proba)+" %",W-330,y+135);
+    c.fillStyle="#C9BFEF";c.font="600 28px Poppins,Arial,sans-serif";c.fillText("cote ≈ "+fmt(m.best.cote_estimee),W-330,y+185);
+    c.fillStyle="#33276A";rectArrondi(c,190,y+225,W-380,14,7);c.fill();
+    c.fillStyle="#B794FF";rectArrondi(c,190,y+225,(W-380)*Math.min(100,m.best.proba)/100,14,7);c.fill();
+    y+=330;
+  });
+  c.fillStyle="#C9BFEF";c.font="600 30px Poppins,Arial,sans-serif";c.fillText("Analyses indicatives · aucun gain garanti",70,H-165);
+  c.fillText("Réservé aux 18 ans et plus · Jouez avec modération",70,H-120);
+  c.fillStyle="#F7F4FF";c.font="800 34px Poppins,Arial,sans-serif";c.fillText(urlSite().replace(/^https?:\/\//,""),70,H-60);
+}
+function heureLocale(iso){var d=new Date(iso);return isNaN(d)?"":p2(d.getHours())+":"+p2(d.getMinutes())}
+function partagerTop3(){
+  var l=top3();if(!l.length)return;
+  var cv=document.createElement("canvas");dessinerTop3(cv,l,dateLongue(S.day));
+  var texte="Top 3 du jour sur ScoutFoot (indicatif, 18+, aucun gain garanti). "+urlSite();
+  cv.toBlob(function(blob){
+    var f=null;try{f=new File([blob],"scoutfoot-top3.png",{type:"image/png"})}catch(e){}
+    if(f&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:texte,title:"ScoutFoot"}).catch(function(){});return}
+    var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="scoutfoot-top3.png";document.body.appendChild(a);a.click();document.body.removeChild(a);
+  },"image/png");
+}
+function fmtPct(p){return(p<10?p.toFixed(1).replace(".",","):String(Math.round(p)))+" %"}
+function semaineHTML(){
+  var cs=(S.data&&S.data.combines_semaine)||[],inf=(S.data&&S.data.combines_semaine_info)||{};
+  var h=`<h2>Combinés de la semaine</h2><div class="info" style="margin-top:0"><b>Risque très élevé.</b> Plus un combiné compte de matchs, plus sa probabilité de réussite est faible : un seul match perdu et tout est perdu. Propositions indicatives, sans aucun gain garanti.</div>`;
+  cs.forEach(function(c){
+    h+=`<article class="card combo"><div class="row"><span>Combiné ${c.taille} matchs<span class="top">Semaine</span></span><span><span class="pc">${fmtPct(c.proba)}</span> <span class="cote">cote ≈ ${fmt(c.cote_estimee)}</span></span></div><div class="bar"><i style="width:${Math.max(2,Math.min(100,c.proba))}%"></i></div><p class="mute" style="margin:8px 0 0">Probabilité de réussite estimée : <b>${fmtPct(c.proba)}</b>, soit environ 1 chance sur ${Math.max(1,Math.round(100/c.proba))}.</p><details><summary>Voir les ${c.taille} sélections</summary><ul>${c.selections.map(function(t){return`<li>${esc(t)}</li>`}).join("")}</ul></details></article>`;
+  });
+  var tailles=cs.map(function(c){return c.taille});
+  if(tailles.indexOf(10)<0||tailles.indexOf(12)<0){
+    h+=`<p class="mute">Pas assez de matchs analysés cette semaine${inf.matchs_eligibles!==undefined?" ("+inf.matchs_eligibles+" disponibles)":""} pour proposer ${tailles.indexOf(10)<0?"le combiné de 10 matchs":"le combiné de 12 matchs"}${tailles.indexOf(10)<0?" ni celui de 12":""}.</p>`;
+  }
+  return h;
 }
 var cur=[];
 function jours(d){if(d.jours&&typeof d.jours==="object")return d.jours;var k=/^\d{4}-\d{2}-\d{2}$/.test(d.date||"")?d.date:iso(today),o={};o[k]={matchs:d.matchs||{},infos:d.infos||{},combines:d.combines||[]};return o}
@@ -286,17 +383,22 @@ function render(){
       h+=fs.length?fs.map(function(z){return carte(z[0],z[1])}).join(""):`<p class="mute">Touchez l'étoile d'un match pour le retrouver ici.</p>`;
     }else{
       var tops=cur.map(function(m,i){return[m,i]}).filter(function(z){return z[0].best}).sort(function(a,b){return b[0].best.proba-a[0].best.proba}).slice(0,3);
-      h+=(cur.length?noteSel():"")+pub("haut")+(tops.length?`<h2>⭐ Top matchs du jour</h2>`+tops.map(function(z){return carte(z[0],z[1])}).join(""):"");
+      h+=(cur.length?noteSel():"")+pub("haut")+(tops.length?`<h2>⭐ Top matchs du jour</h2><button class="lien" data-act="top3">Partager le Top 3 en image</button>`+tops.map(function(z){return carte(z[0],z[1])}).join(""):"");
       var rest=cur.map(function(m,i){return[m,i]}).filter(function(z){return tops.every(function(t){return t[1]!==z[1]})}).sort(function(a,b){var x=(a[0].info&&a[0].info.heure)||"",y=(b[0].info&&b[0].info.heure)||"";return x<y?-1:x>y?1:0});
       if(rest.length)h+=pub("milieu")+`<h2>Tous les matchs</h2>`+avecPub(rest.map(function(z){return carte(z[0],z[1])})).join("");
       if(!cur.length)h+=msgVide();
     }
   }
+  if(S.tab==="combines")h=semaineHTML()+h;
   $("content").innerHTML=h;
   majPubs();
 }
 document.addEventListener("click",function(e){
-  var t=e.target.closest("[data-star],[data-open],[data-day],[data-tab],[data-pub]");if(!t)return;
+  var t=e.target.closest("[data-star],[data-open],[data-day],[data-tab],[data-pub],[data-act]");if(!t)return;
+  if(t.dataset.act){var ac=t.dataset.act;
+    if(ac==="install")installer();else if(ac==="partager")partagerSite();else if(ac==="notif")modal(notifHTML());else if(ac==="top3")partagerTop3();
+    else if(ac==="fermer"){var ov=t.closest(".ov");if(ov&&ov.parentNode)ov.parentNode.removeChild(ov)}
+    return}
   if(t.dataset.star!==undefined){var k=cur[+t.dataset.star].k,i=S.fav.indexOf(k);if(i>=0)S.fav.splice(i,1);else S.fav.push(k);set("fav",JSON.stringify(S.fav))}
   else if(t.dataset.open!==undefined){var m=cur[+t.dataset.open].k;if(!S.open[m]&&interDispo()){montrerInter(function(){S.open[m]=true;render()});return}S.open[m]=!S.open[m]}
   else if(t.dataset.day){S.day=t.dataset.day}
@@ -307,8 +409,9 @@ document.addEventListener("click",function(e){
 function valide(d){if(!d||(typeof d.matchs!=="object"&&typeof d.jours!=="object"))throw new Error("format inattendu")}
 function utiliser(d,demo){S.data=d;S.demo=demo;majTexte(d);var J=jours(d),k=Object.keys(J).sort();S.day=J[iso(today)]?iso(today):(k[0]||iso(today));render()}
 function charge(){fetch("analyse_du_jour.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){valide(d);utiliser(d,false)}).catch(function(){});
+  fetch("reglages.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(c){for(var k in c)if(LIENS.hasOwnProperty(k)&&typeof c[k]==="string"&&/^https:\/\//.test(c[k]))LIENS[k]=c[k];majActions()}).catch(function(){});
   fetch("pubs.json",{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(c){CFG=c;SP_PICK={};render()}).catch(function(){})}
-function entrer(){majTexte(null);$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
+function entrer(){majTexte(null);majActions();$("gate").classList.add("hidden");$("app").classList.remove("hidden");$("nav").classList.remove("hidden");render();charge()}
 $("yes").onclick=function(){set("adulte","1");entrer()};
 $("no").onclick=function(){$("deny").classList.remove("hidden")};
 $("file").onchange=function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();
