@@ -1,11 +1,6 @@
 {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "jours": {
-    "2026-11-09": {
-      "matchs": {},
-      "infos": {},
-      "combines": []
-    },
     "2026-11-10": {
       "matchs": {},
       "infos": {},
@@ -71,8 +66,8 @@
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 43.9,
-            "cote_estimee": 2.28
+            "proba": 44.0,
+            "cote_estimee": 2.27
           },
           {
             "marche": "Plus de 2,5 buts",
@@ -123,17 +118,17 @@
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 77.1,
+            "proba": 77.0,
             "cote_estimee": 1.3
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 63.5,
+            "proba": 63.4,
             "cote_estimee": 1.58
           },
           {
             "marche": "1re équipe à marquer : Vasco da Gama",
-            "proba": 63.4,
+            "proba": 63.3,
             "cote_estimee": 1.58
           },
           {
@@ -163,13 +158,13 @@
           },
           {
             "marche": "1re équipe à marquer : Chapecoense",
-            "proba": 32.8,
-            "cote_estimee": 3.05
+            "proba": 32.9,
+            "cote_estimee": 3.04
           },
           {
             "marche": "Chapecoense ou nul et moins de 3,5 buts",
-            "proba": 26.2,
-            "cote_estimee": 3.81
+            "proba": 26.3,
+            "cote_estimee": 3.8
           },
           {
             "marche": "Match nul",
@@ -179,17 +174,17 @@
           {
             "marche": "Victoire Chapecoense",
             "proba": 18.1,
-            "cote_estimee": 5.53
+            "cote_estimee": 5.51
           },
           {
             "marche": "Chapecoense gagne et plus de 1,5 but",
             "proba": 14.6,
-            "cote_estimee": 6.86
+            "cote_estimee": 6.84
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 9.9,
-            "cote_estimee": 10.14
+            "cote_estimee": 10.13
           }
         ]
       },
@@ -237,7 +232,7 @@
           "forme_ext": "NDVDV",
           "buts_attendus": [
             1.12,
-            2.16
+            2.15
           ],
           "scores": [
             [
@@ -276,13 +271,18 @@
       "matchs": {},
       "infos": {},
       "combines": []
+    },
+    "2026-11-16": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
     }
   },
   "matchs": {},
   "infos": {},
   "combines": [],
   "couverture_selections": null,
-  "genere_le": "2026-11-09T03:37:13.863264+00:00",
+  "genere_le": "2026-11-10T05:08:26.174698+00:00",
   "combines_semaine": [],
   "combines_semaine_info": {
     "matchs_eligibles": 2
