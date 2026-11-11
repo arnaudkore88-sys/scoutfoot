@@ -1,11 +1,6 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "jours": {
-    "2026-11-10": {
-      "matchs": {},
-      "infos": {},
-      "combines": []
-    },
     "2026-11-11": {
       "matchs": {},
       "infos": {},
@@ -71,7 +66,7 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 37.6,
+            "proba": 37.7,
             "cote_estimee": 2.66
           },
           {
@@ -97,7 +92,7 @@
           {
             "marche": "Plus de 3,5 buts",
             "proba": 18.0,
-            "cote_estimee": 5.56
+            "cote_estimee": 5.55
           },
           {
             "marche": "Score exact : 1-1",
@@ -113,7 +108,7 @@
           },
           {
             "marche": "Vasco da Gama ou nul",
-            "proba": 81.9,
+            "proba": 81.8,
             "cote_estimee": 1.22
           },
           {
@@ -133,7 +128,7 @@
           },
           {
             "marche": "Victoire Vasco da Gama",
-            "proba": 60.3,
+            "proba": 60.2,
             "cote_estimee": 1.66
           },
           {
@@ -153,8 +148,8 @@
           },
           {
             "marche": "Chapecoense ou nul",
-            "proba": 39.7,
-            "cote_estimee": 2.52
+            "proba": 39.8,
+            "cote_estimee": 2.51
           },
           {
             "marche": "1re équipe à marquer : Chapecoense",
@@ -169,22 +164,22 @@
           {
             "marche": "Match nul",
             "proba": 21.6,
-            "cote_estimee": 4.63
+            "cote_estimee": 4.62
           },
           {
             "marche": "Victoire Chapecoense",
-            "proba": 18.1,
-            "cote_estimee": 5.51
+            "proba": 18.2,
+            "cote_estimee": 5.5
           },
           {
             "marche": "Chapecoense gagne et plus de 1,5 but",
-            "proba": 14.6,
-            "cote_estimee": 6.84
+            "proba": 14.7,
+            "cote_estimee": 6.82
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 9.9,
-            "cote_estimee": 10.13
+            "cote_estimee": 10.11
           }
         ]
       },
@@ -213,7 +208,7 @@
             ],
             [
               "0-0",
-              12.2
+              12.1
             ]
           ],
           "explication": [
@@ -251,7 +246,7 @@
           "explication": [
             "Forme sur les 5 derniers matchs : Chapecoense 1V 0N 4D, Vasco da Gama 2V 1N 2D.",
             "Chapecoense marque peu; Chapecoense encaisse beaucoup; Vasco da Gama marque plus que la moyenne.",
-            "Vasco da Gama est favori (2,2 buts attendus contre 1,1) malgré le déplacement."
+            "Vasco da Gama est favori (2,1 buts attendus contre 1,1) malgré le déplacement."
           ]
         }
       },
@@ -276,13 +271,18 @@
       "matchs": {},
       "infos": {},
       "combines": []
+    },
+    "2026-11-17": {
+      "matchs": {},
+      "infos": {},
+      "combines": []
     }
   },
   "matchs": {},
   "infos": {},
   "combines": [],
   "couverture_selections": null,
-  "genere_le": "2026-11-10T05:08:26.174698+00:00",
+  "genere_le": "2026-11-11T03:41:25.933190+00:00",
   "combines_semaine": [],
   "combines_semaine_info": {
     "matchs_eligibles": 2
