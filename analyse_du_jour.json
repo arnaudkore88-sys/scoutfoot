@@ -1,11 +1,6 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "jours": {
-    "2026-11-11": {
-      "matchs": {},
-      "infos": {},
-      "combines": []
-    },
     "2026-11-12": {
       "matchs": {},
       "infos": {},
@@ -41,7 +36,7 @@
           },
           {
             "marche": "Mirassol ou nul et moins de 3,5 buts",
-            "proba": 61.8,
+            "proba": 61.7,
             "cote_estimee": 1.62
           },
           {
@@ -67,16 +62,16 @@
           {
             "marche": "Plus de 2,5 buts",
             "proba": 37.7,
-            "cote_estimee": 2.66
+            "cote_estimee": 2.65
           },
           {
             "marche": "1re équipe à marquer : Mineiro",
             "proba": 35.9,
-            "cote_estimee": 2.79
+            "cote_estimee": 2.78
           },
           {
             "marche": "Mirassol gagne et plus de 1,5 but",
-            "proba": 31.8,
+            "proba": 31.9,
             "cote_estimee": 3.14
           },
           {
@@ -123,13 +118,8 @@
           },
           {
             "marche": "1re équipe à marquer : Vasco da Gama",
-            "proba": 63.3,
+            "proba": 63.2,
             "cote_estimee": 1.58
-          },
-          {
-            "marche": "Victoire Vasco da Gama",
-            "proba": 60.2,
-            "cote_estimee": 1.66
           },
           {
             "marche": "Les deux équipes marquent",
@@ -137,49 +127,54 @@
             "cote_estimee": 1.66
           },
           {
+            "marche": "Victoire Vasco da Gama",
+            "proba": 60.1,
+            "cote_estimee": 1.66
+          },
+          {
             "marche": "Moins de 3,5 buts",
-            "proba": 58.7,
+            "proba": 58.8,
             "cote_estimee": 1.7
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 41.3,
-            "cote_estimee": 2.42
+            "proba": 41.2,
+            "cote_estimee": 2.43
           },
           {
             "marche": "Chapecoense ou nul",
-            "proba": 39.8,
+            "proba": 39.9,
             "cote_estimee": 2.51
           },
           {
             "marche": "1re équipe à marquer : Chapecoense",
-            "proba": 32.9,
-            "cote_estimee": 3.04
+            "proba": 33.0,
+            "cote_estimee": 3.03
           },
           {
             "marche": "Chapecoense ou nul et moins de 3,5 buts",
-            "proba": 26.3,
-            "cote_estimee": 3.8
+            "proba": 26.4,
+            "cote_estimee": 3.79
           },
           {
             "marche": "Match nul",
-            "proba": 21.6,
+            "proba": 21.7,
             "cote_estimee": 4.62
           },
           {
             "marche": "Victoire Chapecoense",
             "proba": 18.2,
-            "cote_estimee": 5.5
+            "cote_estimee": 5.49
           },
           {
             "marche": "Chapecoense gagne et plus de 1,5 but",
             "proba": 14.7,
-            "cote_estimee": 6.82
+            "cote_estimee": 6.81
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 9.9,
-            "cote_estimee": 10.11
+            "cote_estimee": 10.1
           }
         ]
       },
@@ -276,15 +271,513 @@
       "matchs": {},
       "infos": {},
       "combines": []
+    },
+    "2026-11-18": {
+      "matchs": {
+        "Coritiba - Santos": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 76.6,
+            "cote_estimee": 1.31
+          },
+          {
+            "marche": "Santos ou nul",
+            "proba": 73.4,
+            "cote_estimee": 1.36
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 70.8,
+            "cote_estimee": 1.41
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 70.7,
+            "cote_estimee": 1.41
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 55.1,
+            "cote_estimee": 1.81
+          },
+          {
+            "marche": "1re équipe à marquer : Santos",
+            "proba": 54.2,
+            "cote_estimee": 1.85
+          },
+          {
+            "marche": "Coritiba ou nul",
+            "proba": 53.5,
+            "cote_estimee": 1.87
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 51.3,
+            "cote_estimee": 1.95
+          },
+          {
+            "marche": "Victoire Santos",
+            "proba": 46.5,
+            "cote_estimee": 2.15
+          },
+          {
+            "marche": "Coritiba ou nul et moins de 3,5 buts",
+            "proba": 39.5,
+            "cote_estimee": 2.53
+          },
+          {
+            "marche": "1re équipe à marquer : Coritiba",
+            "proba": 39.3,
+            "cote_estimee": 2.55
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 29.2,
+            "cote_estimee": 3.43
+          },
+          {
+            "marche": "Match nul",
+            "proba": 26.9,
+            "cote_estimee": 3.72
+          },
+          {
+            "marche": "Victoire Coritiba",
+            "proba": 26.6,
+            "cote_estimee": 3.75
+          },
+          {
+            "marche": "Coritiba gagne et plus de 1,5 but",
+            "proba": 20.1,
+            "cote_estimee": 4.98
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 12.8,
+            "cote_estimee": 7.81
+          }
+        ],
+        "Clube do Remo - Chapecoense": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 78.0,
+            "cote_estimee": 1.28
+          },
+          {
+            "marche": "Clube do Remo ou nul",
+            "proba": 77.2,
+            "cote_estimee": 1.29
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 71.8,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 68.9,
+            "cote_estimee": 1.45
+          },
+          {
+            "marche": "1re équipe à marquer : Clube do Remo",
+            "proba": 57.9,
+            "cote_estimee": 1.73
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 55.3,
+            "cote_estimee": 1.81
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 53.4,
+            "cote_estimee": 1.87
+          },
+          {
+            "marche": "Clube do Remo ou nul et moins de 3,5 buts",
+            "proba": 52.5,
+            "cote_estimee": 1.91
+          },
+          {
+            "marche": "Victoire Clube do Remo",
+            "proba": 51.7,
+            "cote_estimee": 1.93
+          },
+          {
+            "marche": "Chapecoense ou nul",
+            "proba": 48.3,
+            "cote_estimee": 2.07
+          },
+          {
+            "marche": "Clube do Remo gagne et plus de 1,5 but",
+            "proba": 42.2,
+            "cote_estimee": 2.37
+          },
+          {
+            "marche": "1re équipe à marquer : Chapecoense",
+            "proba": 36.1,
+            "cote_estimee": 2.77
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 31.1,
+            "cote_estimee": 3.22
+          },
+          {
+            "marche": "Match nul",
+            "proba": 25.5,
+            "cote_estimee": 3.92
+          },
+          {
+            "marche": "Victoire Chapecoense",
+            "proba": 22.8,
+            "cote_estimee": 4.39
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 12.1,
+            "cote_estimee": 8.24
+          }
+        ],
+        "Cruzeiro - Palmeiras": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 92.9,
+            "cote_estimee": 1.08
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 85.0,
+            "cote_estimee": 1.18
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 79.3,
+            "cote_estimee": 1.26
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 77.7,
+            "cote_estimee": 1.29
+          },
+          {
+            "marche": "Palmeiras ou nul",
+            "proba": 62.9,
+            "cote_estimee": 1.59
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 60.9,
+            "cote_estimee": 1.64
+          },
+          {
+            "marche": "Cruzeiro ou nul",
+            "proba": 58.2,
+            "cote_estimee": 1.72
+          },
+          {
+            "marche": "1re équipe à marquer : Palmeiras",
+            "proba": 50.7,
+            "cote_estimee": 1.97
+          },
+          {
+            "marche": "1re équipe à marquer : Cruzeiro",
+            "proba": 47.8,
+            "cote_estimee": 2.09
+          },
+          {
+            "marche": "Victoire Palmeiras",
+            "proba": 41.8,
+            "cote_estimee": 2.39
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 39.1,
+            "cote_estimee": 2.56
+          },
+          {
+            "marche": "Victoire Cruzeiro",
+            "proba": 37.1,
+            "cote_estimee": 2.7
+          },
+          {
+            "marche": "Cruzeiro gagne et plus de 1,5 but",
+            "proba": 34.6,
+            "cote_estimee": 2.89
+          },
+          {
+            "marche": "Cruzeiro ou nul et moins de 3,5 buts",
+            "proba": 23.4,
+            "cote_estimee": 4.28
+          },
+          {
+            "marche": "Match nul",
+            "proba": 21.1,
+            "cote_estimee": 4.74
+          },
+          {
+            "marche": "Score exact : 2-2",
+            "proba": 7.3,
+            "cote_estimee": 13.75
+          }
+        ],
+        "Flamengo - Paranaense": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 92.9,
+            "cote_estimee": 1.08
+          },
+          {
+            "marche": "Flamengo ou nul",
+            "proba": 90.0,
+            "cote_estimee": 1.11
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 85.2,
+            "cote_estimee": 1.17
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 79.5,
+            "cote_estimee": 1.26
+          },
+          {
+            "marche": "Victoire Flamengo",
+            "proba": 76.0,
+            "cote_estimee": 1.32
+          },
+          {
+            "marche": "1re équipe à marquer : Flamengo",
+            "proba": 72.2,
+            "cote_estimee": 1.38
+          },
+          {
+            "marche": "Flamengo gagne et plus de 1,5 but",
+            "proba": 71.9,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 65.1,
+            "cote_estimee": 1.54
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 61.2,
+            "cote_estimee": 1.63
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 38.8,
+            "cote_estimee": 2.58
+          },
+          {
+            "marche": "Flamengo ou nul et moins de 3,5 buts",
+            "proba": 33.5,
+            "cote_estimee": 2.99
+          },
+          {
+            "marche": "1re équipe à marquer : Paranaense",
+            "proba": 26.3,
+            "cote_estimee": 3.8
+          },
+          {
+            "marche": "Paranaense ou nul",
+            "proba": 24.0,
+            "cote_estimee": 4.17
+          },
+          {
+            "marche": "Match nul",
+            "proba": 14.0,
+            "cote_estimee": 7.16
+          },
+          {
+            "marche": "Victoire Paranaense",
+            "proba": 10.0,
+            "cote_estimee": 9.98
+          },
+          {
+            "marche": "Score exact : 3-1",
+            "proba": 8.2,
+            "cote_estimee": 12.25
+          }
+        ]
+      },
+      "infos": {
+        "Coritiba - Santos": {
+          "heure": "2026-11-18T22:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Coritiba",
+          "ext": "Santos",
+          "logo_dom": "https://crests.football-data.org/4241.png",
+          "logo_ext": "https://crests.football-data.org/6685.png",
+          "forme_dom": "NDDVD",
+          "forme_ext": "DVNND",
+          "buts_attendus": [
+            1.15,
+            1.58
+          ],
+          "scores": [
+            [
+              "1-1",
+              12.8
+            ],
+            [
+              "0-1",
+              9.4
+            ],
+            [
+              "1-2",
+              9.4
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Coritiba 1V 1N 3D, Santos 1V 2N 2D.",
+            "Coritiba marque peu; Coritiba encaisse beaucoup.",
+            "Santos est favori (1,6 but attendu contre 1,1) malgré le déplacement."
+          ]
+        },
+        "Clube do Remo - Chapecoense": {
+          "heure": "2026-11-18T23:00:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Clube do Remo",
+          "ext": "Chapecoense",
+          "logo_dom": "https://crests.football-data.org/4287.png",
+          "logo_ext": "https://crests.football-data.org/1772_large.png",
+          "forme_dom": "NNDVD",
+          "forme_ext": "DDVDD",
+          "buts_attendus": [
+            1.73,
+            1.08
+          ],
+          "scores": [
+            [
+              "1-1",
+              12.1
+            ],
+            [
+              "2-1",
+              9.7
+            ],
+            [
+              "1-0",
+              9.5
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Clube do Remo 1V 2N 2D, Chapecoense 1V 0N 4D.",
+            "Clube do Remo marque peu; Clube do Remo encaisse beaucoup; Chapecoense marque peu.",
+            "Clube do Remo est favori (1,7 but attendu contre 1,1), aidé par le terrain."
+          ]
+        },
+        "Cruzeiro - Palmeiras": {
+          "heure": "2026-11-18T23:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Cruzeiro",
+          "ext": "Palmeiras",
+          "logo_dom": "https://crests.football-data.org/1771.png",
+          "logo_ext": "https://crests.football-data.org/1769.png",
+          "forme_dom": "DVVVV",
+          "forme_ext": "VVVNV",
+          "buts_attendus": [
+            2.05,
+            2.17
+          ],
+          "scores": [
+            [
+              "2-2",
+              7.3
+            ],
+            [
+              "1-2",
+              7.1
+            ],
+            [
+              "1-1",
+              7.1
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Cruzeiro 4V 0N 1D, Palmeiras 4V 1N 0D.",
+            "Cruzeiro marque plus que la moyenne; Palmeiras marque plus que la moyenne.",
+            "Match équilibré (2,0 - 2,2 buts attendus)."
+          ]
+        },
+        "Flamengo - Paranaense": {
+          "heure": "2026-11-18T23:30:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Flamengo",
+          "ext": "Paranaense",
+          "logo_dom": "https://crests.football-data.org/1783.png",
+          "logo_ext": "https://crests.football-data.org/1768.png",
+          "forme_dom": "VDVVV",
+          "forme_ext": "VDNDD",
+          "buts_attendus": [
+            3.11,
+            1.13
+          ],
+          "scores": [
+            [
+              "3-1",
+              8.2
+            ],
+            [
+              "2-1",
+              7.9
+            ],
+            [
+              "3-0",
+              7.2
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Flamengo 4V 0N 1D, Paranaense 1V 1N 3D.",
+            "Flamengo marque plus que la moyenne; Paranaense encaisse beaucoup.",
+            "Flamengo est favori (3,1 buts attendus contre 1,1), aidé par le terrain."
+          ]
+        }
+      },
+      "combines": [
+        {
+          "taille": 2,
+          "proba": 76.5,
+          "cote_estimee": 1.31,
+          "selections": [
+            "Flamengo - Paranaense : Flamengo ou nul (90.0 %)",
+            "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)"
+          ]
+        },
+        {
+          "taille": 3,
+          "proba": 59.7,
+          "cote_estimee": 1.68,
+          "selections": [
+            "Flamengo - Paranaense : Flamengo ou nul (90.0 %)",
+            "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
+            "Clube do Remo - Chapecoense : Plus de 1,5 buts (78.0 %)"
+          ]
+        },
+        {
+          "taille": 4,
+          "proba": 45.7,
+          "cote_estimee": 2.19,
+          "selections": [
+            "Flamengo - Paranaense : Flamengo ou nul (90.0 %)",
+            "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
+            "Clube do Remo - Chapecoense : Plus de 1,5 buts (78.0 %)",
+            "Coritiba - Santos : Plus de 1,5 buts (76.6 %)"
+          ]
+        }
+      ]
     }
   },
   "matchs": {},
   "infos": {},
   "combines": [],
   "couverture_selections": null,
-  "genere_le": "2026-11-11T03:41:25.933190+00:00",
+  "genere_le": "2026-11-12T04:50:40.467488+00:00",
   "combines_semaine": [],
   "combines_semaine_info": {
-    "matchs_eligibles": 2
+    "matchs_eligibles": 6
   }
 }
