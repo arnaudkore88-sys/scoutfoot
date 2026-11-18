@@ -1,11 +1,6 @@
 {
-  "date": "2026-11-17",
+  "date": "2026-11-18",
   "jours": {
-    "2026-11-17": {
-      "matchs": {},
-      "infos": {},
-      "combines": []
-    },
     "2026-11-18": {
       "matchs": {
         "Coritiba - Santos": [
@@ -41,7 +36,7 @@
           },
           {
             "marche": "Coritiba ou nul",
-            "proba": 53.5,
+            "proba": 53.6,
             "cote_estimee": 1.87
           },
           {
@@ -51,7 +46,7 @@
           },
           {
             "marche": "Victoire Santos",
-            "proba": 46.5,
+            "proba": 46.4,
             "cote_estimee": 2.15
           },
           {
@@ -77,12 +72,12 @@
           {
             "marche": "Victoire Coritiba",
             "proba": 26.7,
-            "cote_estimee": 3.75
+            "cote_estimee": 3.74
           },
           {
             "marche": "Coritiba gagne et plus de 1,5 but",
             "proba": 20.2,
-            "cote_estimee": 4.96
+            "cote_estimee": 4.95
           },
           {
             "marche": "Score exact : 1-1",
@@ -93,7 +88,7 @@
         "Clube do Remo - Chapecoense": [
           {
             "marche": "Clube do Remo ou nul",
-            "proba": 78.9,
+            "proba": 78.8,
             "cote_estimee": 1.27
           },
           {
@@ -128,7 +123,7 @@
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 52.0,
+            "proba": 52.1,
             "cote_estimee": 1.92
           },
           {
@@ -143,7 +138,7 @@
           },
           {
             "marche": "Clube do Remo gagne et plus de 1,5 but",
-            "proba": 42.2,
+            "proba": 42.1,
             "cote_estimee": 2.37
           },
           {
@@ -163,7 +158,7 @@
           },
           {
             "marche": "Victoire Chapecoense",
-            "proba": 21.1,
+            "proba": 21.2,
             "cote_estimee": 4.73
           },
           {
@@ -175,7 +170,7 @@
         "Flamengo - Paranaense": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 92.8,
+            "proba": 92.7,
             "cote_estimee": 1.08
           },
           {
@@ -185,12 +180,12 @@
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 85.1,
+            "proba": 85.0,
             "cote_estimee": 1.18
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 79.3,
+            "proba": 79.2,
             "cote_estimee": 1.26
           },
           {
@@ -210,43 +205,43 @@
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 65.3,
+            "proba": 65.2,
             "cote_estimee": 1.53
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 60.9,
+            "proba": 60.8,
             "cote_estimee": 1.64
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 39.1,
-            "cote_estimee": 2.56
+            "proba": 39.2,
+            "cote_estimee": 2.55
           },
           {
             "marche": "Flamengo ou nul et moins de 3,5 buts",
-            "proba": 33.6,
-            "cote_estimee": 2.98
+            "proba": 33.7,
+            "cote_estimee": 2.97
           },
           {
             "marche": "1re équipe à marquer : Paranaense",
-            "proba": 26.5,
+            "proba": 26.6,
             "cote_estimee": 3.77
           },
           {
             "marche": "Paranaense ou nul",
             "proba": 24.4,
-            "cote_estimee": 4.11
+            "cote_estimee": 4.1
           },
           {
             "marche": "Match nul",
-            "proba": 14.1,
-            "cote_estimee": 7.07
+            "proba": 14.2,
+            "cote_estimee": 7.06
           },
           {
             "marche": "Victoire Paranaense",
             "proba": 10.2,
-            "cote_estimee": 9.79
+            "cote_estimee": 9.76
           },
           {
             "marche": "Score exact : 3-1",
@@ -267,7 +262,7 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 79.2,
+            "proba": 79.1,
             "cote_estimee": 1.26
           },
           {
@@ -298,7 +293,7 @@
           {
             "marche": "1re équipe à marquer : Cruzeiro",
             "proba": 47.7,
-            "cote_estimee": 2.1
+            "cote_estimee": 2.09
           },
           {
             "marche": "Victoire Palmeiras",
@@ -308,12 +303,12 @@
           {
             "marche": "Moins de 3,5 buts",
             "proba": 39.3,
-            "cote_estimee": 2.55
+            "cote_estimee": 2.54
           },
           {
             "marche": "Victoire Cruzeiro",
             "proba": 37.0,
-            "cote_estimee": 2.71
+            "cote_estimee": 2.7
           },
           {
             "marche": "Cruzeiro gagne et plus de 1,5 but",
@@ -322,8 +317,8 @@
           },
           {
             "marche": "Cruzeiro ou nul et moins de 3,5 buts",
-            "proba": 23.4,
-            "cote_estimee": 4.27
+            "proba": 23.5,
+            "cote_estimee": 4.26
           },
           {
             "marche": "Match nul",
@@ -414,7 +409,7 @@
           "forme_dom": "VDVVV",
           "forme_ext": "VDNDD",
           "buts_attendus": [
-            3.09,
+            3.08,
             1.14
           ],
           "scores": [
@@ -483,22 +478,22 @@
         },
         {
           "taille": 3,
-          "proba": 60.2,
+          "proba": 60.1,
           "cote_estimee": 1.66,
           "selections": [
             "Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
             "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
-            "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.9 %)"
+            "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.8 %)"
           ]
         },
         {
           "taille": 4,
-          "proba": 46.2,
-          "cote_estimee": 2.16,
+          "proba": 46.1,
+          "cote_estimee": 2.17,
           "selections": [
             "Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
             "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
-            "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.9 %)",
+            "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.8 %)",
             "Coritiba - Santos : Plus de 1,5 buts (76.7 %)"
           ]
         }
@@ -524,7 +519,7 @@
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 63.7,
+            "proba": 63.8,
             "cote_estimee": 1.57
           },
           {
@@ -534,7 +529,7 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 58.7,
+            "proba": 58.6,
             "cote_estimee": 1.71
           },
           {
@@ -569,13 +564,13 @@
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 36.3,
+            "proba": 36.2,
             "cote_estimee": 2.76
           },
           {
             "marche": "Victoire Bahia",
             "proba": 30.8,
-            "cote_estimee": 3.24
+            "cote_estimee": 3.25
           },
           {
             "marche": "Match nul",
@@ -585,7 +580,7 @@
           {
             "marche": "Score exact : 1-1",
             "proba": 11.8,
-            "cote_estimee": 8.47
+            "cote_estimee": 8.46
           }
         ],
         "Corinthians - Botafogo": [
@@ -673,7 +668,7 @@
         "Vasco da Gama - Internacional": [
           {
             "marche": "Vasco da Gama ou nul",
-            "proba": 80.5,
+            "proba": 80.4,
             "cote_estimee": 1.24
           },
           {
@@ -698,12 +693,12 @@
           },
           {
             "marche": "Victoire Vasco da Gama",
-            "proba": 56.6,
+            "proba": 56.5,
             "cote_estimee": 1.77
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 56.2,
+            "proba": 56.1,
             "cote_estimee": 1.78
           },
           {
@@ -723,7 +718,7 @@
           },
           {
             "marche": "Internacional ou nul",
-            "proba": 43.4,
+            "proba": 43.5,
             "cote_estimee": 2.3
           },
           {
@@ -734,17 +729,17 @@
           {
             "marche": "1re équipe à marquer : Internacional",
             "proba": 33.5,
-            "cote_estimee": 2.99
+            "cote_estimee": 2.98
           },
           {
             "marche": "Match nul",
             "proba": 23.9,
-            "cote_estimee": 4.19
+            "cote_estimee": 4.18
           },
           {
             "marche": "Victoire Internacional",
-            "proba": 19.5,
-            "cote_estimee": 5.12
+            "proba": 19.6,
+            "cote_estimee": 5.11
           },
           {
             "marche": "Score exact : 1-1",
@@ -755,7 +750,7 @@
         "Vitória - Bragantino": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 78.4,
+            "proba": 78.3,
             "cote_estimee": 1.28
           },
           {
@@ -790,12 +785,12 @@
           },
           {
             "marche": "1re équipe à marquer : Bragantino",
-            "proba": 48.3,
+            "proba": 48.2,
             "cote_estimee": 2.07
           },
           {
             "marche": "1re équipe à marquer : Vitória",
-            "proba": 45.8,
+            "proba": 45.9,
             "cote_estimee": 2.18
           },
           {
@@ -847,7 +842,7 @@
           "forme_ext": "VDNVD",
           "buts_attendus": [
             1.67,
-            1.38
+            1.37
           ],
           "scores": [
             [
@@ -912,7 +907,7 @@
           "forme_dom": "DVDVV",
           "forme_ext": "NDVDV",
           "buts_attendus": [
-            1.9,
+            1.89,
             1.04
           ],
           "scores": [
@@ -972,32 +967,32 @@
       "combines": [
         {
           "taille": 2,
-          "proba": 65.7,
+          "proba": 65.6,
           "cote_estimee": 1.52,
           "selections": [
             "Grêmio - Bahia : Plus de 1,5 buts (81.6 %)",
-            "Vasco da Gama - Internacional : Vasco da Gama ou nul (80.5 %)"
-          ]
-        },
-        {
-          "taille": 3,
-          "proba": 52.8,
-          "cote_estimee": 1.89,
-          "selections": [
-            "Grêmio - Bahia : Plus de 1,5 buts (81.6 %)",
-            "Vasco da Gama - Internacional : Vasco da Gama ou nul (80.5 %)",
             "Corinthians - Botafogo : Moins de 3,5 buts (80.4 %)"
           ]
         },
         {
+          "taille": 3,
+          "proba": 52.7,
+          "cote_estimee": 1.9,
+          "selections": [
+            "Grêmio - Bahia : Plus de 1,5 buts (81.6 %)",
+            "Corinthians - Botafogo : Moins de 3,5 buts (80.4 %)",
+            "Vasco da Gama - Internacional : Vasco da Gama ou nul (80.4 %)"
+          ]
+        },
+        {
           "taille": 4,
-          "proba": 41.4,
+          "proba": 41.3,
           "cote_estimee": 2.42,
           "selections": [
             "Grêmio - Bahia : Plus de 1,5 buts (81.6 %)",
-            "Vasco da Gama - Internacional : Vasco da Gama ou nul (80.5 %)",
             "Corinthians - Botafogo : Moins de 3,5 buts (80.4 %)",
-            "Vitória - Bragantino : Plus de 1,5 buts (78.4 %)"
+            "Vasco da Gama - Internacional : Vasco da Gama ou nul (80.4 %)",
+            "Vitória - Bragantino : Plus de 1,5 buts (78.3 %)"
           ]
         }
       ]
@@ -1043,7 +1038,7 @@
           {
             "marche": "1re équipe à marquer : São Paulo",
             "proba": 48.0,
-            "cote_estimee": 2.09
+            "cote_estimee": 2.08
           },
           {
             "marche": "1re équipe à marquer : Fluminense",
@@ -1145,33 +1140,33 @@
           {
             "marche": "1re équipe à marquer : 1, FC Köln",
             "proba": 21.3,
-            "cote_estimee": 4.7
+            "cote_estimee": 4.69
           },
           {
             "marche": "1, FC Köln ou nul",
             "proba": 20.8,
-            "cote_estimee": 4.82
+            "cote_estimee": 4.81
           },
           {
             "marche": "Match nul",
             "proba": 13.7,
-            "cote_estimee": 7.32
+            "cote_estimee": 7.31
           },
           {
             "marche": "Score exact : 2-0",
             "proba": 10.4,
-            "cote_estimee": 9.57
+            "cote_estimee": 9.58
           },
           {
             "marche": "Victoire 1, FC Köln",
             "proba": 7.1,
-            "cote_estimee": 14.07
+            "cote_estimee": 14.03
           }
         ],
         "Troyes - Le Havre": [
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 76.2,
+            "proba": 76.1,
             "cote_estimee": 1.31
           },
           {
@@ -1201,7 +1196,7 @@
           },
           {
             "marche": "1re équipe à marquer : Troyes",
-            "proba": 53.4,
+            "proba": 53.5,
             "cote_estimee": 1.87
           },
           {
@@ -1216,8 +1211,8 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 45.1,
-            "cote_estimee": 2.22
+            "proba": 45.2,
+            "cote_estimee": 2.21
           },
           {
             "marche": "1re équipe à marquer : Le Havre",
@@ -1241,7 +1236,7 @@
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 23.8,
+            "proba": 23.9,
             "cote_estimee": 4.19
           },
           {
@@ -1273,7 +1268,7 @@
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 59.0,
+            "proba": 59.1,
             "cote_estimee": 1.69
           },
           {
@@ -1292,19 +1287,19 @@
             "cote_estimee": 2.15
           },
           {
+            "marche": "Les deux équipes marquent",
+            "proba": 35.7,
+            "cote_estimee": 2.8
+          },
+          {
             "marche": "Athletic gagne et plus de 1,5 but",
             "proba": 35.7,
             "cote_estimee": 2.8
           },
           {
-            "marche": "Les deux équipes marquent",
-            "proba": 35.6,
-            "cote_estimee": 2.81
-          },
-          {
             "marche": "Plus de 2,5 buts",
             "proba": 31.9,
-            "cote_estimee": 3.14
+            "cote_estimee": 3.13
           },
           {
             "marche": "Match nul",
@@ -1313,23 +1308,23 @@
           },
           {
             "marche": "1re équipe à marquer : Espanyol",
-            "proba": 27.4,
+            "proba": 27.5,
             "cote_estimee": 3.64
           },
           {
             "marche": "Score exact : 1-0",
-            "proba": 17.7,
-            "cote_estimee": 5.66
+            "proba": 17.6,
+            "cote_estimee": 5.67
           },
           {
             "marche": "Victoire Espanyol",
             "proba": 16.5,
-            "cote_estimee": 6.08
+            "cote_estimee": 6.07
           },
           {
             "marche": "Plus de 3,5 buts",
             "proba": 14.0,
-            "cote_estimee": 7.15
+            "cote_estimee": 7.13
           }
         ]
       },
@@ -1377,7 +1372,7 @@
           "forme_dom": "NVNVV",
           "forme_ext": "VDNND",
           "buts_attendus": [
-            2.88,
+            2.87,
             0.8
           ],
           "scores": [
@@ -1424,7 +1419,7 @@
             ],
             [
               "0-0",
-              9.4
+              9.3
             ]
           ],
           "explication": [
@@ -1449,7 +1444,7 @@
           "scores": [
             [
               "1-0",
-              17.7
+              17.6
             ],
             [
               "0-0",
@@ -1489,13 +1484,13 @@
         },
         {
           "taille": 4,
-          "proba": 45.3,
+          "proba": 45.2,
           "cote_estimee": 2.21,
           "selections": [
             "Bayern - 1. FC Köln : Plus de 1,5 buts (88.7 %)",
             "Athletic - Espanyol : Moins de 3,5 buts (86.0 %)",
             "São Paulo - Fluminense : Plus de 1,5 buts (77.9 %)",
-            "Troyes - Le Havre : Moins de 3,5 buts (76.2 %)"
+            "Troyes - Le Havre : Moins de 3,5 buts (76.1 %)"
           ]
         }
       ]
@@ -1550,7 +1545,7 @@
           },
           {
             "marche": "Man City ou nul et moins de 3,5 buts",
-            "proba": 45.7,
+            "proba": 45.8,
             "cote_estimee": 2.19
           },
           {
@@ -1581,7 +1576,7 @@
           {
             "marche": "Score exact : 1-1",
             "proba": 10.5,
-            "cote_estimee": 9.51
+            "cote_estimee": 9.5
           }
         ],
         "Alavés - Deportivo": [
@@ -1612,7 +1607,7 @@
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 49.0,
+            "proba": 49.1,
             "cote_estimee": 2.04
           },
           {
@@ -1628,17 +1623,17 @@
           {
             "marche": "Plus de 2,5 buts",
             "proba": 42.3,
-            "cote_estimee": 2.37
+            "cote_estimee": 2.36
           },
           {
             "marche": "1re équipe à marquer : Alavés",
-            "proba": 42.0,
+            "proba": 42.1,
             "cote_estimee": 2.38
           },
           {
             "marche": "Victoire Deportivo",
             "proba": 39.3,
-            "cote_estimee": 2.54
+            "cote_estimee": 2.55
           },
           {
             "marche": "Victoire Alavés",
@@ -1653,99 +1648,17 @@
           {
             "marche": "Alavés gagne et plus de 1,5 but",
             "proba": 21.7,
-            "cote_estimee": 4.62
+            "cote_estimee": 4.61
           },
           {
             "marche": "Plus de 3,5 buts",
             "proba": 21.5,
-            "cote_estimee": 4.65
+            "cote_estimee": 4.64
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 14.1,
             "cote_estimee": 7.09
-          }
-        ],
-        "Como 1907 - Cagliari": [
-          {
-            "marche": "Como 1907 ou nul",
-            "proba": 89.5,
-            "cote_estimee": 1.12
-          },
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 83.4,
-            "cote_estimee": 1.2
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 76.2,
-            "cote_estimee": 1.31
-          },
-          {
-            "marche": "Victoire Como 1907",
-            "proba": 71.3,
-            "cote_estimee": 1.4
-          },
-          {
-            "marche": "1re équipe à marquer : Como 1907",
-            "proba": 71.3,
-            "cote_estimee": 1.4
-          },
-          {
-            "marche": "Como 1907 gagne et plus de 1,5 but",
-            "proba": 62.2,
-            "cote_estimee": 1.61
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 61.9,
-            "cote_estimee": 1.62
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 60.4,
-            "cote_estimee": 1.66
-          },
-          {
-            "marche": "Como 1907 ou nul et moins de 3,5 buts",
-            "proba": 52.7,
-            "cote_estimee": 1.9
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 51.4,
-            "cote_estimee": 1.95
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 39.6,
-            "cote_estimee": 2.53
-          },
-          {
-            "marche": "Cagliari ou nul",
-            "proba": 28.7,
-            "cote_estimee": 3.48
-          },
-          {
-            "marche": "1re équipe à marquer : Cagliari",
-            "proba": 24.6,
-            "cote_estimee": 4.06
-          },
-          {
-            "marche": "Match nul",
-            "proba": 18.2,
-            "cote_estimee": 5.49
-          },
-          {
-            "marche": "Score exact : 2-0",
-            "proba": 11.6,
-            "cote_estimee": 8.65
-          },
-          {
-            "marche": "Victoire Cagliari",
-            "proba": 10.5,
-            "cote_estimee": 9.5
           }
         ],
         "Lazio - Lecce": [
@@ -1756,7 +1669,7 @@
           },
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 89.1,
+            "proba": 89.0,
             "cote_estimee": 1.12
           },
           {
@@ -1776,12 +1689,12 @@
           },
           {
             "marche": "Lazio gagne et plus de 1,5 but",
-            "proba": 72.9,
+            "proba": 72.8,
             "cote_estimee": 1.37
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 71.9,
+            "proba": 71.8,
             "cote_estimee": 1.39
           },
           {
@@ -1791,12 +1704,12 @@
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 51.1,
+            "proba": 51.0,
             "cote_estimee": 1.96
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 48.9,
+            "proba": 49.0,
             "cote_estimee": 2.04
           },
           {
@@ -1807,27 +1720,109 @@
           {
             "marche": "1re équipe à marquer : Lecce",
             "proba": 21.4,
-            "cote_estimee": 4.68
+            "cote_estimee": 4.67
           },
           {
             "marche": "Lecce ou nul",
             "proba": 20.6,
-            "cote_estimee": 4.86
+            "cote_estimee": 4.84
           },
           {
             "marche": "Match nul",
             "proba": 13.5,
-            "cote_estimee": 7.42
+            "cote_estimee": 7.4
           },
           {
             "marche": "Score exact : 2-0",
             "proba": 10.2,
-            "cote_estimee": 9.79
+            "cote_estimee": 9.8
           },
           {
             "marche": "Victoire Lecce",
             "proba": 7.1,
-            "cote_estimee": 14.1
+            "cote_estimee": 14.04
+          }
+        ],
+        "Como 1907 - Cagliari": [
+          {
+            "marche": "Como 1907 ou nul",
+            "proba": 89.4,
+            "cote_estimee": 1.12
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 83.4,
+            "cote_estimee": 1.2
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 76.2,
+            "cote_estimee": 1.31
+          },
+          {
+            "marche": "Victoire Como 1907",
+            "proba": 71.2,
+            "cote_estimee": 1.4
+          },
+          {
+            "marche": "1re équipe à marquer : Como 1907",
+            "proba": 71.2,
+            "cote_estimee": 1.4
+          },
+          {
+            "marche": "Como 1907 gagne et plus de 1,5 but",
+            "proba": 62.1,
+            "cote_estimee": 1.61
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 61.8,
+            "cote_estimee": 1.62
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 60.4,
+            "cote_estimee": 1.65
+          },
+          {
+            "marche": "Como 1907 ou nul et moins de 3,5 buts",
+            "proba": 52.6,
+            "cote_estimee": 1.9
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 51.4,
+            "cote_estimee": 1.94
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 39.6,
+            "cote_estimee": 2.53
+          },
+          {
+            "marche": "Cagliari ou nul",
+            "proba": 28.8,
+            "cote_estimee": 3.47
+          },
+          {
+            "marche": "1re équipe à marquer : Cagliari",
+            "proba": 24.7,
+            "cote_estimee": 4.05
+          },
+          {
+            "marche": "Match nul",
+            "proba": 18.2,
+            "cote_estimee": 5.48
+          },
+          {
+            "marche": "Score exact : 2-0",
+            "proba": 11.5,
+            "cote_estimee": 8.66
+          },
+          {
+            "marche": "Victoire Cagliari",
+            "proba": 10.6,
+            "cote_estimee": 9.47
           }
         ],
         "Elversberg - Freiburg": [
@@ -1889,7 +1884,7 @@
           {
             "marche": "Victoire Elversberg",
             "proba": 37.5,
-            "cote_estimee": 2.67
+            "cote_estimee": 2.66
           },
           {
             "marche": "Elversberg ou nul et moins de 3,5 buts",
@@ -1898,8 +1893,8 @@
           },
           {
             "marche": "Elversberg gagne et plus de 1,5 but",
-            "proba": 32.7,
-            "cote_estimee": 3.06
+            "proba": 32.8,
+            "cote_estimee": 3.05
           },
           {
             "marche": "Match nul",
@@ -1915,12 +1910,12 @@
         "M'gladbach - Dortmund": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 76.7,
+            "proba": 76.8,
             "cote_estimee": 1.3
           },
           {
             "marche": "Dortmund ou nul",
-            "proba": 75.2,
+            "proba": 75.1,
             "cote_estimee": 1.33
           },
           {
@@ -1935,17 +1930,17 @@
           },
           {
             "marche": "1re équipe à marquer : Dortmund",
-            "proba": 55.8,
+            "proba": 55.7,
             "cote_estimee": 1.79
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 54.7,
+            "proba": 54.8,
             "cote_estimee": 1.83
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 51.5,
+            "proba": 51.6,
             "cote_estimee": 1.94
           },
           {
@@ -1956,16 +1951,16 @@
           {
             "marche": "Victoire Dortmund",
             "proba": 48.7,
-            "cote_estimee": 2.05
+            "cote_estimee": 2.06
           },
           {
             "marche": "M'gladbach ou nul et moins de 3,5 buts",
             "proba": 38.1,
-            "cote_estimee": 2.63
+            "cote_estimee": 2.62
           },
           {
             "marche": "1re équipe à marquer : M'gladbach",
-            "proba": 37.7,
+            "proba": 37.8,
             "cote_estimee": 2.65
           },
           {
@@ -1980,13 +1975,13 @@
           },
           {
             "marche": "Victoire M'gladbach",
-            "proba": 24.8,
-            "cote_estimee": 4.03
+            "proba": 24.9,
+            "cote_estimee": 4.02
           },
           {
             "marche": "M'gladbach gagne et plus de 1,5 but",
             "proba": 18.6,
-            "cote_estimee": 5.38
+            "cote_estimee": 5.36
           },
           {
             "marche": "Score exact : 1-1",
@@ -2002,7 +1997,7 @@
           },
           {
             "marche": "RB Leipzig ou nul",
-            "proba": 79.0,
+            "proba": 78.9,
             "cote_estimee": 1.27
           },
           {
@@ -2022,12 +2017,12 @@
           },
           {
             "marche": "1re équipe à marquer : RB Leipzig",
-            "proba": 61.1,
+            "proba": 61.0,
             "cote_estimee": 1.64
           },
           {
             "marche": "Victoire RB Leipzig",
-            "proba": 57.3,
+            "proba": 57.2,
             "cote_estimee": 1.75
           },
           {
@@ -2042,18 +2037,18 @@
           },
           {
             "marche": "Union Berlin ou nul",
-            "proba": 42.7,
+            "proba": 42.8,
             "cote_estimee": 2.34
           },
           {
             "marche": "1re équipe à marquer : Union Berlin",
-            "proba": 35.7,
+            "proba": 35.8,
             "cote_estimee": 2.8
           },
           {
             "marche": "Union Berlin ou nul et moins de 3,5 buts",
             "proba": 26.0,
-            "cote_estimee": 3.85
+            "cote_estimee": 3.84
           },
           {
             "marche": "Match nul",
@@ -2062,13 +2057,13 @@
           },
           {
             "marche": "Victoire Union Berlin",
-            "proba": 21.0,
-            "cote_estimee": 4.76
+            "proba": 21.1,
+            "cote_estimee": 4.75
           },
           {
             "marche": "Union Berlin gagne et plus de 1,5 but",
             "proba": 17.7,
-            "cote_estimee": 5.66
+            "cote_estimee": 5.64
           },
           {
             "marche": "Score exact : 1-2",
@@ -2102,7 +2097,7 @@
             ],
             [
               "2-0",
-              8.1
+              8.0
             ]
           ],
           "explication": [
@@ -2144,39 +2139,6 @@
             "Match équilibré (1,1 - 1,3 buts attendus)."
           ]
         },
-        "Como 1907 - Cagliari": {
-          "heure": "2026-11-21T14:00:00Z",
-          "ligue": "Serie A",
-          "dom": "Como 1907",
-          "ext": "Cagliari",
-          "logo_dom": "https://crests.football-data.org/7397.png",
-          "logo_ext": "https://crests.football-data.org/104.png",
-          "forme_dom": "VVVVD",
-          "forme_ext": "DDDDV",
-          "buts_attendus": [
-            2.37,
-            0.82
-          ],
-          "scores": [
-            [
-              "2-0",
-              11.6
-            ],
-            [
-              "2-1",
-              9.5
-            ],
-            [
-              "3-0",
-              9.1
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Como 1907 4V 0N 1D, Cagliari 1V 0N 4D.",
-            "Como 1907 marque plus que la moyenne; Como 1907 encaisse peu; Cagliari marque peu.",
-            "Como 1907 est favori (2,4 buts attendus contre 0,8), aidé par le terrain."
-          ]
-        },
         "Lazio - Lecce": {
           "heure": "2026-11-21T14:00:00Z",
           "ligue": "Serie A",
@@ -2208,6 +2170,39 @@
             "Forme sur les 5 derniers matchs : Lazio 4V 1N 0D, Lecce 1V 1N 3D.",
             "Lazio marque plus que la moyenne; Lazio encaisse peu; Lecce marque peu.",
             "Lazio est favori (2,9 buts attendus contre 0,8), aidé par le terrain."
+          ]
+        },
+        "Como 1907 - Cagliari": {
+          "heure": "2026-11-21T14:00:00Z",
+          "ligue": "Serie A",
+          "dom": "Como 1907",
+          "ext": "Cagliari",
+          "logo_dom": "https://crests.football-data.org/7397.png",
+          "logo_ext": "https://crests.football-data.org/104.png",
+          "forme_dom": "VVVVD",
+          "forme_ext": "DDDDV",
+          "buts_attendus": [
+            2.37,
+            0.82
+          ],
+          "scores": [
+            [
+              "2-0",
+              11.5
+            ],
+            [
+              "2-1",
+              9.5
+            ],
+            [
+              "3-0",
+              9.1
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Como 1907 4V 0N 1D, Cagliari 1V 0N 4D.",
+            "Como 1907 marque plus que la moyenne; Como 1907 encaisse peu; Cagliari marque peu.",
+            "Como 1907 est favori (2,4 buts attendus contre 0,8), aidé par le terrain."
           ]
         },
         "Elversberg - Freiburg": {
@@ -2253,7 +2248,7 @@
           "forme_dom": "DDVND",
           "forme_ext": "VVNVV",
           "buts_attendus": [
-            1.1,
+            1.11,
             1.63
           ],
           "scores": [
@@ -2287,7 +2282,7 @@
           "forme_ext": "DVVDV",
           "buts_attendus": [
             1.27,
-            2.18
+            2.17
           ],
           "scores": [
             [
@@ -2313,41 +2308,41 @@
       "combines": [
         {
           "taille": 2,
-          "proba": 79.7,
-          "cote_estimee": 1.25,
+          "proba": 79.6,
+          "cote_estimee": 1.26,
           "selections": [
-            "Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-            "Lazio - Lecce : Plus de 1,5 buts (89.1 %)"
+            "Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
+            "Lazio - Lecce : Plus de 1,5 buts (89.0 %)"
           ]
         },
         {
           "taille": 3,
-          "proba": 69.1,
+          "proba": 68.9,
           "cote_estimee": 1.45,
           "selections": [
-            "Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-            "Lazio - Lecce : Plus de 1,5 buts (89.1 %)",
+            "Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
+            "Lazio - Lecce : Plus de 1,5 buts (89.0 %)",
             "Union Berlin - RB Leipzig : Plus de 1,5 buts (86.6 %)"
           ]
         },
         {
           "taille": 4,
-          "proba": 59.7,
+          "proba": 59.5,
           "cote_estimee": 1.68,
           "selections": [
-            "Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-            "Lazio - Lecce : Plus de 1,5 buts (89.1 %)",
+            "Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
+            "Lazio - Lecce : Plus de 1,5 buts (89.0 %)",
             "Union Berlin - RB Leipzig : Plus de 1,5 buts (86.6 %)",
             "Elversberg - Freiburg : Plus de 1,5 buts (86.4 %)"
           ]
         },
         {
           "taille": 5,
-          "proba": 50.1,
+          "proba": 49.9,
           "cote_estimee": 2.0,
           "selections": [
-            "Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-            "Lazio - Lecce : Plus de 1,5 buts (89.1 %)",
+            "Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
+            "Lazio - Lecce : Plus de 1,5 buts (89.0 %)",
             "Union Berlin - RB Leipzig : Plus de 1,5 buts (86.6 %)",
             "Elversberg - Freiburg : Plus de 1,5 buts (86.4 %)",
             "Man City - Fulham : Plus de 1,5 buts (83.9 %)"
@@ -2360,7 +2355,7 @@
         "Chapecoense - Cruzeiro": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 86.2,
+            "proba": 86.1,
             "cote_estimee": 1.16
           },
           {
@@ -2385,53 +2380,53 @@
           },
           {
             "marche": "Victoire Cruzeiro",
-            "proba": 63.4,
+            "proba": 63.3,
             "cote_estimee": 1.58
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 61.0,
+            "proba": 61.1,
             "cote_estimee": 1.64
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 55.5,
+            "proba": 55.6,
             "cote_estimee": 1.8
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 44.5,
+            "proba": 44.4,
             "cote_estimee": 2.25
           },
           {
             "marche": "Chapecoense ou nul",
-            "proba": 36.6,
+            "proba": 36.7,
             "cote_estimee": 2.73
           },
           {
             "marche": "1re équipe à marquer : Chapecoense",
             "proba": 31.5,
-            "cote_estimee": 3.18
+            "cote_estimee": 3.17
           },
           {
             "marche": "Chapecoense ou nul et moins de 3,5 buts",
             "proba": 23.5,
-            "cote_estimee": 4.26
+            "cote_estimee": 4.25
           },
           {
             "marche": "Match nul",
-            "proba": 20.2,
-            "cote_estimee": 4.94
+            "proba": 20.3,
+            "cote_estimee": 4.93
           },
           {
             "marche": "Victoire Chapecoense",
             "proba": 16.4,
-            "cote_estimee": 6.11
+            "cote_estimee": 6.1
           },
           {
             "marche": "Chapecoense gagne et plus de 1,5 but",
             "proba": 13.4,
-            "cote_estimee": 7.48
+            "cote_estimee": 7.45
           },
           {
             "marche": "Score exact : 1-2",
@@ -2442,7 +2437,7 @@
         "Twente - Willem II": [
           {
             "marche": "Twente ou nul",
-            "proba": 95.8,
+            "proba": 95.7,
             "cote_estimee": 1.04
           },
           {
@@ -2457,12 +2452,12 @@
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 86.8,
+            "proba": 86.7,
             "cote_estimee": 1.15
           },
           {
             "marche": "Twente gagne et plus de 1,5 but",
-            "proba": 83.2,
+            "proba": 83.1,
             "cote_estimee": 1.2
           },
           {
@@ -2472,13 +2467,13 @@
           },
           {
             "marche": "1re équipe à marquer : Twente",
-            "proba": 80.6,
+            "proba": 80.5,
             "cote_estimee": 1.24
           },
           {
             "marche": "Plus de 3,5 buts",
             "proba": 65.6,
-            "cote_estimee": 1.52
+            "cote_estimee": 1.53
           },
           {
             "marche": "Les deux équipes marquent",
@@ -2488,43 +2483,43 @@
           {
             "marche": "Moins de 3,5 buts",
             "proba": 34.4,
-            "cote_estimee": 2.91
+            "cote_estimee": 2.9
           },
           {
             "marche": "Twente ou nul et moins de 3,5 buts",
-            "proba": 31.8,
+            "proba": 31.9,
             "cote_estimee": 3.14
           },
           {
             "marche": "1re équipe à marquer : Willem II",
             "proba": 18.3,
-            "cote_estimee": 5.47
+            "cote_estimee": 5.45
           },
           {
             "marche": "Willem II ou nul",
             "proba": 13.0,
-            "cote_estimee": 7.71
+            "cote_estimee": 7.67
           },
           {
             "marche": "Score exact : 3-0",
             "proba": 9.2,
-            "cote_estimee": 10.9
+            "cote_estimee": 10.92
           },
           {
             "marche": "Match nul",
-            "proba": 8.7,
-            "cote_estimee": 11.45
+            "proba": 8.8,
+            "cote_estimee": 11.4
           },
           {
             "marche": "Victoire Willem II",
-            "proba": 4.2,
-            "cote_estimee": 23.63
+            "proba": 4.3,
+            "cote_estimee": 23.45
           }
         ],
         "Juventus - Venezia FC": [
           {
             "marche": "Juventus ou nul",
-            "proba": 81.9,
+            "proba": 81.8,
             "cote_estimee": 1.22
           },
           {
@@ -2534,12 +2529,12 @@
           },
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 70.9,
+            "proba": 71.0,
             "cote_estimee": 1.41
           },
           {
             "marche": "But en 1re mi-temps",
-            "proba": 66.6,
+            "proba": 66.7,
             "cote_estimee": 1.5
           },
           {
@@ -2550,26 +2545,26 @@
           {
             "marche": "1re équipe à marquer : Juventus",
             "proba": 60.4,
-            "cote_estimee": 1.65
+            "cote_estimee": 1.66
           },
           {
             "marche": "Victoire Juventus",
-            "proba": 55.2,
+            "proba": 55.1,
             "cote_estimee": 1.81
           },
           {
             "marche": "Les deux équipes marquent",
-            "proba": 45.9,
+            "proba": 46.0,
             "cote_estimee": 2.18
           },
           {
             "marche": "Venezia FC ou nul",
-            "proba": 44.8,
+            "proba": 44.9,
             "cote_estimee": 2.23
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 44.0,
+            "proba": 44.1,
             "cote_estimee": 2.27
           },
           {
@@ -2579,7 +2574,7 @@
           },
           {
             "marche": "1re équipe à marquer : Venezia FC",
-            "proba": 30.8,
+            "proba": 30.9,
             "cote_estimee": 3.24
           },
           {
@@ -2590,23 +2585,23 @@
           {
             "marche": "Plus de 3,5 buts",
             "proba": 23.0,
-            "cote_estimee": 4.36
+            "cote_estimee": 4.35
           },
           {
             "marche": "Victoire Venezia FC",
-            "proba": 18.1,
-            "cote_estimee": 5.51
+            "proba": 18.2,
+            "cote_estimee": 5.5
           },
           {
             "marche": "Score exact : 1-0",
-            "proba": 13.2,
-            "cote_estimee": 7.6
+            "proba": 13.1,
+            "cote_estimee": 7.61
           }
         ],
         "Barça - Villarreal": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 96.0,
+            "proba": 95.9,
             "cote_estimee": 1.04
           },
           {
@@ -2631,12 +2626,12 @@
           },
           {
             "marche": "Barça gagne et plus de 1,5 but",
-            "proba": 77.5,
+            "proba": 77.4,
             "cote_estimee": 1.29
           },
           {
             "marche": "1re équipe à marquer : Barça",
-            "proba": 73.4,
+            "proba": 73.3,
             "cote_estimee": 1.36
           },
           {
@@ -2652,7 +2647,7 @@
           {
             "marche": "Moins de 3,5 buts",
             "proba": 27.7,
-            "cote_estimee": 3.62
+            "cote_estimee": 3.61
           },
           {
             "marche": "1re équipe à marquer : Villarreal",
@@ -2661,28 +2656,110 @@
           },
           {
             "marche": "Barça ou nul et moins de 3,5 buts",
-            "proba": 23.9,
-            "cote_estimee": 4.18
+            "proba": 24.0,
+            "cote_estimee": 4.17
           },
           {
             "marche": "Villarreal ou nul",
             "proba": 20.2,
-            "cote_estimee": 4.96
+            "cote_estimee": 4.95
           },
           {
             "marche": "Match nul",
             "proba": 11.5,
-            "cote_estimee": 8.72
+            "cote_estimee": 8.7
           },
           {
             "marche": "Victoire Villarreal",
             "proba": 8.7,
-            "cote_estimee": 11.49
+            "cote_estimee": 11.46
           },
           {
             "marche": "Score exact : 3-1",
             "proba": 7.5,
-            "cote_estimee": 13.3
+            "cote_estimee": 13.29
+          }
+        ],
+        "Sparta - AZ": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 90.6,
+            "cote_estimee": 1.1
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 82.6,
+            "cote_estimee": 1.21
+          },
+          {
+            "marche": "AZ ou nul",
+            "proba": 75.6,
+            "cote_estimee": 1.32
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 74.5,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 71.8,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "1re équipe à marquer : AZ",
+            "proba": 59.0,
+            "cote_estimee": 1.7
+          },
+          {
+            "marche": "Victoire AZ",
+            "proba": 54.8,
+            "cote_estimee": 1.83
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 54.5,
+            "cote_estimee": 1.84
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 45.5,
+            "cote_estimee": 2.2
+          },
+          {
+            "marche": "Sparta ou nul",
+            "proba": 45.2,
+            "cote_estimee": 2.21
+          },
+          {
+            "marche": "1re équipe à marquer : Sparta",
+            "proba": 39.0,
+            "cote_estimee": 2.56
+          },
+          {
+            "marche": "Victoire Sparta",
+            "proba": 24.4,
+            "cote_estimee": 4.09
+          },
+          {
+            "marche": "Sparta ou nul et moins de 3,5 buts",
+            "proba": 22.7,
+            "cote_estimee": 4.41
+          },
+          {
+            "marche": "Sparta gagne et plus de 1,5 but",
+            "proba": 21.9,
+            "cote_estimee": 4.57
+          },
+          {
+            "marche": "Match nul",
+            "proba": 20.8,
+            "cote_estimee": 4.81
+          },
+          {
+            "marche": "Score exact : 1-2",
+            "proba": 8.7,
+            "cote_estimee": 11.52
           }
         ],
         "Ajax - Den Haag": [
@@ -2718,8 +2795,8 @@
           },
           {
             "marche": "Victoire Ajax",
-            "proba": 57.4,
-            "cote_estimee": 1.74
+            "proba": 57.3,
+            "cote_estimee": 1.75
           },
           {
             "marche": "Moins de 3,5 buts",
@@ -2738,7 +2815,7 @@
           },
           {
             "marche": "Den Haag ou nul",
-            "proba": 42.6,
+            "proba": 42.7,
             "cote_estimee": 2.34
           },
           {
@@ -2754,7 +2831,7 @@
           {
             "marche": "Victoire Den Haag",
             "proba": 21.4,
-            "cote_estimee": 4.68
+            "cote_estimee": 4.67
           },
           {
             "marche": "Match nul",
@@ -2767,257 +2844,11 @@
             "cote_estimee": 10.65
           }
         ],
-        "Sparta - AZ": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 90.6,
-            "cote_estimee": 1.1
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 82.6,
-            "cote_estimee": 1.21
-          },
-          {
-            "marche": "AZ ou nul",
-            "proba": 75.6,
-            "cote_estimee": 1.32
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 74.5,
-            "cote_estimee": 1.34
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 71.7,
-            "cote_estimee": 1.39
-          },
-          {
-            "marche": "1re équipe à marquer : AZ",
-            "proba": 59.0,
-            "cote_estimee": 1.7
-          },
-          {
-            "marche": "Victoire AZ",
-            "proba": 54.8,
-            "cote_estimee": 1.82
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 54.5,
-            "cote_estimee": 1.84
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 45.5,
-            "cote_estimee": 2.2
-          },
-          {
-            "marche": "Sparta ou nul",
-            "proba": 45.2,
-            "cote_estimee": 2.21
-          },
-          {
-            "marche": "1re équipe à marquer : Sparta",
-            "proba": 39.0,
-            "cote_estimee": 2.57
-          },
-          {
-            "marche": "Victoire Sparta",
-            "proba": 24.4,
-            "cote_estimee": 4.1
-          },
-          {
-            "marche": "Sparta ou nul et moins de 3,5 buts",
-            "proba": 22.7,
-            "cote_estimee": 4.41
-          },
-          {
-            "marche": "Sparta gagne et plus de 1,5 but",
-            "proba": 21.8,
-            "cote_estimee": 4.58
-          },
-          {
-            "marche": "Match nul",
-            "proba": 20.8,
-            "cote_estimee": 4.81
-          },
-          {
-            "marche": "Score exact : 1-2",
-            "proba": 8.7,
-            "cote_estimee": 11.52
-          }
-        ],
-        "Hull City - Brighton Hove": [
-          {
-            "marche": "Brighton Hove ou nul",
-            "proba": 83.4,
-            "cote_estimee": 1.2
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 75.8,
-            "cote_estimee": 1.32
-          },
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 72.2,
-            "cote_estimee": 1.39
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 67.5,
-            "cote_estimee": 1.48
-          },
-          {
-            "marche": "1re équipe à marquer : Brighton Hove",
-            "proba": 62.4,
-            "cote_estimee": 1.6
-          },
-          {
-            "marche": "Victoire Brighton Hove",
-            "proba": 57.8,
-            "cote_estimee": 1.73
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 45.9,
-            "cote_estimee": 2.18
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 45.6,
-            "cote_estimee": 2.19
-          },
-          {
-            "marche": "Hull City ou nul",
-            "proba": 42.2,
-            "cote_estimee": 2.37
-          },
-          {
-            "marche": "Hull City ou nul et moins de 3,5 buts",
-            "proba": 34.7,
-            "cote_estimee": 2.88
-          },
-          {
-            "marche": "1re équipe à marquer : Hull City",
-            "proba": 29.4,
-            "cote_estimee": 3.4
-          },
-          {
-            "marche": "Match nul",
-            "proba": 25.6,
-            "cote_estimee": 3.91
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 24.2,
-            "cote_estimee": 4.13
-          },
-          {
-            "marche": "Victoire Hull City",
-            "proba": 16.6,
-            "cote_estimee": 6.04
-          },
-          {
-            "marche": "Score exact : 0-1",
-            "proba": 13.0,
-            "cote_estimee": 7.66
-          },
-          {
-            "marche": "Hull City gagne et plus de 1,5 but",
-            "proba": 10.9,
-            "cote_estimee": 9.2
-          }
-        ],
-        "Paris FC - Angers SCO": [
-          {
-            "marche": "Paris FC ou nul",
-            "proba": 90.4,
-            "cote_estimee": 1.11
-          },
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 80.8,
-            "cote_estimee": 1.24
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 74.1,
-            "cote_estimee": 1.35
-          },
-          {
-            "marche": "1re équipe à marquer : Paris FC",
-            "proba": 72.0,
-            "cote_estimee": 1.39
-          },
-          {
-            "marche": "Victoire Paris FC",
-            "proba": 71.8,
-            "cote_estimee": 1.39
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 64.6,
-            "cote_estimee": 1.55
-          },
-          {
-            "marche": "Paris FC gagne et plus de 1,5 but",
-            "proba": 61.2,
-            "cote_estimee": 1.63
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 57.8,
-            "cote_estimee": 1.73
-          },
-          {
-            "marche": "Paris FC ou nul et moins de 3,5 buts",
-            "proba": 57.0,
-            "cote_estimee": 1.75
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 47.0,
-            "cote_estimee": 2.13
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 35.4,
-            "cote_estimee": 2.83
-          },
-          {
-            "marche": "Angers SCO ou nul",
-            "proba": 28.2,
-            "cote_estimee": 3.54
-          },
-          {
-            "marche": "1re équipe à marquer : Angers SCO",
-            "proba": 23.0,
-            "cote_estimee": 4.35
-          },
-          {
-            "marche": "Match nul",
-            "proba": 18.6,
-            "cote_estimee": 5.39
-          },
-          {
-            "marche": "Score exact : 2-0",
-            "proba": 12.8,
-            "cote_estimee": 7.78
-          },
-          {
-            "marche": "Victoire Angers SCO",
-            "proba": 9.6,
-            "cote_estimee": 10.37
-          }
-        ],
         "Bologna - Udinese": [
           {
             "marche": "Bologna ou nul",
             "proba": 86.6,
-            "cote_estimee": 1.15
+            "cote_estimee": 1.16
           },
           {
             "marche": "Plus de 1,5 buts",
@@ -3041,12 +2872,12 @@
           },
           {
             "marche": "Plus de 2,5 buts",
-            "proba": 65.8,
+            "proba": 65.7,
             "cote_estimee": 1.52
           },
           {
             "marche": "Bologna gagne et plus de 1,5 but",
-            "proba": 60.2,
+            "proba": 60.1,
             "cote_estimee": 1.66
           },
           {
@@ -3056,7 +2887,7 @@
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 56.1,
+            "proba": 56.2,
             "cote_estimee": 1.78
           },
           {
@@ -3066,13 +2897,13 @@
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 43.9,
+            "proba": 43.8,
             "cote_estimee": 2.28
           },
           {
             "marche": "Udinese ou nul",
             "proba": 32.4,
-            "cote_estimee": 3.09
+            "cote_estimee": 3.08
           },
           {
             "marche": "1re équipe à marquer : Udinese",
@@ -3082,17 +2913,181 @@
           {
             "marche": "Match nul",
             "proba": 19.0,
-            "cote_estimee": 5.27
+            "cote_estimee": 5.26
           },
           {
             "marche": "Victoire Udinese",
             "proba": 13.4,
-            "cote_estimee": 7.47
+            "cote_estimee": 7.45
           },
           {
             "marche": "Score exact : 2-0",
             "proba": 9.7,
-            "cote_estimee": 10.34
+            "cote_estimee": 10.35
+          }
+        ],
+        "Paris FC - Angers SCO": [
+          {
+            "marche": "Paris FC ou nul",
+            "proba": 90.3,
+            "cote_estimee": 1.11
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 80.8,
+            "cote_estimee": 1.24
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 74.1,
+            "cote_estimee": 1.35
+          },
+          {
+            "marche": "1re équipe à marquer : Paris FC",
+            "proba": 72.0,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "Victoire Paris FC",
+            "proba": 71.7,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 64.6,
+            "cote_estimee": 1.55
+          },
+          {
+            "marche": "Paris FC gagne et plus de 1,5 but",
+            "proba": 61.1,
+            "cote_estimee": 1.64
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 57.8,
+            "cote_estimee": 1.73
+          },
+          {
+            "marche": "Paris FC ou nul et moins de 3,5 buts",
+            "proba": 57.0,
+            "cote_estimee": 1.75
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 47.1,
+            "cote_estimee": 2.12
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 35.4,
+            "cote_estimee": 2.83
+          },
+          {
+            "marche": "Angers SCO ou nul",
+            "proba": 28.3,
+            "cote_estimee": 3.54
+          },
+          {
+            "marche": "1re équipe à marquer : Angers SCO",
+            "proba": 23.0,
+            "cote_estimee": 4.34
+          },
+          {
+            "marche": "Match nul",
+            "proba": 18.6,
+            "cote_estimee": 5.38
+          },
+          {
+            "marche": "Score exact : 2-0",
+            "proba": 12.8,
+            "cote_estimee": 7.79
+          },
+          {
+            "marche": "Victoire Angers SCO",
+            "proba": 9.7,
+            "cote_estimee": 10.33
+          }
+        ],
+        "Sassuolo - Genoa": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 85.1,
+            "cote_estimee": 1.18
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 77.5,
+            "cote_estimee": 1.29
+          },
+          {
+            "marche": "Genoa ou nul",
+            "proba": 74.8,
+            "cote_estimee": 1.34
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 64.3,
+            "cote_estimee": 1.56
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 64.3,
+            "cote_estimee": 1.56
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 57.8,
+            "cote_estimee": 1.73
+          },
+          {
+            "marche": "1re équipe à marquer : Genoa",
+            "proba": 57.4,
+            "cote_estimee": 1.74
+          },
+          {
+            "marche": "Victoire Genoa",
+            "proba": 51.5,
+            "cote_estimee": 1.94
+          },
+          {
+            "marche": "Sassuolo ou nul",
+            "proba": 48.5,
+            "cote_estimee": 2.06
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 42.2,
+            "cote_estimee": 2.37
+          },
+          {
+            "marche": "1re équipe à marquer : Sassuolo",
+            "proba": 39.0,
+            "cote_estimee": 2.57
+          },
+          {
+            "marche": "Sassuolo ou nul et moins de 3,5 buts",
+            "proba": 30.1,
+            "cote_estimee": 3.32
+          },
+          {
+            "marche": "Victoire Sassuolo",
+            "proba": 25.2,
+            "cote_estimee": 3.97
+          },
+          {
+            "marche": "Match nul",
+            "proba": 23.4,
+            "cote_estimee": 4.28
+          },
+          {
+            "marche": "Sassuolo gagne et plus de 1,5 but",
+            "proba": 21.1,
+            "cote_estimee": 4.75
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 10.4,
+            "cote_estimee": 9.62
           }
         ]
       },
@@ -3174,12 +3169,12 @@
           "forme_ext": "VDDDV",
           "buts_attendus": [
             1.61,
-            0.82
+            0.83
           ],
           "scores": [
             [
               "1-0",
-              13.2
+              13.1
             ],
             [
               "1-1",
@@ -3192,7 +3187,7 @@
           ],
           "explication": [
             "Forme sur les 5 derniers matchs : Juventus 2V 1N 2D, Venezia FC 2V 0N 3D.",
-            "Juventus encaisse peu; Venezia FC marque peu.",
+            "Venezia FC marque peu.",
             "Juventus est favori (1,6 but attendu contre 0,8), aidé par le terrain."
           ]
         },
@@ -3206,7 +3201,7 @@
           "forme_dom": "DDVVV",
           "forme_ext": "DVDDV",
           "buts_attendus": [
-            3.64,
+            3.63,
             1.28
           ],
           "scores": [
@@ -3227,39 +3222,6 @@
             "Forme sur les 5 derniers matchs : Barça 3V 0N 2D, Villarreal 2V 0N 3D.",
             "Barça marque plus que la moyenne.",
             "Barça est favori (3,6 buts attendus contre 1,3), aidé par le terrain."
-          ]
-        },
-        "Ajax - Den Haag": {
-          "heure": "2026-11-22T13:30:00Z",
-          "ligue": "Eredivisie",
-          "dom": "Ajax",
-          "ext": "Den Haag",
-          "logo_dom": "https://crests.football-data.org/678.png",
-          "logo_ext": "https://crests.football-data.org/680.png",
-          "forme_dom": "NVVVN",
-          "forme_ext": "NVDDV",
-          "buts_attendus": [
-            2.24,
-            1.33
-          ],
-          "scores": [
-            [
-              "2-1",
-              9.4
-            ],
-            [
-              "1-1",
-              9.1
-            ],
-            [
-              "2-0",
-              7.1
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Ajax 3V 2N 0D, Den Haag 2V 1N 2D.",
-            "Ajax marque plus que la moyenne; Ajax encaisse peu.",
-            "Ajax est favori (2,2 buts attendus contre 1,3), aidé par le terrain."
           ]
         },
         "Sparta - AZ": {
@@ -3295,70 +3257,37 @@
             "AZ est favori (2,3 buts attendus contre 1,5) malgré le déplacement."
           ]
         },
-        "Hull City - Brighton Hove": {
-          "heure": "2026-11-22T14:00:00Z",
-          "ligue": "Premier League",
-          "dom": "Hull City",
-          "ext": "Brighton Hove",
-          "logo_dom": "https://crests.football-data.org/322.png",
-          "logo_ext": "https://crests.football-data.org/397.png",
-          "forme_dom": "NDNND",
-          "forme_ext": "VVDVV",
+        "Ajax - Den Haag": {
+          "heure": "2026-11-22T13:30:00Z",
+          "ligue": "Eredivisie",
+          "dom": "Ajax",
+          "ext": "Den Haag",
+          "logo_dom": "https://crests.football-data.org/678.png",
+          "logo_ext": "https://crests.football-data.org/680.png",
+          "forme_dom": "NVVVN",
+          "forme_ext": "NVDDV",
           "buts_attendus": [
-            0.8,
-            1.7
+            2.24,
+            1.33
           ],
           "scores": [
             [
-              "0-1",
-              13.0
+              "2-1",
+              9.4
             ],
             [
               "1-1",
-              12.1
+              9.1
             ],
-            [
-              "0-2",
-              11.8
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Hull City 0V 3N 2D, Brighton Hove 4V 0N 1D.",
-            "Hull City marque peu; Brighton Hove marque plus que la moyenne; Brighton Hove encaisse peu.",
-            "Brighton Hove est favori (1,7 but attendu contre 0,8) malgré le déplacement."
-          ]
-        },
-        "Paris FC - Angers SCO": {
-          "heure": "2026-11-22T14:00:00Z",
-          "ligue": "Ligue 1",
-          "dom": "Paris FC",
-          "ext": "Angers SCO",
-          "logo_dom": "https://crests.football-data.org/1045.png",
-          "logo_ext": "https://crests.football-data.org/532.png",
-          "forme_dom": "DVDVV",
-          "forme_ext": "DDNDD",
-          "buts_attendus": [
-            2.28,
-            0.73
-          ],
-          "scores": [
             [
               "2-0",
-              12.8
-            ],
-            [
-              "1-0",
-              10.6
-            ],
-            [
-              "3-0",
-              9.8
+              7.1
             ]
           ],
           "explication": [
-            "Forme sur les 5 derniers matchs : Paris FC 3V 0N 2D, Angers SCO 0V 1N 4D.",
-            "Paris FC encaisse peu; Angers SCO marque peu; Angers SCO encaisse beaucoup.",
-            "Paris FC est favori (2,3 buts attendus contre 0,7), aidé par le terrain."
+            "Forme sur les 5 derniers matchs : Ajax 3V 2N 0D, Den Haag 2V 1N 2D.",
+            "Ajax marque plus que la moyenne; Ajax encaisse peu.",
+            "Ajax est favori (2,2 buts attendus contre 1,3), aidé par le terrain."
           ]
         },
         "Bologna - Udinese": {
@@ -3392,6 +3321,72 @@
             "Forme sur les 5 derniers matchs : Bologna 4V 0N 1D, Udinese 0V 1N 4D.",
             "Udinese marque peu; Udinese encaisse beaucoup.",
             "Bologna est favori (2,4 buts attendus contre 1,0), aidé par le terrain."
+          ]
+        },
+        "Paris FC - Angers SCO": {
+          "heure": "2026-11-22T14:00:00Z",
+          "ligue": "Ligue 1",
+          "dom": "Paris FC",
+          "ext": "Angers SCO",
+          "logo_dom": "https://crests.football-data.org/1045.png",
+          "logo_ext": "https://crests.football-data.org/532.png",
+          "forme_dom": "DVDVV",
+          "forme_ext": "DDNDD",
+          "buts_attendus": [
+            2.28,
+            0.73
+          ],
+          "scores": [
+            [
+              "2-0",
+              12.8
+            ],
+            [
+              "1-0",
+              10.6
+            ],
+            [
+              "3-0",
+              9.7
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Paris FC 3V 0N 2D, Angers SCO 0V 1N 4D.",
+            "Paris FC encaisse peu; Angers SCO marque peu; Angers SCO encaisse beaucoup.",
+            "Paris FC est favori (2,3 buts attendus contre 0,7), aidé par le terrain."
+          ]
+        },
+        "Sassuolo - Genoa": {
+          "heure": "2026-11-22T14:00:00Z",
+          "ligue": "Serie A",
+          "dom": "Sassuolo",
+          "ext": "Genoa",
+          "logo_dom": "https://crests.football-data.org/471.png",
+          "logo_ext": "https://crests.football-data.org/107.png",
+          "forme_dom": "DDDDD",
+          "forme_ext": "DVVVD",
+          "buts_attendus": [
+            1.34,
+            1.97
+          ],
+          "scores": [
+            [
+              "1-1",
+              10.4
+            ],
+            [
+              "1-2",
+              9.5
+            ],
+            [
+              "0-2",
+              7.1
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Sassuolo 0V 0N 5D, Genoa 3V 0N 2D.",
+            "Sassuolo encaisse beaucoup; Genoa marque peu.",
+            "Genoa est favori (2,0 buts attendus contre 1,3) malgré le déplacement."
           ]
         }
       },
@@ -3428,14 +3423,14 @@
         },
         {
           "taille": 5,
-          "proba": 50.8,
+          "proba": 50.7,
           "cote_estimee": 1.97,
           "selections": [
             "Barça - Villarreal : But en 1re mi-temps (89.1 %)",
             "Ajax - Den Haag : Plus de 1,5 buts (87.8 %)",
             "Twente - Willem II : Victoire Twente (87.0 %)",
             "Bologna - Udinese : Bologna ou nul (86.6 %)",
-            "Chapecoense - Cruzeiro : Plus de 1,5 buts (86.2 %)"
+            "Chapecoense - Cruzeiro : Plus de 1,5 buts (86.1 %)"
           ]
         }
       ]
@@ -3445,7 +3440,7 @@
         "Monza - Fiorentina": [
           {
             "marche": "Plus de 1,5 buts",
-            "proba": 91.9,
+            "proba": 91.8,
             "cote_estimee": 1.09
           },
           {
@@ -3475,7 +3470,7 @@
           },
           {
             "marche": "Plus de 3,5 buts",
-            "proba": 57.9,
+            "proba": 57.8,
             "cote_estimee": 1.73
           },
           {
@@ -3490,7 +3485,7 @@
           },
           {
             "marche": "Moins de 3,5 buts",
-            "proba": 42.1,
+            "proba": 42.2,
             "cote_estimee": 2.37
           },
           {
@@ -3501,7 +3496,7 @@
           {
             "marche": "Victoire Monza",
             "proba": 37.7,
-            "cote_estimee": 2.66
+            "cote_estimee": 2.65
           },
           {
             "marche": "Monza gagne et plus de 1,5 but",
@@ -3515,95 +3510,13 @@
           },
           {
             "marche": "Match nul",
-            "proba": 21.6,
+            "proba": 21.7,
             "cote_estimee": 4.62
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 7.7,
-            "cote_estimee": 13.05
-          }
-        ],
-        "Levante - Elche": [
-          {
-            "marche": "Plus de 1,5 buts",
-            "proba": 77.5,
-            "cote_estimee": 1.29
-          },
-          {
-            "marche": "But en 1re mi-temps",
-            "proba": 71.3,
-            "cote_estimee": 1.4
-          },
-          {
-            "marche": "Moins de 3,5 buts",
-            "proba": 69.7,
-            "cote_estimee": 1.43
-          },
-          {
-            "marche": "Levante ou nul",
-            "proba": 69.0,
-            "cote_estimee": 1.45
-          },
-          {
-            "marche": "Elche ou nul",
-            "proba": 58.1,
-            "cote_estimee": 1.72
-          },
-          {
-            "marche": "Les deux équipes marquent",
-            "proba": 56.9,
-            "cote_estimee": 1.76
-          },
-          {
-            "marche": "Plus de 2,5 buts",
-            "proba": 52.5,
-            "cote_estimee": 1.9
-          },
-          {
-            "marche": "1re équipe à marquer : Levante",
-            "proba": 51.0,
-            "cote_estimee": 1.96
-          },
-          {
-            "marche": "Levante ou nul et moins de 3,5 buts",
-            "proba": 48.1,
-            "cote_estimee": 2.08
-          },
-          {
-            "marche": "1re équipe à marquer : Elche",
-            "proba": 42.8,
-            "cote_estimee": 2.34
-          },
-          {
-            "marche": "Victoire Levante",
-            "proba": 41.9,
-            "cote_estimee": 2.38
-          },
-          {
-            "marche": "Levante gagne et plus de 1,5 but",
-            "proba": 33.5,
-            "cote_estimee": 2.98
-          },
-          {
-            "marche": "Victoire Elche",
-            "proba": 31.0,
-            "cote_estimee": 3.23
-          },
-          {
-            "marche": "Plus de 3,5 buts",
-            "proba": 30.3,
-            "cote_estimee": 3.3
-          },
-          {
-            "marche": "Match nul",
-            "proba": 27.1,
-            "cote_estimee": 3.69
-          },
-          {
-            "marche": "Score exact : 1-1",
-            "proba": 12.9,
-            "cote_estimee": 7.78
+            "cote_estimee": 13.03
           }
         ],
         "Brentford - Everton": [
@@ -3675,7 +3588,7 @@
           {
             "marche": "Victoire Everton",
             "proba": 25.8,
-            "cote_estimee": 3.88
+            "cote_estimee": 3.87
           },
           {
             "marche": "Plus de 3,5 buts",
@@ -3686,6 +3599,88 @@
             "marche": "Score exact : 1-1",
             "proba": 13.8,
             "cote_estimee": 7.23
+          }
+        ],
+        "Levante - Elche": [
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 77.5,
+            "cote_estimee": 1.29
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 71.3,
+            "cote_estimee": 1.4
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 69.7,
+            "cote_estimee": 1.43
+          },
+          {
+            "marche": "Levante ou nul",
+            "proba": 69.0,
+            "cote_estimee": 1.45
+          },
+          {
+            "marche": "Elche ou nul",
+            "proba": 58.0,
+            "cote_estimee": 1.72
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 56.9,
+            "cote_estimee": 1.76
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 52.5,
+            "cote_estimee": 1.9
+          },
+          {
+            "marche": "1re équipe à marquer : Levante",
+            "proba": 51.0,
+            "cote_estimee": 1.96
+          },
+          {
+            "marche": "Levante ou nul et moins de 3,5 buts",
+            "proba": 48.1,
+            "cote_estimee": 2.08
+          },
+          {
+            "marche": "1re équipe à marquer : Elche",
+            "proba": 42.8,
+            "cote_estimee": 2.34
+          },
+          {
+            "marche": "Victoire Levante",
+            "proba": 42.0,
+            "cote_estimee": 2.38
+          },
+          {
+            "marche": "Levante gagne et plus de 1,5 but",
+            "proba": 33.5,
+            "cote_estimee": 2.98
+          },
+          {
+            "marche": "Victoire Elche",
+            "proba": 31.0,
+            "cote_estimee": 3.23
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 30.3,
+            "cote_estimee": 3.3
+          },
+          {
+            "marche": "Match nul",
+            "proba": 27.1,
+            "cote_estimee": 3.69
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 12.9,
+            "cote_estimee": 7.78
           }
         ],
         "Internacional - Vitória": [
@@ -3711,7 +3706,7 @@
           },
           {
             "marche": "1re équipe à marquer : Internacional",
-            "proba": 60.7,
+            "proba": 60.6,
             "cote_estimee": 1.65
           },
           {
@@ -3736,7 +3731,7 @@
           },
           {
             "marche": "Internacional gagne et plus de 1,5 but",
-            "proba": 45.7,
+            "proba": 45.6,
             "cote_estimee": 2.19
           },
           {
@@ -3762,12 +3757,12 @@
           {
             "marche": "Victoire Vitória",
             "proba": 19.7,
-            "cote_estimee": 5.09
+            "cote_estimee": 5.08
           },
           {
             "marche": "Score exact : 1-1",
             "proba": 11.7,
-            "cote_estimee": 8.52
+            "cote_estimee": 8.51
           }
         ],
         "Botafogo - São Paulo": [
@@ -3804,7 +3799,7 @@
           {
             "marche": "1re équipe à marquer : Botafogo",
             "proba": 45.6,
-            "cote_estimee": 2.2
+            "cote_estimee": 2.19
           },
           {
             "marche": "1re équipe à marquer : São Paulo",
@@ -3838,18 +3833,18 @@
           },
           {
             "marche": "Botafogo gagne et plus de 1,5 but",
-            "proba": 22.8,
-            "cote_estimee": 4.38
+            "proba": 22.9,
+            "cote_estimee": 4.37
           },
           {
             "marche": "Score exact : 0-0",
             "proba": 15.3,
-            "cote_estimee": 6.53
+            "cote_estimee": 6.54
           },
           {
             "marche": "Plus de 3,5 buts",
             "proba": 13.4,
-            "cote_estimee": 7.47
+            "cote_estimee": 7.46
           }
         ]
       },
@@ -3874,7 +3869,7 @@
             ],
             [
               "1-2",
-              7.3
+              7.4
             ],
             [
               "2-2",
@@ -3885,38 +3880,6 @@
             "Forme sur les 5 derniers matchs : Monza 1V 0N 4D, Fiorentina 1V 2N 2D.",
             "Monza encaisse beaucoup; Fiorentina encaisse beaucoup.",
             "Match équilibré (2,0 - 2,1 buts attendus)."
-          ]
-        },
-        "Levante - Elche": {
-          "heure": "2026-11-23T20:00:00Z",
-          "ligue": "Primera Division",
-          "dom": "Levante",
-          "ext": "Elche",
-          "logo_dom": "https://crests.football-data.org/88.png",
-          "logo_ext": "https://crests.football-data.org/285.png",
-          "forme_dom": "NVDDN",
-          "forme_ext": "NNVDD",
-          "buts_attendus": [
-            1.51,
-            1.27
-          ],
-          "scores": [
-            [
-              "1-1",
-              12.9
-            ],
-            [
-              "2-1",
-              9.0
-            ],
-            [
-              "1-0",
-              8.4
-            ]
-          ],
-          "explication": [
-            "Forme sur les 5 derniers matchs : Levante 1V 2N 2D, Elche 1V 2N 2D.",
-            "Match équilibré (1,5 - 1,3 buts attendus)."
           ]
         },
         "Brentford - Everton": {
@@ -3950,6 +3913,38 @@
             "Forme sur les 5 derniers matchs : Brentford 1V 2N 2D, Everton 2V 1N 2D.",
             "Everton encaisse peu.",
             "Brentford est favori (1,4 but attendu contre 1,0), aidé par le terrain."
+          ]
+        },
+        "Levante - Elche": {
+          "heure": "2026-11-23T20:00:00Z",
+          "ligue": "Primera Division",
+          "dom": "Levante",
+          "ext": "Elche",
+          "logo_dom": "https://crests.football-data.org/88.png",
+          "logo_ext": "https://crests.football-data.org/285.png",
+          "forme_dom": "NVDDN",
+          "forme_ext": "NNVDD",
+          "buts_attendus": [
+            1.51,
+            1.27
+          ],
+          "scores": [
+            [
+              "1-1",
+              12.9
+            ],
+            [
+              "2-1",
+              9.0
+            ],
+            [
+              "1-0",
+              8.4
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Levante 1V 2N 2D, Elche 1V 2N 2D.",
+            "Match équilibré (1,5 - 1,3 buts attendus)."
           ]
         },
         "Internacional - Vitória": {
@@ -4005,7 +4000,7 @@
             ],
             [
               "1-1",
-              14.5
+              14.6
             ],
             [
               "1-0",
@@ -4063,23 +4058,637 @@
           ]
         }
       ]
+    },
+    "2026-11-24": {
+      "matchs": {
+        "Santos - Grêmio": [
+          {
+            "marche": "Santos ou nul",
+            "proba": 80.6,
+            "cote_estimee": 1.24
+          },
+          {
+            "marche": "Plus de 1,5 buts",
+            "proba": 78.2,
+            "cote_estimee": 1.28
+          },
+          {
+            "marche": "But en 1re mi-temps",
+            "proba": 71.9,
+            "cote_estimee": 1.39
+          },
+          {
+            "marche": "Moins de 3,5 buts",
+            "proba": 68.7,
+            "cote_estimee": 1.46
+          },
+          {
+            "marche": "1re équipe à marquer : Santos",
+            "proba": 61.0,
+            "cote_estimee": 1.64
+          },
+          {
+            "marche": "Victoire Santos",
+            "proba": 56.1,
+            "cote_estimee": 1.78
+          },
+          {
+            "marche": "Santos ou nul et moins de 3,5 buts",
+            "proba": 54.4,
+            "cote_estimee": 1.84
+          },
+          {
+            "marche": "Les deux équipes marquent",
+            "proba": 53.7,
+            "cote_estimee": 1.86
+          },
+          {
+            "marche": "Plus de 2,5 buts",
+            "proba": 53.6,
+            "cote_estimee": 1.87
+          },
+          {
+            "marche": "Santos gagne et plus de 1,5 but",
+            "proba": 46.1,
+            "cote_estimee": 2.17
+          },
+          {
+            "marche": "Grêmio ou nul",
+            "proba": 43.9,
+            "cote_estimee": 2.28
+          },
+          {
+            "marche": "1re équipe à marquer : Grêmio",
+            "proba": 33.1,
+            "cote_estimee": 3.02
+          },
+          {
+            "marche": "Plus de 3,5 buts",
+            "proba": 31.3,
+            "cote_estimee": 3.19
+          },
+          {
+            "marche": "Match nul",
+            "proba": 24.5,
+            "cote_estimee": 4.08
+          },
+          {
+            "marche": "Victoire Grêmio",
+            "proba": 19.4,
+            "cote_estimee": 5.16
+          },
+          {
+            "marche": "Score exact : 1-1",
+            "proba": 11.7,
+            "cote_estimee": 8.57
+          }
+        ]
+      },
+      "infos": {
+        "Santos - Grêmio": {
+          "heure": "2026-11-24T00:00:00Z",
+          "ligue": "Campeonato Brasileiro Série A",
+          "dom": "Santos",
+          "ext": "Grêmio",
+          "logo_dom": "https://crests.football-data.org/6685.png",
+          "logo_ext": "https://crests.football-data.org/1767.png",
+          "forme_dom": "DVNND",
+          "forme_ext": "NDVVD",
+          "buts_attendus": [
+            1.83,
+            0.99
+          ],
+          "scores": [
+            [
+              "1-1",
+              11.7
+            ],
+            [
+              "1-0",
+              10.0
+            ],
+            [
+              "2-0",
+              9.9
+            ]
+          ],
+          "explication": [
+            "Forme sur les 5 derniers matchs : Santos 1V 2N 2D, Grêmio 2V 1N 2D.",
+            "Santos est favori (1,8 but attendu contre 1,0), aidé par le terrain."
+          ]
+        }
+      },
+      "combines": []
     }
   },
-  "matchs": {},
-  "infos": {},
-  "combines": [],
+  "matchs": {
+    "Coritiba - Santos": [
+      {
+        "marche": "Plus de 1,5 buts",
+        "proba": 76.7,
+        "cote_estimee": 1.3
+      },
+      {
+        "marche": "Santos ou nul",
+        "proba": 73.3,
+        "cote_estimee": 1.36
+      },
+      {
+        "marche": "But en 1re mi-temps",
+        "proba": 70.8,
+        "cote_estimee": 1.41
+      },
+      {
+        "marche": "Moins de 3,5 buts",
+        "proba": 70.7,
+        "cote_estimee": 1.41
+      },
+      {
+        "marche": "Les deux équipes marquent",
+        "proba": 55.2,
+        "cote_estimee": 1.81
+      },
+      {
+        "marche": "1re équipe à marquer : Santos",
+        "proba": 54.2,
+        "cote_estimee": 1.85
+      },
+      {
+        "marche": "Coritiba ou nul",
+        "proba": 53.6,
+        "cote_estimee": 1.87
+      },
+      {
+        "marche": "Plus de 2,5 buts",
+        "proba": 51.4,
+        "cote_estimee": 1.94
+      },
+      {
+        "marche": "Victoire Santos",
+        "proba": 46.4,
+        "cote_estimee": 2.15
+      },
+      {
+        "marche": "Coritiba ou nul et moins de 3,5 buts",
+        "proba": 39.5,
+        "cote_estimee": 2.53
+      },
+      {
+        "marche": "1re équipe à marquer : Coritiba",
+        "proba": 39.3,
+        "cote_estimee": 2.54
+      },
+      {
+        "marche": "Plus de 3,5 buts",
+        "proba": 29.3,
+        "cote_estimee": 3.41
+      },
+      {
+        "marche": "Match nul",
+        "proba": 26.8,
+        "cote_estimee": 3.73
+      },
+      {
+        "marche": "Victoire Coritiba",
+        "proba": 26.7,
+        "cote_estimee": 3.74
+      },
+      {
+        "marche": "Coritiba gagne et plus de 1,5 but",
+        "proba": 20.2,
+        "cote_estimee": 4.95
+      },
+      {
+        "marche": "Score exact : 1-1",
+        "proba": 12.8,
+        "cote_estimee": 7.82
+      }
+    ],
+    "Clube do Remo - Chapecoense": [
+      {
+        "marche": "Clube do Remo ou nul",
+        "proba": 78.8,
+        "cote_estimee": 1.27
+      },
+      {
+        "marche": "Plus de 1,5 buts",
+        "proba": 75.6,
+        "cote_estimee": 1.32
+      },
+      {
+        "marche": "Moins de 3,5 buts",
+        "proba": 72.0,
+        "cote_estimee": 1.39
+      },
+      {
+        "marche": "But en 1re mi-temps",
+        "proba": 70.0,
+        "cote_estimee": 1.43
+      },
+      {
+        "marche": "1re équipe à marquer : Clube do Remo",
+        "proba": 58.7,
+        "cote_estimee": 1.7
+      },
+      {
+        "marche": "Clube do Remo ou nul et moins de 3,5 buts",
+        "proba": 55.9,
+        "cote_estimee": 1.79
+      },
+      {
+        "marche": "Victoire Clube do Remo",
+        "proba": 52.9,
+        "cote_estimee": 1.89
+      },
+      {
+        "marche": "Les deux équipes marquent",
+        "proba": 52.1,
+        "cote_estimee": 1.92
+      },
+      {
+        "marche": "Plus de 2,5 buts",
+        "proba": 50.0,
+        "cote_estimee": 2.0
+      },
+      {
+        "marche": "Chapecoense ou nul",
+        "proba": 47.1,
+        "cote_estimee": 2.12
+      },
+      {
+        "marche": "Clube do Remo gagne et plus de 1,5 but",
+        "proba": 42.1,
+        "cote_estimee": 2.37
+      },
+      {
+        "marche": "1re équipe à marquer : Chapecoense",
+        "proba": 34.4,
+        "cote_estimee": 2.91
+      },
+      {
+        "marche": "Plus de 3,5 buts",
+        "proba": 28.0,
+        "cote_estimee": 3.57
+      },
+      {
+        "marche": "Match nul",
+        "proba": 26.0,
+        "cote_estimee": 3.85
+      },
+      {
+        "marche": "Victoire Chapecoense",
+        "proba": 21.2,
+        "cote_estimee": 4.73
+      },
+      {
+        "marche": "Score exact : 1-1",
+        "proba": 12.4,
+        "cote_estimee": 8.06
+      }
+    ],
+    "Flamengo - Paranaense": [
+      {
+        "marche": "Plus de 1,5 buts",
+        "proba": 92.7,
+        "cote_estimee": 1.08
+      },
+      {
+        "marche": "Flamengo ou nul",
+        "proba": 89.8,
+        "cote_estimee": 1.11
+      },
+      {
+        "marche": "But en 1re mi-temps",
+        "proba": 85.0,
+        "cote_estimee": 1.18
+      },
+      {
+        "marche": "Plus de 2,5 buts",
+        "proba": 79.2,
+        "cote_estimee": 1.26
+      },
+      {
+        "marche": "Victoire Flamengo",
+        "proba": 75.6,
+        "cote_estimee": 1.32
+      },
+      {
+        "marche": "1re équipe à marquer : Flamengo",
+        "proba": 72.0,
+        "cote_estimee": 1.39
+      },
+      {
+        "marche": "Flamengo gagne et plus de 1,5 but",
+        "proba": 71.5,
+        "cote_estimee": 1.4
+      },
+      {
+        "marche": "Les deux équipes marquent",
+        "proba": 65.2,
+        "cote_estimee": 1.53
+      },
+      {
+        "marche": "Plus de 3,5 buts",
+        "proba": 60.8,
+        "cote_estimee": 1.64
+      },
+      {
+        "marche": "Moins de 3,5 buts",
+        "proba": 39.2,
+        "cote_estimee": 2.55
+      },
+      {
+        "marche": "Flamengo ou nul et moins de 3,5 buts",
+        "proba": 33.7,
+        "cote_estimee": 2.97
+      },
+      {
+        "marche": "1re équipe à marquer : Paranaense",
+        "proba": 26.6,
+        "cote_estimee": 3.77
+      },
+      {
+        "marche": "Paranaense ou nul",
+        "proba": 24.4,
+        "cote_estimee": 4.1
+      },
+      {
+        "marche": "Match nul",
+        "proba": 14.2,
+        "cote_estimee": 7.06
+      },
+      {
+        "marche": "Victoire Paranaense",
+        "proba": 10.2,
+        "cote_estimee": 9.76
+      },
+      {
+        "marche": "Score exact : 3-1",
+        "proba": 8.2,
+        "cote_estimee": 12.25
+      }
+    ],
+    "Cruzeiro - Palmeiras": [
+      {
+        "marche": "Plus de 1,5 buts",
+        "proba": 92.8,
+        "cote_estimee": 1.08
+      },
+      {
+        "marche": "But en 1re mi-temps",
+        "proba": 85.0,
+        "cote_estimee": 1.18
+      },
+      {
+        "marche": "Plus de 2,5 buts",
+        "proba": 79.1,
+        "cote_estimee": 1.26
+      },
+      {
+        "marche": "Les deux équipes marquent",
+        "proba": 77.6,
+        "cote_estimee": 1.29
+      },
+      {
+        "marche": "Palmeiras ou nul",
+        "proba": 63.0,
+        "cote_estimee": 1.59
+      },
+      {
+        "marche": "Plus de 3,5 buts",
+        "proba": 60.7,
+        "cote_estimee": 1.65
+      },
+      {
+        "marche": "Cruzeiro ou nul",
+        "proba": 58.1,
+        "cote_estimee": 1.72
+      },
+      {
+        "marche": "1re équipe à marquer : Palmeiras",
+        "proba": 50.8,
+        "cote_estimee": 1.97
+      },
+      {
+        "marche": "1re équipe à marquer : Cruzeiro",
+        "proba": 47.7,
+        "cote_estimee": 2.09
+      },
+      {
+        "marche": "Victoire Palmeiras",
+        "proba": 41.9,
+        "cote_estimee": 2.39
+      },
+      {
+        "marche": "Moins de 3,5 buts",
+        "proba": 39.3,
+        "cote_estimee": 2.54
+      },
+      {
+        "marche": "Victoire Cruzeiro",
+        "proba": 37.0,
+        "cote_estimee": 2.7
+      },
+      {
+        "marche": "Cruzeiro gagne et plus de 1,5 but",
+        "proba": 34.5,
+        "cote_estimee": 2.9
+      },
+      {
+        "marche": "Cruzeiro ou nul et moins de 3,5 buts",
+        "proba": 23.5,
+        "cote_estimee": 4.26
+      },
+      {
+        "marche": "Match nul",
+        "proba": 21.1,
+        "cote_estimee": 4.73
+      },
+      {
+        "marche": "Score exact : 2-2",
+        "proba": 7.3,
+        "cote_estimee": 13.75
+      }
+    ]
+  },
+  "infos": {
+    "Coritiba - Santos": {
+      "heure": "2026-11-18T22:30:00Z",
+      "ligue": "Campeonato Brasileiro Série A",
+      "dom": "Coritiba",
+      "ext": "Santos",
+      "logo_dom": "https://crests.football-data.org/4241.png",
+      "logo_ext": "https://crests.football-data.org/6685.png",
+      "forme_dom": "NDDVD",
+      "forme_ext": "DVNND",
+      "buts_attendus": [
+        1.15,
+        1.58
+      ],
+      "scores": [
+        [
+          "1-1",
+          12.8
+        ],
+        [
+          "1-2",
+          9.4
+        ],
+        [
+          "0-1",
+          9.4
+        ]
+      ],
+      "explication": [
+        "Forme sur les 5 derniers matchs : Coritiba 1V 1N 3D, Santos 1V 2N 2D.",
+        "Coritiba marque peu; Coritiba encaisse beaucoup.",
+        "Santos est favori (1,6 but attendu contre 1,1) malgré le déplacement."
+      ]
+    },
+    "Clube do Remo - Chapecoense": {
+      "heure": "2026-11-18T23:00:00Z",
+      "ligue": "Campeonato Brasileiro Série A",
+      "dom": "Clube do Remo",
+      "ext": "Chapecoense",
+      "logo_dom": "https://crests.football-data.org/4287.png",
+      "logo_ext": "https://crests.football-data.org/1772_large.png",
+      "forme_dom": "NNDVD",
+      "forme_ext": "DVDDD",
+      "buts_attendus": [
+        1.69,
+        0.99
+      ],
+      "scores": [
+        [
+          "1-1",
+          12.4
+        ],
+        [
+          "1-0",
+          10.7
+        ],
+        [
+          "2-0",
+          9.8
+        ]
+      ],
+      "explication": [
+        "Forme sur les 5 derniers matchs : Clube do Remo 1V 2N 2D, Chapecoense 1V 0N 4D.",
+        "Clube do Remo marque peu; Clube do Remo encaisse beaucoup; Chapecoense marque peu.",
+        "Clube do Remo est favori (1,7 but attendu contre 1,0), aidé par le terrain."
+      ]
+    },
+    "Flamengo - Paranaense": {
+      "heure": "2026-11-18T23:30:00Z",
+      "ligue": "Campeonato Brasileiro Série A",
+      "dom": "Flamengo",
+      "ext": "Paranaense",
+      "logo_dom": "https://crests.football-data.org/1783.png",
+      "logo_ext": "https://crests.football-data.org/1768.png",
+      "forme_dom": "VDVVV",
+      "forme_ext": "VDNDD",
+      "buts_attendus": [
+        3.08,
+        1.14
+      ],
+      "scores": [
+        [
+          "3-1",
+          8.2
+        ],
+        [
+          "2-1",
+          7.9
+        ],
+        [
+          "3-0",
+          7.2
+        ]
+      ],
+      "explication": [
+        "Forme sur les 5 derniers matchs : Flamengo 4V 0N 1D, Paranaense 1V 1N 3D.",
+        "Flamengo marque plus que la moyenne; Paranaense encaisse beaucoup.",
+        "Flamengo est favori (3,1 buts attendus contre 1,1), aidé par le terrain."
+      ]
+    },
+    "Cruzeiro - Palmeiras": {
+      "heure": "2026-11-18T23:30:00Z",
+      "ligue": "Campeonato Brasileiro Série A",
+      "dom": "Cruzeiro",
+      "ext": "Palmeiras",
+      "logo_dom": "https://crests.football-data.org/1771.png",
+      "logo_ext": "https://crests.football-data.org/1769.png",
+      "forme_dom": "DVVVV",
+      "forme_ext": "VVVNV",
+      "buts_attendus": [
+        2.04,
+        2.17
+      ],
+      "scores": [
+        [
+          "2-2",
+          7.3
+        ],
+        [
+          "1-2",
+          7.1
+        ],
+        [
+          "1-1",
+          7.1
+        ]
+      ],
+      "explication": [
+        "Forme sur les 5 derniers matchs : Cruzeiro 4V 0N 1D, Palmeiras 4V 1N 0D.",
+        "Cruzeiro marque plus que la moyenne; Palmeiras marque plus que la moyenne.",
+        "Match équilibré (2,0 - 2,2 buts attendus)."
+      ]
+    }
+  },
+  "combines": [
+    {
+      "taille": 2,
+      "proba": 76.3,
+      "cote_estimee": 1.31,
+      "selections": [
+        "Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
+        "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)"
+      ]
+    },
+    {
+      "taille": 3,
+      "proba": 60.1,
+      "cote_estimee": 1.66,
+      "selections": [
+        "Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
+        "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
+        "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.8 %)"
+      ]
+    },
+    {
+      "taille": 4,
+      "proba": 46.1,
+      "cote_estimee": 2.17,
+      "selections": [
+        "Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
+        "Cruzeiro - Palmeiras : But en 1re mi-temps (85.0 %)",
+        "Clube do Remo - Chapecoense : Clube do Remo ou nul (78.8 %)",
+        "Coritiba - Santos : Plus de 1,5 buts (76.7 %)"
+      ]
+    }
+  ],
   "couverture_selections": null,
-  "genere_le": "2026-11-17T05:47:54.952092+00:00",
+  "genere_le": "2026-11-18T05:13:35.771175+00:00",
   "combines_semaine": [
     {
       "taille": 10,
-      "proba": 28.1,
-      "cote_estimee": 3.56,
+      "proba": 28.0,
+      "cote_estimee": 3.57,
       "selections": [
         "18/11 · Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
-        "21/11 · Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-        "21/11 · Lazio - Lecce : Plus de 1,5 buts (89.1 %)",
+        "21/11 · Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
         "22/11 · Barça - Villarreal : But en 1re mi-temps (89.1 %)",
+        "21/11 · Lazio - Lecce : Plus de 1,5 buts (89.0 %)",
         "20/11 · Bayern - 1. FC Köln : Plus de 1,5 buts (88.7 %)",
         "22/11 · Ajax - Den Haag : Plus de 1,5 buts (87.8 %)",
         "22/11 · Twente - Willem II : Victoire Twente (87.0 %)",
@@ -4090,13 +4699,13 @@
     },
     {
       "taille": 12,
-      "proba": 20.9,
-      "cote_estimee": 4.78,
+      "proba": 20.8,
+      "cote_estimee": 4.8,
       "selections": [
         "18/11 · Flamengo - Paranaense : Flamengo ou nul (89.8 %)",
-        "21/11 · Como 1907 - Cagliari : Como 1907 ou nul (89.5 %)",
-        "21/11 · Lazio - Lecce : Plus de 1,5 buts (89.1 %)",
+        "21/11 · Como 1907 - Cagliari : Como 1907 ou nul (89.4 %)",
         "22/11 · Barça - Villarreal : But en 1re mi-temps (89.1 %)",
+        "21/11 · Lazio - Lecce : Plus de 1,5 buts (89.0 %)",
         "20/11 · Bayern - 1. FC Köln : Plus de 1,5 buts (88.7 %)",
         "22/11 · Ajax - Den Haag : Plus de 1,5 buts (87.8 %)",
         "22/11 · Twente - Willem II : Victoire Twente (87.0 %)",
@@ -4104,11 +4713,11 @@
         "22/11 · Bologna - Udinese : Bologna ou nul (86.6 %)",
         "23/11 · Botafogo - São Paulo : Moins de 3,5 buts (86.6 %)",
         "21/11 · Elversberg - Freiburg : Plus de 1,5 buts (86.4 %)",
-        "22/11 · Chapecoense - Cruzeiro : Plus de 1,5 buts (86.2 %)"
+        "22/11 · Chapecoense - Cruzeiro : Plus de 1,5 buts (86.1 %)"
       ]
     }
   ],
   "combines_semaine_info": {
-    "matchs_eligibles": 33
+    "matchs_eligibles": 34
   }
 }
